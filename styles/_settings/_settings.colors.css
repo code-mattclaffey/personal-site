@@ -1,0 +1,15 @@
+/*--------------------
+    Colours
+--------------------*/
+
+:root {
+    --primary: #0a1f56;
+    --primary-light: #0f2c78;
+    --secondary: #377ef4;
+    --secondary-light: #7aa4ea;
+    --cta-green: #00ad9f;
+    --cta-green-hover: #00c2b2;
+    --white: #ffffff;
+    --black: #000000;
+    --keyline: #dddddd;
+}

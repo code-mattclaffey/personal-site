@@ -1,0 +1,41 @@
+/* Banner Component */
+
+
+.c-banner {
+    background: linear-gradient(0deg,var(--primary),var(--primary-light));
+    text-shadow: 0 2px 20px rgba(0,0,0,.16);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+@media (--md-viewport) {
+    .c-banner {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+}
+
+.c-banner__title {
+    padding-top: 2rem;
+    position: relative;
+}
+
+.c-banner__sub-title {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.c-banner__wave {
+    top: 100%;
+    left: 0;
+    color: var(--white);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+}

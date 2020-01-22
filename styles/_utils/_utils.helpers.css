@@ -1,0 +1,9 @@
+/* Text Utils */
+
+.u-text--uppercase {
+    text-transform: uppercase;
+}
+
+.u-text--bold {
+    font-weight: var(--heading-h1-weight);
+}
