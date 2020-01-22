@@ -10,7 +10,7 @@ export const Header = () => (
     <header className="c-header">
         <RegionInner additionalClassNames="c-header__inner">
             <Link href="/">
-                <a className="e-link--naked u-margin--none u-text--bold">
+                <a className="e-link--naked u-text--larger u-margin--none u-text--bold">
                     mattc.
                 </a>
             </Link>
