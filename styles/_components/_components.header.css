@@ -1,0 +1,20 @@
+/* Header Component */
+
+.c-header {
+    background: transparent;
+    color: var(--white);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: 10;
+}
+
+.c-header__inner {
+    align-items: center;
+    border-bottom: 1px solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--region-gutter-horizontal);
+}

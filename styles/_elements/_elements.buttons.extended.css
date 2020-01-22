@@ -1,8 +1,8 @@
 :root {
-    --button-bg: var(--cta);
-    --button-border: 2px solid var(--cta);
+    --button-bg: var(--cta-green);
+    --button-border: 2px solid var(--cta-green);
     --button-color: var(--white);
-    --button-hover-bg: var(--cta-hover);
-    --button-hover-border: 2px solid var(--cta-hover);
+    --button-hover-bg: var(--cta-green-hover);
+    --button-hover-border: 2px solid var(--cta-green-hover);
     --button-hover-color: var(--white);
 }

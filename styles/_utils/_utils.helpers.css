@@ -7,3 +7,11 @@
 .u-text--bold {
     font-weight: var(--heading-h1-weight);
 }
+
+.u-text--larger {
+    font-size: 1.2rem;
+}
+
+.u-margin--none {
+    margin: 0;
+}
