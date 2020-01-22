@@ -6,7 +6,7 @@ import {
     RegionInner,
     Heading,
     Text,
-    Button
+    Button,
 } from '@titan-tooling/ui';
 
 import '../styles/index.css';
@@ -18,11 +18,13 @@ const Home = () => (
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <header className="c-header">
-          <RegionInner additionalClassNames="c-header__inner">
-            <Link href="/">
-              <a className="e-link--naked u-margin--none u-text--bold">mattc.</a>
-            </Link>
-          </RegionInner>
+            <RegionInner additionalClassNames="c-header__inner">
+                <Link href="/">
+                    <a className="e-link--naked u-margin--none u-text--bold">
+                        mattc.
+                    </a>
+                </Link>
+            </RegionInner>
         </header>
         <Region
             style={{
@@ -37,11 +39,14 @@ const Home = () => (
                     as="h1"
                     additionalClassNames="c-banner__title"
                 >
-                    Hi!, I'm Matt
+                    🙋‍♂️ Heyy!, I'm Matt.
                 </Heading>
-                <Text additionalClassNames="u-text--larger">
-                    Hi, I'm Matt & am a Frontend Developer from
-                    Manchester
+                <Text additionalClassNames="c-banner__text u-text--larger">
+                    I am a creative frontend developer living in
+                    Manchester. My focus at the moment is building
+                    reusable design systems,{' '}
+                    <abbr title="Continous Integration">CI</abbr> and
+                    TDD. I also love all things todo with performance & web accessibility.
                 </Text>
                 <Button as="a" variant="primary" size="large">
                     View case studies

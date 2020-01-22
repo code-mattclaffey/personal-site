@@ -41,3 +41,7 @@
     transform: translateY(-50%);
     width: 100%;
 }
+
+.c-banner__text {
+    max-width: 70ch;
+}
