@@ -6,23 +6,23 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    min-height: 80vh;
     text-shadow: 0 2px 20px rgba(0,0,0,.16);
     overflow: hidden;
     position: relative;
-    text-align: center;
+    padding-top: 50px;
     z-index: 0;
 }
 
-@media (--md-viewport) {
-    .c-banner {
-        text-align: left;
-    }
+.c-banner__title {
+    position: relative;
 }
 
-.c-banner__title {
-    padding-top: 2rem;
-    position: relative;
+@media (--sm-max-viewport) {
+    .c-banner__title {
+        font-size: var(--heading-h4-size);
+        font-weight: var(--heading-h4-weight);
+    }
 }
 
 .c-banner__sub-title {
