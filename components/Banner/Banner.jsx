@@ -22,7 +22,7 @@ export const Banner = () => (
                 as="h1"
                 additionalClassNames="c-banner__title"
             >
-                🙋‍♂️ Heyy!, I'm Matt.
+                🙋‍♂️ Heyy! I'm Matt.
             </Heading>
             <Text additionalClassNames="c-banner__text u-text--larger">
                 I am a creative frontend developer living in
