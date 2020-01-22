@@ -1,0 +1,32 @@
+/* Navigation */
+
+@media (--md-max-viewport) {
+    .c-navigation {
+        display: none;
+    }
+}
+
+
+.c-navigation__items {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+
+.c-navigation__link {
+    border-bottom: 5px solid transparent;
+    color: var(--white);
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+.c-navigation__link[aria-current="current"],
+.c-navigation__link:hover,
+.c-navigation__link:focus {
+    border-bottom: 5px solid var(--cta-green);
+}

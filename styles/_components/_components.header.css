@@ -4,6 +4,7 @@
     background: transparent;
     color: var(--white);
     left: 0;
+    padding-top: var(--region-gutter-horizontal);
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,12 +17,25 @@
     border-bottom: 1px solid var(--dark-keyline);
     display: flex;
     justify-content: space-between;
-    padding: var(--region-gutter-horizontal);
+    padding: 0 var(--region-gutter-horizontal);
+}
+
+@media (--md-max-viewport) {
+    .c-header__inner {
+        padding-bottom: var(--region-gutter-horizontal);
+    }
 }
 
 .c-header__menu-button {
     color: var(--white);
+    display: block;
     height: 44px;
     padding: 8px;
     width: 44px;
+}
+
+@media (--md-viewport) {
+    .c-header__menu-button {
+        display: none;
+    }
 }
