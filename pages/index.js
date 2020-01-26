@@ -5,6 +5,7 @@ import { Banner } from '../components/Banner';
 import { Header } from '../components/Header';
 
 import '../styles/index.css';
+import { BlogGrid } from '../components/BlogGrid';
 
 const Home = () => (
     <>
@@ -14,6 +15,7 @@ const Home = () => (
         </Head>
         <Header />
         <Banner />
+        <BlogGrid />
     </>
 );
 

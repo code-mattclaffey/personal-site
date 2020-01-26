@@ -1,5 +1,15 @@
 /* Extended heading styles */
 
+:root {
+    --heading-h3-size: 1.4em;
+}
+
+@media (--md-viewport) {
+    :root {
+        --heading-h3-size: 1.6em;
+    }
+}
+
 .e-heading--highlighted {
     background-color: var(--secondary);
     border-radius: 3px;

@@ -1,0 +1,5 @@
+/* Picture Element */
+
+.e-picture {
+    background: linear-gradient(0deg, var(--primary), var(--primary-light));
+}
