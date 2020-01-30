@@ -1,15 +1,20 @@
 /* Header Component */
 
 .c-header {
-    background: transparent;
+    background: var(--white);
     border-bottom: 1px solid var(--keyline);
     color: var(--black);
     left: 0;
-    padding-top: var(--region-gutter-horizontal);
-    position: absolute;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
+}
+
+@media (--md-max-viewport) {
+    .c-header {
+        padding-top: var(--region-gutter-horizontal);
+    }
 }
 
 .c-header__inner {
