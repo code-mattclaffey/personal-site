@@ -1,0 +1,7 @@
+/* Personal Projects */
+
+@media (--md-viewport) {
+    .c-personal-projects {
+        --region-gutter-vertical: 160px;
+    }
+}
