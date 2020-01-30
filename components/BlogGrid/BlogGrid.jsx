@@ -23,15 +23,15 @@ export const BlogGrid = () => {
                 }}>
                 <RegionInner>
                     <Grid>
-                        <GridItem columns={{ xs: '12' }}>
+                        <GridItem columns={{ xs: '12', md: '9' }}>
                             <div className="c-blog-grid__header">
-                                <Heading>
-                                    My most popular blog posts
-                                </Heading>
-                                <Text additionalClassNames="u-text--larger">
+                                <Heading type="h4">
                                     I write a blog post every couple
                                     of weeks about small things that I
                                     really enjoy about the web.
+                                </Heading>
+                                <Text additionalClassNames="u-text--larger">
+                                    Blog posts vary from Web Performance, Accessibility, React and anything cool of course!
                                 </Text>
                                 <Link href="https://medium.com/@mattclaffey">
                                     <a
