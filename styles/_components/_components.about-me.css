@@ -6,3 +6,9 @@
     }
 }
 
+@media (--md-max-viewport) {
+    .c-about-me .c-about-me__main-heading {
+        font-size: 1.4em;
+    }
+}
+

@@ -23,7 +23,7 @@ export const AboutMe = () => {
                     <Grid>
                         <GridItem columns={{ xs: '12', md: '9' }}>
                             <div>
-                                <Heading type="h4">
+                                <Heading type="h4" additionalClassNames="c-about-me__main-heading">
                                     I have been a frontend developer for around 6 years, I've done work for multiple agencies, consulted for clients, and collaborated with talented people to create digital products. 
                                 </Heading>
                                 <Text additionalClassNames="u-text--larger">
