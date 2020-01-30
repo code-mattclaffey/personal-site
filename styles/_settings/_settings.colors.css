@@ -3,14 +3,14 @@
 --------------------*/
 
 :root {
-    --primary: #0a1f56;
-    --primary-light: #0f2c78;
-    --secondary: #377ef4;
-    --secondary-light: #7aa4ea;
-    --cta-green: #00ad9f;
-    --cta-green-hover: #00c2b2;
+    --primary: #160647;
+    --primary-light: #1b0758;
+    --secondary: #7765e6;
+    --secondary-light: #8773ff;
+    --cta-green: #8773ff;
+    --cta-green-hover: #8773ff;
     --white: #ffffff;
     --black: #000000;
     --keyline: #dddddd;
-    --dark-keyline: #003ca0;
+    --dark-keyline: #7765e6;
 }

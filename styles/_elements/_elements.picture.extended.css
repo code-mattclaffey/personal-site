@@ -1,5 +1,5 @@
-/* Picture Element */
+/* Picture */
 
-.e-picture {
-    background: linear-gradient(0deg, var(--primary), var(--primary-light));
+.e-picture .e-img {
+    height: 100%;
 }

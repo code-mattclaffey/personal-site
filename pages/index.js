@@ -17,6 +17,7 @@ const Home = () => (
         <Header />
         <Banner />
         <AboutMe />
+        <BlogGrid />
     </>
 );
 
