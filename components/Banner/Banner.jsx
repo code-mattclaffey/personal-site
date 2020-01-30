@@ -22,16 +22,11 @@ export const Banner = () => (
                 as="h1"
                 additionalClassNames="c-banner__title"
             >
-                🙋‍♂️ Heyy! I'm Matt.
+                ✏️ Designer, Frontend Developer & Speaker
             </Heading>
             <Text additionalClassNames="c-banner__text u-text--larger">
                 I am a creative frontend developer living in
-                Manchester. My focus at the moment is building
-                reusable design systems,{' '}
-                <abbr title="Continous Integration">CI</abbr> and{' '}
-                <abbr title="Test Driven Development">TDD</abbr>. I
-                also love all things todo with performance & web
-                accessibility.
+                Manchester.
             </Text>
             <Button as="a" variant="primary" size="large">
                 View case studies

@@ -6,6 +6,7 @@ import { Header } from '../components/Header';
 
 import '../styles/index.css';
 import { BlogGrid } from '../components/BlogGrid';
+import { AboutMe } from '../components/AboutMe/AboutMe';
 
 const Home = () => (
     <>
@@ -15,7 +16,7 @@ const Home = () => (
         </Head>
         <Header />
         <Banner />
-        <BlogGrid />
+        <AboutMe />
     </>
 );
 

@@ -2,11 +2,15 @@
 
 :root {
     --heading-h3-size: 1.4em;
+    --heading-h2-size: 2em;
+    --heading-h5-size: 1.2em;
 }
 
 @media (--md-viewport) {
     :root {
         --heading-h3-size: 1.6em;
+        --heading-h2-size: 2.4em;
+        --heading-h5-size: 1.2em;
     }
 }
 

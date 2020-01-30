@@ -1,6 +1,7 @@
 
 :root {
     --grid-gap: 20px;
+    --base-font-size: 18px;
 }
 
 @media (--md-viewport) {
