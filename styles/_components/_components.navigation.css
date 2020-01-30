@@ -19,7 +19,7 @@
 
 .c-navigation__link {
     border-bottom: 5px solid transparent;
-    color: var(--white);
+    color: var(--black);
     display: block;
     text-decoration: none;
     padding: 12px 20px;
@@ -28,5 +28,5 @@
 .c-navigation__link[aria-current="current"],
 .c-navigation__link:hover,
 .c-navigation__link:focus {
-    border-bottom: 5px solid var(--cta-green);
+    border-bottom: 5px solid var(--primary);
 }

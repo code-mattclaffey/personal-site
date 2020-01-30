@@ -4,6 +4,7 @@
     --heading-h3-size: 1.4em;
     --heading-h2-size: 2em;
     --heading-h5-size: 1.2em;
+    --heading-line-height: 1.4;
 }
 
 @media (--md-viewport) {

@@ -2,7 +2,6 @@
 
 
 .c-banner {
-    background: linear-gradient(0deg,var(--primary),var(--primary-light));
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -32,9 +31,9 @@
 }
 
 .c-banner__wave {
+    fill: var(--secondary-light);
     top: 100%;
     left: 0;
-    color: var(--white);
     display: block;
     overflow: hidden;
     position: absolute;

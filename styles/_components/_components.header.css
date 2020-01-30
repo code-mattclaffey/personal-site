@@ -2,7 +2,8 @@
 
 .c-header {
     background: transparent;
-    color: var(--white);
+    border-bottom: 1px solid var(--keyline);
+    color: var(--black);
     left: 0;
     padding-top: var(--region-gutter-horizontal);
     position: absolute;
@@ -13,7 +14,6 @@
 
 .c-header__inner {
     align-items: center;
-    border-bottom: 1px solid var(--dark-keyline);
     display: flex;
     justify-content: space-between;
     padding: 0 var(--region-gutter-horizontal);
@@ -26,7 +26,7 @@
 }
 
 .c-header__menu-button {
-    color: var(--white);
+    color: var(--black);
     display: block;
     height: 44px;
     padding: 8px;

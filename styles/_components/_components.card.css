@@ -1,0 +1,14 @@
+/* Card Component */
+
+.c-card {
+    background: var(--white);
+    color: var(--black);
+    border-radius: 8px;
+    box-shadow: 0 10px 43px rgba(47, 47, 47, 0.15);
+    border: 1px solid rgba(47, 47, 47, 0.15);
+    padding: 30px;
+}
+
+.c-about-me .c-card {
+    height: 100%;
+}

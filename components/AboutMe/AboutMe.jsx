@@ -14,23 +14,20 @@ import {
 export const AboutMe = () => {
     return (
         <section>
-            <Region as="section" additionalClassNames="c-about-me">
+            <Region as="section" additionalClassNames="c-about-me"
+            style={{
+                '--region-text-color': 'var(--white)',
+                '--region-bg': 'var(--secondary-light)',
+            }}>
                 <RegionInner>
                     <Grid>
                         <GridItem columns={{ xs: '12', md: '9' }}>
                             <div>
                                 <Heading type="h4">
-                                    🙋‍♂️ Heyy! I'm Matt.
+                                    I have been a frontend developer for around 6 years, I've done work for multiple agencies, consulted for clients, and collaborated with talented people to create digital products. 
                                 </Heading>
-                                <Text>
-                                    Since beginning my journey as a
-                                    frontend developer nearly 6 years
-                                    ago, I've done work for multiple
-                                    agencies, consulted for clients,
-                                    and collaborated with talented
-                                    people to create digital products
-                                    for both business and consumer
-                                    use. My focus at the moment is
+                                <Text additionalClassNames="u-text--larger">
+                                    My focus at the moment is
                                     building reusable design systems,{' '}
                                     <abbr title="Continous Integration">
                                         CI
@@ -49,7 +46,8 @@ export const AboutMe = () => {
                                 </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '4' }}>
+                        <GridItem columns={{ xs: '12', md: '6' }}>
+                            <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Designer
                             </Heading>
@@ -69,8 +67,10 @@ export const AboutMe = () => {
                                 </a>{' '}
                                 feel free to check them out.
                             </Text>
+                            </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '4' }}>
+                        <GridItem columns={{ xs: '12', md: '6' }}>
+                            <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Frontend Developer
                             </Heading>
@@ -87,8 +87,10 @@ export const AboutMe = () => {
                                 languages I am familliar with are .NET
                                 & NodeJS.
                             </Text>
+                            </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '4' }}>
+                        <GridItem columns={{ xs: '12', md: '6' }}>
+                            <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Speaker
                             </Heading>
@@ -106,8 +108,10 @@ export const AboutMe = () => {
                                 will do it! I also write a lot of
                                 blogs on Medium too.
                             </Text>
+                            </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '4' }}>
+                        <GridItem columns={{ xs: '12', md: '6' }}>
+                            <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Tooling
                             </Heading>
@@ -123,8 +127,10 @@ export const AboutMe = () => {
                                 past Jenkins, AWS Code Pipeline &
                                 TeamCity.
                             </Text>
+                            </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '4' }}>
+                        <GridItem columns={{ xs: '12', md: '6' }}>
+                            <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Content Management Systems
                             </Heading>
@@ -137,8 +143,10 @@ export const AboutMe = () => {
                                 working on GraphQl, Apollo Client and
                                 NextJS
                             </Text>
+                            </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '4' }}>
+                        <GridItem columns={{ xs: '12', md: '6' }}>
+                            <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Events
                             </Heading>
@@ -158,6 +166,7 @@ export const AboutMe = () => {
                                 get planning for another one or two
                                 this year!
                             </Text>
+                            </div>
                         </GridItem>
                     </Grid>
                 </RegionInner>
