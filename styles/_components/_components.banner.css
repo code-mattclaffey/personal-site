@@ -5,7 +5,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    min-height: 65vh;
+    min-height: 85vh;
     text-shadow: 0 2px 20px rgba(0,0,0,.16);
     overflow: hidden;
     position: relative;
@@ -31,7 +31,7 @@
 }
 
 .c-banner__wave {
-    fill: var(--secondary-light);
+    fill: var(--secondary);
     top: 100%;
     left: 0;
     display: block;

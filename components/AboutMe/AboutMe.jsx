@@ -17,7 +17,7 @@ export const AboutMe = () => {
             <Region as="section" additionalClassNames="c-about-me"
             style={{
                 '--region-text-color': 'var(--white)',
-                '--region-bg': 'var(--secondary-light)',
+                '--region-bg': 'var(--secondary)',
             }}>
                 <RegionInner>
                     <Grid>

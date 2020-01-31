@@ -5,10 +5,10 @@
 :root {
     --primary: #160647;
     --primary-light: #1b0758;
-    --secondary: #7765e6;
+    --secondary: #6d55fb;
     --secondary-light: #8773ff;
     --white: #ffffff;
     --black: #000000;
     --keyline: #dddddd;
-    --dark-keyline: #7765e6;
+    --dark-keyline: #6d55fb;
 }
