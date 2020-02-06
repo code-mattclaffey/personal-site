@@ -2,10 +2,9 @@
 
 
 .c-banner {
-    justify-content: center;
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 70vh;
     text-shadow: 0 2px 20px rgba(0,0,0,.16);
     overflow: hidden;
     position: relative;
@@ -14,14 +13,30 @@
     z-index: 0;
 }
 
+@media (--sm-viewport) {
+    .c-banner {
+        justify-content: center;
+    }
+}
+
+@media (--md-viewport) {
+    .c-banner {
+        min-height: 90vh;
+    }
+}
+
 .c-banner__title {
     position: relative;
 }
 
-@media (--sm-max-viewport) {
+@media (--md-max-viewport) {
     .c-banner__title {
-        font-size: var(--heading-h4-size);
+        font-size: 1.6em;
         font-weight: var(--heading-h4-weight);
+    }
+
+    .c-banner .c-button {
+        display: inline-block;
     }
 }
 

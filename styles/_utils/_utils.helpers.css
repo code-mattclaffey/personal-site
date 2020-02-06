@@ -38,3 +38,9 @@
 	width: 1px !important; 
 	overflow: hidden;
 }
+
+@media (--md-viewport) {
+    .u-text--larger\@md {
+        font-size: 1.2rem;
+    }
+}
