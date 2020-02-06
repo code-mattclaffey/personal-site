@@ -1,5 +1,11 @@
 /* footer */
 
+@media (--sm-max-viewport) {
+    .c-footer {
+        text-align: center;
+    }
+}
+
 .c-footer__grid {
     align-items: center;
 }

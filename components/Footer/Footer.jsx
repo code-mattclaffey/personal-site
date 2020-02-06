@@ -15,6 +15,7 @@ export const Footer = () => {
     return (
         <>
         <Region
+            additionalClassNames="c-footer"
             style={{
                 '--region-text-color': 'var(--white)',
                 '--region-bg': 'var(--dark-bg)',
