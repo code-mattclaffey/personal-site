@@ -9,7 +9,7 @@ import {
 
 export const Banner = () => (
     <Region
-        additionalClassNames="c-banner"
+        additionalClassNames="c-banner o-region--has-shape-bottom"
         style={{
             '--region-bg': 'var(--dark-bg)',
             '--region-text-color': 'var(--white)',
@@ -34,7 +34,7 @@ export const Banner = () => (
                 View case studies
             </Button>
         </RegionInner>
-        <div className="c-banner__wave">
+        <div className="o-region__shape o-region__shape--bottom">
             <svg
                 viewBox="0 0 1440 440"
                 fill="none"

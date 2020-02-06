@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Menu } from 'react-feather';
 
 import {
-    RegionInner,
+    RegionInner
 } from '@titan-tooling/ui';
 
 export const Header = () => (
@@ -15,41 +15,46 @@ export const Header = () => (
                 </a>
             </Link>
             <div>
-                <nav className="c-navigation">
+                <nav className="c-navigation" id="menu">
                     <ul className="c-navigation__items">
                         <li>
-                            <Link href="/">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer" aria-current="current">Home</a>
+                            <Link href="#">
+                                <a className="c-navigation__link u-text--smaller">Home</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Blog</a>
+                            <Link href="#section--about">
+                                <a className="c-navigation__link u-text--smaller">About Me</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
-                                <a className="c-navigation__link u-text--smaller">Case Studies</a>
+                            <Link href="#section--feed">
+                                <a className="c-navigation__link u-text--smaller">My Feed</a>
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="/">
                                 <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">CV</a>
                             </Link>
+                        </li> */}
+                        <li>
+                            <Link href="https://medium.com/@mattclaffey">
+                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Medium</a>
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="https://github.com/code-mattclaffey">
                                 <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Github</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="http://dribbble.com/mattclaffey/">
                                 <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Dribbble</a>
                             </Link>
                         </li>
                     </ul>
                 </nav>
-                <a href="#menu" className="c-header__menu-button">
+                <a href="#menu" className="c-header__menu-button" aria-label="Open Main Menu">
                     <Menu size="100%" />
                 </a>
             </div>

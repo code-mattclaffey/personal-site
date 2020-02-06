@@ -5,9 +5,9 @@ import { Banner } from '../components/Banner';
 import { Header } from '../components/Header';
 
 import '../styles/index.css';
-import { BlogGrid } from '../components/BlogGrid';
 import { PersonalProjects } from '../components/PersonalProjects';
-import { AboutMe } from '../components/AboutMe/AboutMe';
+import { AboutMe } from '../components/AboutMe';
+import { Footer } from '../components/Footer';
 
 const Home = () => (
     <>
@@ -19,7 +19,7 @@ const Home = () => (
         <Banner />
         <AboutMe />
         <PersonalProjects />
-        <BlogGrid />
+        <Footer />
     </>
 );
 

@@ -11,3 +11,7 @@
         font-size: 1.4em;
     }
 }
+
+.c-personal-projects .o-grid__item .c-card {
+    height: 100%;
+}

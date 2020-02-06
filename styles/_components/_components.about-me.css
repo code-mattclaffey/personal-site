@@ -1,9 +1,7 @@
 /* About Me */
 
-@media (--md-viewport) {
-    .c-about-me {
-        --region-gutter-vertical: 160px;
-    }
+.c-about-me {
+    --region-gutter-vertical: 80px;
 }
 
 @media (--md-max-viewport) {

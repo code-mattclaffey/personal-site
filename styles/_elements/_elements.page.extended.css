@@ -6,3 +6,7 @@
     font-family: var(--base-font-family);
     font-weight: var(--base-font-weight-medium);
 }
+
+html {
+    scroll-behavior: smooth;
+}

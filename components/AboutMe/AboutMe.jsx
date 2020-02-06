@@ -14,7 +14,7 @@ import {
 export const AboutMe = () => {
     return (
         <section>
-            <Region as="section" additionalClassNames="c-about-me"
+            <Region as="section" id="section--about" additionalClassNames="c-about-me"
             style={{
                 '--region-text-color': 'var(--dark-bg)',
             }}>

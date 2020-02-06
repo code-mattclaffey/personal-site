@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Link from 'next/link';
-
 import {
     Region,
     RegionInner,
@@ -14,11 +12,23 @@ import {
 export const PersonalProjects = () => {
     return (
         <>
-            <Region additionalClassNames="c-personal-projects"
-            style={{
-                '--region-text-color': 'var(--dark-bg)',
-                '--region-bg': 'var(--light-bg)',
-            }}>
+            <Region
+                additionalClassNames="c-personal-projects o-region--has-shape-top"
+                id="section--feed"
+                style={{
+                    '--region-text-color': 'var(--dark-bg)',
+                    '--region-bg': 'var(--light-bg)',
+                }}
+            >
+                <div className="o-region__shape o-region__shape--top">
+                    <svg
+                        viewBox="0 0 1440 440"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M827.243 202.965L1440 82V440H0V0L816.814 202.713C820.229 203.561 823.79 203.647 827.243 202.965Z" fill="var(--white)"></path>
+                    </svg>
+                </div>
                 <RegionInner>
                     <Grid>
                         <GridItem columns={{ xs: '12', md: '9' }}>
@@ -26,93 +36,127 @@ export const PersonalProjects = () => {
                                 type="h4"
                                 additionalClassNames="c-personal-projects__main-heading"
                             >
-                                Github is the main place I store all
-                                my personal projects. It varies from
-                                workshops, documentation, test
-                                projects and re-usable tools.
+                                My Feed
                             </Heading>
                             <Text additionalClassNames="u-text--larger">
-                                I love making a new project! That
-                                excitement to trying something new out
-                                which can then be brought back to to
-                                share with colleague really helps my
-                                personal development and gives me
-                                confidence in implementing new modern
-                                features.
+                                From Github projects to blog posts,
+                                the latest stuff I have worked on and
+                                wrote about will appear here. (worked
+                                on content)
                             </Text>
-                            <Link href="https://medium.com/@mattclaffey">
-                                <a
-                                    className="c-button c-button--secondary"
-                                    target="_blank"
-                                    rel="noopener noreffer"
-                                >
-                                    View Github Repositories
-                                </a>
-                            </Link>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
-                            <div className="c-card">
+                        <GridItem columns={{ xs: '12', md: '7' }}>
+                            <div className="c-card"
+                            >
                                 <Heading as="h4" type="h5">
-                                    Titan Tooling - ESLint Config
+                                    Titan UI
                                 </Heading>
                                 <Text>
-                                    I used to get annoyed when setting
-                                    up a project with all the configs
-                                    left right and center so I decided
-                                    to make my own eslint config so
-                                    all my configs were stored via an
-                                    npm module.{' '}
+                                    A reusabled CSS Framework which
+                                    comes with Typescript React
+                                    Components that help spin up
+                                    websites faster.
                                 </Text>
                                 <a
                                     href="/path/to/git/repo"
-                                    className="e-link"
+                                    className="e-link c-card__link"
                                 >
                                     Visit{' '}
                                     <span className="u-visually-hidden">
-                                        Titan Tooling Eslint Config
+                                        Titan UI on Github
                                     </span>{' '}
                                     Repository
                                 </a>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
-                            <div className="c-card">
+                        <GridItem columns={{ xs: '12', md: '5' }}>
+                            <div
+                                className="c-card"
+                                style={{
+                                    '--card-bg': '#2E4050',
+                                    '--card-color': 'var(--white)',
+                                }}
+                            >
                                 <Heading as="h4" type="h5">
-                                    Titan Tooling - UI
+                                    Demystifying React Context
                                 </Heading>
-                                <Text>Some text to come later</Text>
+                                <Text>
+                                    Yesterday I spent some time
+                                    learning about how to use the
+                                    context and when I read the docs I
+                                    thought, “this sounds extremely
+                                    complex for something that does a
+                                    simple thing”.
+                                </Text>
+                                <a
+                                    href="/path/to/git/repo"
+                                    className="e-link c-card__link"
+                                >
+                                    Read More{' '}
+                                    <span className="u-visually-hidden">
+                                        more about Titan UI on Medium
+                                    </span>
+                                </a>
                             </div>
                         </GridItem>
                         <GridItem columns={{ xs: '12', md: '6' }}>
-                            <div className="c-card">
+                            <div
+                                className="c-card"
+                                style={{
+                                    '--card-bg': '#ea4c89',
+                                    '--card-color': 'var(--white)',
+                                }}
+                            >
                                 <Heading as="h4" type="h5">
-                                    Titan Tooling - PostCSS Config
+                                    Demystifying React Context
                                 </Heading>
-                                <Text>Some text to come later</Text>
+                                <Text>
+                                    Yesterday I spent some time
+                                    learning about how to use the
+                                    context and when I read the docs I
+                                    thought, “this sounds extremely
+                                    complex for something that does a
+                                    simple thing”.
+                                </Text>
+                                <a
+                                    href="/path/to/git/repo"
+                                    className="e-link c-card__link"
+                                >
+                                    Read More{' '}
+                                    <span className="u-visually-hidden">
+                                        more about Titan UI on Medium
+                                    </span>
+                                </a>
                             </div>
                         </GridItem>
                         <GridItem columns={{ xs: '12', md: '6' }}>
-                            <div className="c-card">
+                            <div
+                                className="c-card"
+                                style={{
+                                    '--card-bg': '#2E4050',
+                                    '--card-color': 'var(--white)',
+                                }}
+                            >
                                 <Heading as="h4" type="h5">
-                                    PWA Game Workshop
+                                    Demystifying React Context
                                 </Heading>
-                                <Text>Some text to come later</Text>
-                            </div>
-                        </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
-                            <div className="c-card">
-                                <Heading as="h4" type="h5">
-                                    TDD Workshop
-                                </Heading>
-                                <Text>Some text to come later</Text>
-                            </div>
-                        </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
-                            <div className="c-card">
-                                <Heading as="h4" type="h5">
-                                    Performance Kit
-                                </Heading>
-                                <Text>Some text to come later</Text>
+                                <Text>
+                                    Yesterday I spent some time
+                                    learning about how to use the
+                                    context and when I read the docs I
+                                    thought, “this sounds extremely
+                                    complex for something that does a
+                                    simple thing”.
+                                </Text>
+                                <a
+                                    href="/path/to/git/repo"
+                                    className="e-link c-card__link"
+                                >
+                                    Read More{' '}
+                                    <span className="u-visually-hidden">
+                                        more about Titan UI on Medium
+                                    </span>
+                                </a>
                             </div>
                         </GridItem>
                     </Grid>

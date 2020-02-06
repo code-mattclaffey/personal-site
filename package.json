@@ -9,10 +9,9 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "@titan-tooling/ui": "^0.6.1",
+    "@titan-tooling/ui": "^0.8.0",
     "classnames": "^2.2.6",
     "next": "9.2.0",
-    "postcss-custom-media": "^7.0.8",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-feather": "^2.0.3"
@@ -23,6 +22,7 @@
     "cssnano": "^4.1.10",
     "mqpacker": "^7.0.0",
     "postcss-cli": "^7.1.0",
+    "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^9.0.2",
     "postcss-import": "^12.0.1",
     "postcss-pxtorem": "^4.0.1",

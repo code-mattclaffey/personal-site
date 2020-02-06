@@ -18,6 +18,7 @@ export const BlogGrid = () => {
         <>
             <Region
                 additionalClassNames="c-blog-grid"
+                id="section--blog"
                 style={{
                     '--region-text-color': 'var(--white)',
                 }}>
