@@ -25,7 +25,7 @@ export const Banner = () => (
                 <span className="c-banner__highlighted-text">Manchester.</span>
             </Heading>
             <Text additionalClassNames="c-banner__text u-text--larger@md">
-                I have been a frontend developer for around 6 years,
+                Hi I'm Matt, I have been a frontend developer for around 6 years,
                 I've done work for multiple agencies, consulted for
                 clients, and collaborated with talented people to
                 create digital products.
