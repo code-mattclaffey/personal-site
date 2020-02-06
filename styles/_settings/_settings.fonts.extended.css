@@ -4,19 +4,3 @@
     --base-font-family: 'Gotham', 'Avenir Next', 'Helvectica Neue', Arial, sans-serif,
     sans-serif;
 }
-
-@font-face {
-    font-display: swap;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Gotham Bold'), url('/GothaProBol.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Gotham'), url('/GothaProLig.woff2') format('woff2');
-}
