@@ -38,19 +38,13 @@ export const Header = () => (
                             </Link>
                         </li> */}
                         <li>
-                            <Link href="https://medium.com/@mattclaffey">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Medium</a>
-                            </Link>
+                            <a href="https://medium.com/@mattclaffey" className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Medium</a>
                         </li>
                         <li>
-                            <Link href="https://github.com/code-mattclaffey">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
-                            </Link>
+                            <a href="https://github.com/code-mattclaffey" className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
                         </li>
                         <li>
-                            <Link href="http://dribbble.com/mattclaffey/">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
-                            </Link>
+                            <a  href="http://dribbble.com/mattclaffey/" className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
                         </li>
                     </ul>
                 </nav>

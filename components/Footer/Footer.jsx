@@ -73,19 +73,13 @@ export const Footer = () => {
                                 </Link>
                             </ListItem>
                             <ListItem>
-                                <Link href="https://medium.com/@mattclaffey">
-                                    <a className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Medium</a>
-                                </Link>
+                                <a href="https://medium.com/@mattclaffey" className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Medium</a>
                             </ListItem>
                             <ListItem>
-                                <Link href="https://github.com/code-mattclaffey">
-                                    <a className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
-                                </Link>
+                                <a href="https://github.com/code-mattclaffey" className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
                             </ListItem>
                             <ListItem>
-                                <Link href="http://dribbble.com/mattclaffey/">
-                                    <a className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
-                                </Link>
+                                <a  href="http://dribbble.com/mattclaffey/" className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
                             </ListItem>
                         </List>
                     </GridItem>
