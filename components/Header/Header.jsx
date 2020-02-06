@@ -34,22 +34,22 @@ export const Header = () => (
                         </li>
                         {/* <li>
                             <Link href="/">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">CV</a>
+                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">CV</a>
                             </Link>
                         </li> */}
                         <li>
                             <Link href="https://medium.com/@mattclaffey">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Medium</a>
+                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Medium</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="https://github.com/code-mattclaffey">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Github</a>
+                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="http://dribbble.com/mattclaffey/">
-                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreffer">Dribbble</a>
+                                <a className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
                             </Link>
                         </li>
                     </ul>
