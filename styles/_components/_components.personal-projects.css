@@ -5,3 +5,9 @@
         --region-gutter-vertical: 160px;
     }
 }
+
+@media (--md-max-viewport) {
+    .c-personal-projects .c-personal-projects__main-heading {
+        font-size: 1.4em;
+    }
+}

@@ -25,7 +25,7 @@ export const BlogGrid = () => {
                     <Grid>
                         <GridItem columns={{ xs: '12', md: '9' }}>
                             <div className="c-blog-grid__header">
-                                <Heading type="h4">
+                                <Heading type="h4" additionalClassNames="c-blog-grid__main-heading">
                                     I write a blog post every couple
                                     of weeks about small things that I
                                     really enjoy about the web.

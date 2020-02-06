@@ -1,9 +1,8 @@
 /* Header Component */
 
 .c-header {
-    background: var(--white);
-    border-bottom: 1px solid var(--keyline);
-    color: var(--black);
+    background: var(--dark-bg);
+    color: var(--white);
     left: 0;
     position: sticky;
     top: 0;
