@@ -14,7 +14,7 @@ const Home = () => (
         <Head>
             <title>Home</title>
             <link rel="icon" href="/favicon.ico" />
-            <style jsx>
+            <style jsx global>
                 {`
                     @font-face {
                         font-display: swap;
