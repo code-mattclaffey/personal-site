@@ -10,13 +10,35 @@ import {
     GridItem,
     ButtonLink,
     List,
-    ListItem
+    ListItem,
+    Image
 } from '@titan-tooling/ui';
 
 
 export const Footer = () => {
     return (
         <>
+        <Region>
+            <RegionInner>
+                <Grid additionalClassNames="u-flex--align-items u-text--center">
+                    <GridItem columns={{ xs: '12' }}>
+                        <Heading>I have had the pleasure working with</Heading>
+                    </GridItem>
+                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                        <Image additionalClassNames="c-about-me__image" src="/code-logo.jpg" alt="Code Computerlove" />
+                    </GridItem>
+                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                        <Image additionalClassNames="c-about-me__image" src="/booking-go.jpg" alt="BookingGo" />
+                    </GridItem>
+                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                        <Image additionalClassNames="c-about-me__image" src="/ampersand-logo.jpg" alt="Ampersand" style={{ width: '100px' }}/>
+                    </GridItem>
+                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                        <Image additionalClassNames="c-about-me__image" src="/dept-logo.jpg" alt="Dept" />
+                    </GridItem>
+                </Grid>
+            </RegionInner>
+        </Region>
         <Region
             additionalClassNames="c-footer"
             style={{
