@@ -9,11 +9,12 @@ import {
     Text,
     Grid,
     GridItem,
+    Image
 } from '@titan-tooling/ui';
 
 export const AboutMe = () => {
     return (
-        <section>
+        <>
             <Region as="section" id="section--about" additionalClassNames="c-about-me"
             style={{
                 '--region-text-color': 'var(--dark-bg)',
@@ -23,7 +24,7 @@ export const AboutMe = () => {
                         <GridItem columns={{ xs: '12', md: '9' }}>
                             <div>
                                 <Heading type="h4" additionalClassNames="c-about-me__main-heading">
-                                    I have been a frontend developer for around 6 years, I've done work for multiple agencies, consulted for clients, and collaborated with talented people to create digital products. 
+                                    Who am I?
                                 </Heading>
                                 <Text additionalClassNames="u-text--larger">
                                     My focus at the moment is
@@ -170,6 +171,27 @@ export const AboutMe = () => {
                     </Grid>
                 </RegionInner>
             </Region>
-        </section>
+            <Region>
+                <RegionInner>
+                    <Grid additionalClassNames="u-flex--align-items u-text--center">
+                        <GridItem columns={{ xs: '12' }}>
+                            <Heading additionalClassNames="u-text--center">Creative businesses I have worked with</Heading>
+                        </GridItem>
+                        <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                            <Image additionalClassNames="c-about-me__image" src="/code-logo.jpg" alt="Code Computerlove" />
+                        </GridItem>
+                        <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                            <Image additionalClassNames="c-about-me__image" src="/booking-go.jpg" alt="BookingGo" />
+                        </GridItem>
+                        <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                            <Image additionalClassNames="c-about-me__image" src="/ampersand-logo.jpg" alt="Ampersand" style={{ width: '100px' }}/>
+                        </GridItem>
+                        <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                            <Image additionalClassNames="c-about-me__image" src="/dept-logo.jpg" alt="Dept" />
+                        </GridItem>
+                    </Grid>
+                </RegionInner>
+            </Region>
+        </>
     );
 };

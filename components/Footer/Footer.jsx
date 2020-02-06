@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
     Region,
@@ -7,7 +8,9 @@ import {
     Text,
     Grid,
     GridItem,
-    ButtonLink
+    ButtonLink,
+    List,
+    ListItem
 } from '@titan-tooling/ui';
 
 
@@ -24,16 +27,45 @@ export const Footer = () => {
             <RegionInner>
                 <Grid additionalClassNames="c-footer__grid">
                     <GridItem columns={{ xs: '12', md: '9' }}>
-                        <Heading>‍🚀️ Want to work with me?</Heading>
+                        <Heading type="h3">‍🚀️ Want to work with me?</Heading>
                         <Text additionalClassNames="u-text--short">I like working on small projects on the side of my day to day so if you need help building a website then get in touch.</Text>
                     </GridItem>
-                    <GridItem columns={{ xs: '12', md: '3' }}>
+                    <GridItem columns={{ xs: '12', md: '3' }} additionalClassNames="u-flex@md u-flex--justify-flex-end@md">
                         <ButtonLink url="mailto:mattclaffey93@gmail.com" variant="secondary">
                             Contact Me
                         </ButtonLink>
                     </GridItem>
-                    <GridItem columns={{ xs: '12', md: '9' }}>
+                    <GridItem columns={{ xs: '12', md: '6' }}>
                         <Text additionalClassNames="u-text--small">© 2020 mattc. All rights reserved.</Text>
+                    </GridItem>
+                    <GridItem columns={{ xs: '12', md: '6' }}>
+                        <List inline additionalClassNames="u-flex@md u-flex--justify-flex-end@md">
+                            <ListItem>
+                                <Link href="#section--about">
+                                    <a className="c-footer__link e-link u-text--smaller">About Me</a>
+                                </Link>
+                            </ListItem>
+                            <ListItem>
+                                <Link href="#section--feed">
+                                    <a className="c-footer__link e-link u-text--smaller">My Feed</a>
+                                </Link>
+                            </ListItem>
+                            <ListItem>
+                                <Link href="https://medium.com/@mattclaffey">
+                                    <a className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Medium</a>
+                                </Link>
+                            </ListItem>
+                            <ListItem>
+                                <Link href="https://github.com/code-mattclaffey">
+                                    <a className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
+                                </Link>
+                            </ListItem>
+                            <ListItem>
+                                <Link href="http://dribbble.com/mattclaffey/">
+                                    <a className="c-footer__link e-link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
+                                </Link>
+                            </ListItem>
+                        </List>
                     </GridItem>
                 </Grid>
             </RegionInner>

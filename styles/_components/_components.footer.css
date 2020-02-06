@@ -9,3 +9,13 @@
 .c-footer__grid {
     align-items: center;
 }
+
+.c-footer__link,
+.c-footer__link:focus,
+.c-footer__link:active,
+.c-footer__link:visited,
+.c-footer__link:hover {
+    color: var(--white);
+    border-color: var(--white);
+    margin: 0 5px;
+}

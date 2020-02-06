@@ -10,3 +10,6 @@
     }
 }
 
+.c-about-me__image {
+    filter: grayscale(100%);
+}
