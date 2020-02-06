@@ -4,6 +4,10 @@
     text-transform: uppercase;
 }
 
+.u-text--short {
+    max-width: 60ch;
+}
+
 .u-text--center {
     text-align: center;
 }
