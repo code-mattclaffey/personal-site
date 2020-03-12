@@ -12,7 +12,18 @@ import { Footer } from '../components/Footer';
 const Home = () => (
     <>
         <Head>
-            <title>Matt Claffey - Manchester Based - Senior Frontend Developer</title>
+            <html lang="en" />
+            <title>
+                Matt Claffey - Manchester Based - Senior Frontend
+                Developer
+            </title>
+            <meta
+                name="description"
+                content="Hi I'm Matt, I have been a frontend developer for
+                around 6 years, I've done work for multiple agencies,
+                consulted for clients, and collaborated with talented
+                people to create digital products."
+            />
             <link rel="icon" href="/favicon.ico" />
             <style jsx global>
                 {`
