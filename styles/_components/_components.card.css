@@ -4,10 +4,6 @@
     padding: 10px 0;
 }
 
-.c-about-me .c-card {
-    height: 100%;
-}
-
 .c-card__link {
     color: var(--card-color);
     border-color: var(--card-color);
