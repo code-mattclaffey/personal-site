@@ -13,22 +13,13 @@ export const PersonalProjects = () => {
     return (
         <>
             <Region
-                additionalClassNames="c-personal-projects o-region--has-shape-top"
+                additionalClassNames="c-personal-projects"
                 id="section--feed"
                 style={{
                     '--region-text-color': 'var(--dark-bg)',
                     '--region-bg': 'var(--light-bg)',
                 }}
             >
-                <div className="o-region__shape o-region__shape--top">
-                    <svg
-                        viewBox="0 0 1440 440"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path d="M827.243 202.965L1440 82V440H0V0L816.814 202.713C820.229 203.561 823.79 203.647 827.243 202.965Z" fill="var(--white)"></path>
-                    </svg>
-                </div>
                 <RegionInner>
                     <Grid>
                         <GridItem columns={{ xs: '12', md: '9' }}>
@@ -45,7 +36,7 @@ export const PersonalProjects = () => {
                                 on content)
                             </Text>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '7' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card"
                             >
                                 <Heading as="h4" type="h5">
@@ -69,13 +60,9 @@ export const PersonalProjects = () => {
                                 </a>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '5' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div
                                 className="c-card"
-                                style={{
-                                    '--card-bg': '#2E4050',
-                                    '--card-color': 'var(--white)',
-                                }}
                             >
                                 <Heading as="h4" type="h5">
                                     Demystifying React Context
@@ -99,13 +86,9 @@ export const PersonalProjects = () => {
                                 </a>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div
                                 className="c-card"
-                                style={{
-                                    '--card-bg': '#ea4c89',
-                                    '--card-color': 'var(--white)',
-                                }}
                             >
                                 <Heading as="h4" type="h5">
                                     Demystifying React Context
@@ -129,13 +112,9 @@ export const PersonalProjects = () => {
                                 </a>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div
                                 className="c-card"
-                                style={{
-                                    '--card-bg': '#2E4050',
-                                    '--card-color': 'var(--white)',
-                                }}
                             >
                                 <Heading as="h4" type="h5">
                                     Demystifying React Context

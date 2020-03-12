@@ -3,14 +3,16 @@
 --------------------*/
 
 :root {
-    --primary: #160647;
+    --primary: #151a3c;
     --primary-light: #1b0758;
-    --secondary: #ea4c89;
-    --secondary-light: #8773ff;
+    --secondary: #e4384f;
+    --secondary-light: #fb3c54;
     --white: #ffffff;
     --black: #000000;
     --keyline: #dddddd;
     --dark-keyline: #6d55fb;
-    --dark-bg: #08101f;
+    --dark-bg: #151a3c;
     --light-bg: #f3f6f9;
+    --earth-green: #038565;
+    --ocean-blue: #3341b2;
 }

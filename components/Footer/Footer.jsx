@@ -53,9 +53,9 @@ export const Footer = () => {
                         <Text additionalClassNames="u-text--short">I like working on small projects on the side of my day to day so if you need help building a website then get in touch.</Text>
                     </GridItem>
                     <GridItem columns={{ xs: '12', md: '3' }} additionalClassNames="u-flex@md u-flex--justify-flex-end@md">
-                        <ButtonLink url="mailto:mattclaffey93@gmail.com" variant="secondary">
-                            Contact Me
-                        </ButtonLink>
+                    <ButtonLink as="a" size="large" variant="secondary" href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry" target="_top">
+                        Contact Me
+                    </ButtonLink>
                     </GridItem>
                     <GridItem columns={{ xs: '12', md: '6' }}>
                         <Text additionalClassNames="u-text--small">© 2020 mattc. All rights reserved.</Text>

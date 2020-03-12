@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Menu } from 'react-feather';
 
 import {
-    RegionInner
+    RegionInner,
 } from '@titan-tooling/ui';
 
 export const Header = () => (
@@ -44,7 +44,7 @@ export const Header = () => (
                             <a href="https://github.com/code-mattclaffey" className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Github</a>
                         </li>
                         <li>
-                            <a  href="http://dribbble.com/mattclaffey/" className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
+                            <a href="http://dribbble.com/mattclaffey/" className="c-navigation__link u-text--smaller" target="_blank" rel="noreferrer">Dribbble</a>
                         </li>
                     </ul>
                 </nav>

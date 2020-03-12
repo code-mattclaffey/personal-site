@@ -43,7 +43,7 @@ export const AboutMe = () => {
                                 </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Designer
@@ -66,7 +66,7 @@ export const AboutMe = () => {
                             </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Frontend Developer
@@ -86,7 +86,7 @@ export const AboutMe = () => {
                             </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Speaker
@@ -107,7 +107,7 @@ export const AboutMe = () => {
                             </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Tooling
@@ -126,7 +126,7 @@ export const AboutMe = () => {
                             </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Content Management Systems
@@ -142,7 +142,7 @@ export const AboutMe = () => {
                             </Text>
                             </div>
                         </GridItem>
-                        <GridItem columns={{ xs: '12', md: '6' }}>
+                        <GridItem columns={{ xs: '12', lg: '7' }}>
                             <div className="c-card">
                             <Heading as="h4" type="h5">
                                 Events
