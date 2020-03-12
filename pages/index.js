@@ -12,7 +12,7 @@ import { Footer } from '../components/Footer';
 const Home = () => (
     <>
         <Head>
-            <title>Home</title>
+            <title>Matt Claffey - Manchester Based - Senior Frontend Developer</title>
             <link rel="icon" href="/favicon.ico" />
             <style jsx global>
                 {`
