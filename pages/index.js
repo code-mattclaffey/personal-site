@@ -29,7 +29,6 @@ const Home = () => (
         <Header />
         <Banner />
         <AboutMe />
-        <PersonalProjects />
         <Footer />
     </>
 );

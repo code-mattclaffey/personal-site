@@ -7,159 +7,164 @@ import {
     Text,
     Grid,
     GridItem,
+    List,
+    ListItem,
 } from '@titan-tooling/ui';
 
 export const AboutMe = () => {
     return (
         <>
-            <Region as="section" id="section--about" additionalClassNames="c-about-me"
-            style={{
-                '--region-text-color': 'var(--dark-bg)',
-            }}>
+            <Region
+                as="section"
+                id="section--about"
+                additionalClassNames="c-about-me"
+                style={{
+                    '--region-text-color': 'var(--dark-bg)',
+                }}
+            >
                 <RegionInner>
                     <Grid>
                         <GridItem columns={{ xs: '12', md: '9' }}>
-                            <div>
-                                <Heading type="h3" additionalClassNames="c-about-me__main-heading">
-                                    Who am I?
-                                </Heading>
-                                <Text additionalClassNames="u-text--super">
-                                    My focus at the moment is
-                                    building reusable design systems,{' '}
-                                    <abbr title="Continous Integration">
-                                        CI
-                                    </abbr>{' '}
-                                    and{' '}
-                                    <abbr title="Test Driven Development">
-                                        TDD
-                                    </abbr>
-                                    . I also love all things todo with
-                                    performance & web accessibility.
-                                    I'm very outgoing and always up
-                                    for working with modern tech, I do
-                                    a lot of gym/boxing and I
-                                    ocasionally go out to socialise
-                                    with friends on the weekend.
-                                </Text>
-                            </div>
-                        </GridItem>
-                        <GridItem columns={{ xs: '12', lg: '6' }}>
-                            <div className="c-card">
-                            <Heading as="h3" type="h4">
-                                Frontend Developer
+                            <Heading
+                                type="h3"
+                                additionalClassNames="c-about-me__main-heading"
+                            >
+                                About Me
                             </Heading>
-                            <Text additionalClassNames="u-text--larger@md">
-                                Making code as reusable as
-                                possible so I spend a lot of time
-                                building tools that make my day to day
-                                a lot faster.
+                            <Text additionalClassNames="u-text--super">
+                                I have
+                                6 years professional experience in
+                                front-end development working with
+                                multiple agencies & in house companies
+                                — helping teams collaborate and work
+                                better together, streamline workflow,
+                                and deliver quality websites and
+                                applications.
                             </Text>
-                            <Text additionalClassNames="u-text--larger@md">
-                                The languages I am
-                                mainly using at the minute are HTML,
-                                CSS, React, PHP, JavaScript. Other
-                                languages I am familliar with are .NET
-                                & NodeJS.
-                            </Text>
-                            </div>
-                        </GridItem>
-                        <GridItem columns={{ xs: '12', lg: '6' }}>
-                            <div className="c-card">
-                            <Heading as="h3" type="h4">
-                                Designer
+                            <hr className="e-divider" />
+                            <Heading
+                                type="h4"
+                                additionalClassNames="c-about-me__main-heading"
+                            >
+                                What I'm Working On
                             </Heading>
-                            <Text additionalClassNames="u-text--larger@md">
-                                Designing in the browser
-                                whenever I can so I can see my project
-                                come to life! I work mainly in Sketch
-                                & Photoshop but I have used before;
-                                InVision, Marvel App & Zeplin. My
-                                Personal design work lives on{' '}
-                                <a
-                                    href="https://www.dribbble.com/mattclaffey"
-                                    target="_blank"
-                                    rel="noopener noreffer"
-                                >
-                                    Dribbble account
-                                </a>{' '}
-                                feel free to check them out.
+                            <Text additionalClassNames="u-text--larger">
+                                My focus at the moment is building
+                                reusable design systems,{' '}
+                                <abbr title="Continous Integration">
+                                    CI
+                                </abbr>{' '}
+                                and{' '}
+                                <abbr title="Test Driven Development">
+                                    TDD
+                                </abbr>
+                                . I also love all things todo with
+                                performance & web accessibility. I'm
+                                very outgoing and always up for
+                                working with modern tech, I do a lot
+                                of gym/boxing and I ocasionally go out
+                                to socialise with friends on the
+                                weekend.
                             </Text>
-                            </div>
-                        </GridItem>
-                        <GridItem columns={{ xs: '12', lg: '6' }}>
-                            <div className="c-card">
-                                <Heading as="h4" type="h5">
-                                    Speaker
-                                </Heading>
-                                <Text>
-                                    Once a year I talk at an event called
-                                    MCR Fred on something I am passionate
-                                    about. It normally sparks from me
-                                    doing talks or running workshops in
-                                    the workplace and then branching it
-                                    out into the frontend community.
-                                </Text>
-                                <Text>
-                                    If I
-                                    feel like it will help someone then I
-                                    will do it! I also write a lot of
-                                    blogs on Medium too.
-                                </Text>
-                            </div>
-                            <div className="c-card">
-                                <Heading as="h4" type="h5">
-                                    Tooling
-                                </Heading>
-                                <Text>
-                                    I have been focusing my efforts mainly
-                                    into{' '}
-                                    <abbr title="Continous Integration">
-                                        CI
-                                    </abbr>{' '}
-                                    at the minute which is mainly around
-                                    using tools such as Netlify &
-                                    TravisCI. I have worked with in the
-                                    past Jenkins, AWS Code Pipeline &
-                                    TeamCity.
-                                </Text>
-                            </div>
-                        </GridItem>
-                        <GridItem columns={{ xs: '12', lg: '6' }}>
-                            <div className="c-card">
-                                <Heading as="h4" type="h5">
-                                    Content Management Systems
-                                </Heading>
-                                <Text>
-                                    Platforms I am working in are Magento
-                                    however I have expierence in working
-                                    in Umbraco, Sitecore, Contentful &
-                                    Netlify CMS. Trying to work on
-                                    projects that are more headless now so
-                                    working on GraphQl, Apollo Client and
-                                    NextJS
-                                </Text>
-                            </div>
-                            <div className="c-card">
-                                <Heading as="h4" type="h5">
-                                    Events
-                                </Heading>
-                                <Text>
-                                    One of my goals in life is to travel
-                                    and visit a lot of places before I
-                                    settle down so I decided to invest in
-                                    travelling to see conferences all over
-                                    the world. 
-                                </Text>
-                                <Text>
-                                    Events I have attended are;
-                                    2 x Google Hackathons (London), DotCSS
-                                    & DotJS (Paris), MCR Fred
-                                    (Manchester), All Day Hey (Leeds) &
-                                    UpFront North (Manchester). I need to
-                                    get planning for another one or two
-                                    this year!
-                                </Text>
-                            </div>
+                            <Heading
+                                type="h5"
+                                additionalClassNames="c-about-me__main-heading"
+                            >
+                                Active Projects
+                            </Heading>
+                            <List additionalClassNames="u-text--larger">
+                                <ListItem>
+                                    <a
+                                        href="/path/to-repo"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <b>Titan Ui</b>
+                                    </a>{' '}
+                                    - A reusable CSS Framework which
+                                    comes with Typescript React
+                                    Components that help spin up
+                                    websites faster.{' '}
+                                </ListItem>
+                                <ListItem>
+                                    <a
+                                        href="https://performance-kit.netlify.com"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <b>Performance Kit V2</b>
+                                    </a>{' '}
+                                    - A NextJS project that outputs
+                                    static generated blog pages
+                                    focused around performance
+                                </ListItem>
+                                <ListItem>
+                                    <a
+                                        href="hhttps://www.howtographql.com/"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        <b>
+                                            How to graphql tutorials
+                                        </b>
+                                    </a>{' '}
+                                    - Learning more about using
+                                    graphql and how to use it with a
+                                    react project. Hopefully a new
+                                    project can spark from it.
+                                </ListItem>
+                            </List>
+                            <hr className="e-divider" />
+                            <Heading
+                                type="h4"
+                                additionalClassNames="c-about-me__main-heading"
+                            >
+                                Skills
+                            </Heading>
+                            <List additionalClassNames="u-text--larger">
+                                <ListItem>
+                                    <b>HTML</b>: templating languages, style guides, pattern libraries, prototyping
+                                </ListItem>
+                                <ListItem>
+                                    <b>CSS</b>: Sass, Less, PostCSS, BEM & ITCSS
+                                </ListItem>
+                                <ListItem>
+                                    <b>JavaScript</b>: ES6+, React, Redux, NextJS, Gatsby
+                                </ListItem>  
+                                <ListItem>
+                                    <b>Accessibility</b>: testing, audits, education and improvement
+                                </ListItem>
+                                <ListItem>
+                                    <b>Team leadership</b>: code standards and best practices, training, consultation, hiring
+                                </ListItem> 
+                                <ListItem>
+                                    <b>Workflow</b>: Git, automation, testing, continuous integration and delivery, kanban & scrum
+                                </ListItem>                                
+                            </List>
+                            <hr className="e-divider" />
+                            <Heading
+                                type="h4"
+                                additionalClassNames="c-about-me__main-heading"
+                            >
+                                Other Information
+                            </Heading>
+                            <List additionalClassNames="u-text--larger">
+                                <ListItem>
+                                    <b>Speaker</b>: meetups, internal workshops & internal meetings
+                                </ListItem>
+                                <ListItem>
+                                    <b>Hackathons</b>: Google PWA Hackathon (winner), Google AMP Hackathon (2nd) & internal code in the dark (4th)
+                                </ListItem>
+                                <ListItem>
+                                    <b>Design Tools</b>: Abstract, Sketch, Zepline, Invision, Photoshop & Illustrator
+                                </ListItem>  
+                                <ListItem>
+                                    <b>Platforms</b>: AWS, Sitecore, Umbraco, Magento, Contentful & Netlify
+                                </ListItem>
+                                <ListItem>
+                                    <b>CI Tools</b>: TeamCity, Jenkins, AWS Pipeline, Netlify & Travis CI
+                                </ListItem> 
+                            </List>
                         </GridItem>
                     </Grid>
                 </RegionInner>

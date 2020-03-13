@@ -25,12 +25,26 @@ export const Banner = () => (
                 Manchester.
             </Heading>
             <Text additionalClassNames="c-banner__text u-text--larger@md">
-                Hi I'm Matt, I have been a frontend developer for
-                around 6 years, I've done work for multiple agencies,
-                consulted for clients, and collaborated with talented
-                people to create digital products.
+                Hi! I'm Matt, I specialise in in HTML5, CSS3, JavaScript/React and
+                have experience working with .NET & PHP Platforms. I
+                am currently working as a Senior Front-End Web
+                Developer for{' '}
+                <a
+                    href="https://ampersandcommerce.com/"
+                    target="_blank"
+                    rel="norefferer"
+                >
+                    Ampersand Commerce
+                </a>
+                , a digital agency based in Manchester.
             </Text>
-            <Button as="a" size="large" variant="secondary" href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry" target="_top">
+            <Button
+                as="a"
+                size="large"
+                variant="secondary"
+                href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry"
+                target="_top"
+            >
                 Contact Me
             </Button>
         </RegionInner>

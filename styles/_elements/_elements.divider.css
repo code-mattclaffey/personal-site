@@ -1,0 +1,6 @@
+/* Divider */
+
+.e-divider {
+    border-color: var(--white);
+    margin: 4em 0;
+}
