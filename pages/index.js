@@ -25,25 +25,6 @@ const Home = () => (
                 people to create digital products."
             />
             <link rel="icon" href="/favicon.ico" />
-            <style jsx global>
-                {`
-                    @font-face {
-                        font-display: swap;
-                        font-family: 'Gotham';
-                        font-style: normal;
-                        font-weight: 700;
-                        src: url('/GothaProBol.woff2') format('woff2');
-                    }
-
-                    @font-face {
-                        font-display: swap;
-                        font-family: 'Gotham';
-                        font-style: normal;
-                        font-weight: 300;
-                        src: url('/GothaProLig.woff2') format('woff2');
-                    }
-                `}
-            </style>
         </Head>
         <Header />
         <Banner />
