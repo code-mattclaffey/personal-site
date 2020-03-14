@@ -24,16 +24,16 @@ export const Footer = () => {
                     <GridItem columns={{ xs: '12' }}>
                         <Heading>I have had the pleasure working with</Heading>
                     </GridItem>
-                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', md: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/code-logo.jpg" alt="Code Computerlove" />
                     </GridItem>
-                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', md: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/booking-go.jpg" alt="BookingGo" />
                     </GridItem>
-                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', md: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/ampersand-logo.jpg" alt="Ampersand" style={{ width: '100px' }}/>
                     </GridItem>
-                    <GridItem columns={{ xs: '12', sm: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', md: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/dept-logo.jpg" alt="Dept" />
                     </GridItem>
                 </Grid>
@@ -53,7 +53,7 @@ export const Footer = () => {
                         <Text additionalClassNames="u-text--short">I like working on small projects on the side of my day to day so if you need help building a website then get in touch.</Text>
                     </GridItem>
                     <GridItem columns={{ xs: '12', md: '3' }} additionalClassNames="u-flex@md u-flex--justify-flex-end@md">
-                    <ButtonLink as="a" size="large" variant="secondary" href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry" target="_top">
+                    <ButtonLink as="a" variant="secondary" href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry" target="_top">
                         Contact Me
                     </ButtonLink>
                     </GridItem>
@@ -61,7 +61,7 @@ export const Footer = () => {
                         <Text additionalClassNames="u-text--small">© 2020 mattc. All rights reserved.</Text>
                     </GridItem>
                     <GridItem columns={{ xs: '12', md: '6' }}>
-                        <List inline additionalClassNames="u-flex@md u-flex--justify-flex-end@md">
+                        <List stacked additionalClassNames="c-footer__links u-flex@md u-flex--justify-flex-end@md">
                             <ListItem>
                                 <Link href="#section--about">
                                     <a className="c-footer__link e-link u-text--smaller">About Me</a>
