@@ -24,16 +24,16 @@ export const Footer = () => {
                     <GridItem columns={{ xs: '12' }}>
                         <Heading>I have had the pleasure working with</Heading>
                     </GridItem>
-                    <GridItem columns={{ xs: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', sm: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/code-logo.jpg" alt="Code Computerlove" />
                     </GridItem>
-                    <GridItem columns={{ xs: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', sm: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/booking-go.jpg" alt="BookingGo" />
                     </GridItem>
-                    <GridItem columns={{ xs: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', sm: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/ampersand-logo.jpg" alt="Ampersand" style={{ width: '100px' }}/>
                     </GridItem>
-                    <GridItem columns={{ xs: '6', md: '3' }}>
+                    <GridItem columns={{ xs: '6', sm: '3' }}>
                         <Image additionalClassNames="c-about-me__image" src="/dept-logo.jpg" alt="Dept" />
                     </GridItem>
                 </Grid>
