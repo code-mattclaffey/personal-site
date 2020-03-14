@@ -18,10 +18,7 @@ const Home = () => (
             </title>
             <meta
                 name="description"
-                content="Hi I'm Matt, I have been a frontend developer for
-                around 6 years, I've done work for multiple agencies,
-                consulted for clients, and collaborated with talented
-                people to create digital products."
+                content="Hi I'm Matt, a senior frontend developer based in Manchester."
             />
             <link rel="icon" href="/favicon.ico" />
             <meta

@@ -32,7 +32,7 @@ export const Banner = () => (
                 <a
                     href="https://ampersandcommerce.com/"
                     target="_blank"
-                    rel="norefferer"
+                    rel="noreferrer"
                 >
                     Ampersand Commerce
                 </a>
