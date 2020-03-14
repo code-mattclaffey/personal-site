@@ -1,0 +1,17 @@
+/* Header and footer links scope */
+
+.c-banner .e-link, 
+.c-banner a:not([class]),
+.c-banner .e-link:active, 
+.c-banner .e-link:visited, 
+.c-banner a:not([class]):active, 
+.c-banner a:not([class]):visited,
+.c-footer .e-link:active, 
+.c-footer .e-link:visited, 
+.c-footer a:not([class]):active, 
+.c-footer a:not([class]):visited,
+.c-footer .e-link, 
+.c-footer a:not([class]) {
+    color: inherit;
+    border-color: var(--secondary-light);
+}

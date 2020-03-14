@@ -31,7 +31,7 @@ export const AboutMe = () => {
                             >
                                 About Me
                             </Heading>
-                            <Text additionalClassNames="u-text--super">
+                            <Text additionalClassNames="u-text--larger u-text--super@md">
                                 I have
                                 6 years professional experience in
                                 front-end development working with
@@ -48,7 +48,7 @@ export const AboutMe = () => {
                             >
                                 What I'm Working On
                             </Heading>
-                            <Text additionalClassNames="u-text--larger">
+                            <Text additionalClassNames="u-text--larger@md">
                                 My focus at the moment is building
                                 reusable design systems,{' '}
                                 <abbr title="Continous Integration">
@@ -59,12 +59,7 @@ export const AboutMe = () => {
                                     TDD
                                 </abbr>
                                 . I also love all things todo with
-                                performance & web accessibility. I'm
-                                very outgoing and always up for
-                                working with modern tech, I do a lot
-                                of gym/boxing and I ocasionally go out
-                                to socialise with friends on the
-                                weekend.
+                                performance & web accessibility.
                             </Text>
                             <Heading
                                 type="h5"
@@ -72,10 +67,10 @@ export const AboutMe = () => {
                             >
                                 Active Projects
                             </Heading>
-                            <List additionalClassNames="u-text--larger">
+                            <List additionalClassNames="u-text--larger@md">
                                 <ListItem>
                                     <a
-                                        href="/path/to-repo"
+                                        href="https://titanui.netlify.com/"
                                         target="_blank"
                                         rel="noopener"
                                     >
@@ -100,7 +95,7 @@ export const AboutMe = () => {
                                 </ListItem>
                                 <ListItem>
                                     <a
-                                        href="hhttps://www.howtographql.com/"
+                                        href="https://www.howtographql.com/"
                                         target="_blank"
                                         rel="noopener"
                                     >
@@ -121,7 +116,7 @@ export const AboutMe = () => {
                             >
                                 Skills
                             </Heading>
-                            <List additionalClassNames="u-text--larger">
+                            <List additionalClassNames="u-text--larger@md">
                                 <ListItem>
                                     <b>HTML</b>: templating languages, style guides, pattern libraries, prototyping
                                 </ListItem>
@@ -148,7 +143,7 @@ export const AboutMe = () => {
                             >
                                 Other Information
                             </Heading>
-                            <List additionalClassNames="u-text--larger">
+                            <List additionalClassNames="u-text--larger@md">
                                 <ListItem>
                                     <b>Speaker</b>: meetups, internal workshops & internal meetings
                                 </ListItem>

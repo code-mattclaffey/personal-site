@@ -10,6 +10,7 @@
 @import "./_settings/_settings.colors.css";
 @import "./_settings/_settings.fonts.extended.css";
 @import "./_settings/_settings.breakpoints.css";
+@import "./_scope/_scope.links.css";
 @import "./_objects/_objects.region.extended.css";
 @import "./_components/_components.banner.css";
 @import "./_components/_components.header.css";
