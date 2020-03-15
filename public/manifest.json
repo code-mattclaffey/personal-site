@@ -4,6 +4,7 @@
  "display": "standalone",
  "short_name": "Mattc.",
  "theme_color": "#151a3c",
+ "background_color": "#151a3c",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
