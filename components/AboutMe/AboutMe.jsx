@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'react-uuid';
 
 import {
     Region,
@@ -10,6 +11,18 @@ import {
     List,
     ListItem,
 } from '@titan-tooling/ui';
+import {
+    ABOUT_SECTION_TITlE,
+    ABOUT_SECTION_DESC,
+    WHAT_I_WORK_ON_TITlE,
+    WHAT_I_WORK_ON_TEXT,
+    ACTIVE_PROJECTS,
+    ACTIVE_PROJECTS_TITLE,
+    SKILLS_TITLE,
+    SKILLS,
+    OTHER_TITLE,
+    OTHER,
+} from '../../constants';
 
 export const AboutMe = () => {
     return (
@@ -29,136 +42,63 @@ export const AboutMe = () => {
                                 type="h3"
                                 additionalClassNames="c-about-me__main-heading"
                             >
-                                About Me
+                                {ABOUT_SECTION_TITlE}
                             </Heading>
                             <Text additionalClassNames="u-text--larger u-text--super@md">
-                                I have
-                                6 years professional experience in
-                                front-end development working with
-                                multiple agencies & in house companies
-                                — helping teams collaborate and work
-                                better together, streamline workflow,
-                                and deliver quality websites and
-                                applications.
+                                {ABOUT_SECTION_DESC}
                             </Text>
                             <hr className="e-divider" />
                             <Heading
                                 type="h4"
                                 additionalClassNames="c-about-me__main-heading"
                             >
-                                What I'm Working On
+                                {WHAT_I_WORK_ON_TITlE}
                             </Heading>
                             <Text additionalClassNames="u-text--larger@md">
-                                My focus at the moment is building
-                                reusable design systems,{' '}
-                                <abbr title="Continous Integration">
-                                    CI
-                                </abbr>{' '}
-                                and{' '}
-                                <abbr title="Test Driven Development">
-                                    TDD
-                                </abbr>
-                                . I also love all things todo with
-                                performance & web accessibility.
+                                <WHAT_I_WORK_ON_TEXT />
                             </Text>
                             <Heading
                                 type="h5"
                                 additionalClassNames="c-about-me__main-heading"
                             >
-                                Active Projects
+                                {ACTIVE_PROJECTS_TITLE}
                             </Heading>
                             <List additionalClassNames="u-text--larger@md">
-                                <ListItem>
-                                    <a
-                                        href="https://titanui.netlify.com/"
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        <b>Titan Ui</b>
-                                    </a>{' '}
-                                    - A reusable CSS Framework which
-                                    comes with Typescript React
-                                    Components that help spin up
-                                    websites faster.{' '}
-                                </ListItem>
-                                <ListItem>
-                                    <a
-                                        href="https://performance-kit.netlify.com"
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        <b>Performance Kit V2</b>
-                                    </a>{' '}
-                                    - A NextJS project that outputs
-                                    static generated blog pages
-                                    focused around performance
-                                </ListItem>
-                                <ListItem>
-                                    <a
-                                        href="https://www.howtographql.com/"
-                                        target="_blank"
-                                        rel="noopener"
-                                    >
-                                        <b>
-                                            How to graphql tutorials
-                                        </b>
-                                    </a>{' '}
-                                    - Learning more about using
-                                    graphql and how to use it with a
-                                    react project. Hopefully a new
-                                    project can spark from it.
-                                </ListItem>
+                                {ACTIVE_PROJECTS.map(
+                                    ActiveProject => (
+                                        <ListItem key={uuid()}>
+                                            <ActiveProject />
+                                        </ListItem>
+                                    ),
+                                )}
                             </List>
                             <hr className="e-divider" />
                             <Heading
                                 type="h4"
                                 additionalClassNames="c-about-me__main-heading"
                             >
-                                Skills
+                                {SKILLS_TITLE}
                             </Heading>
                             <List additionalClassNames="u-text--larger@md">
-                                <ListItem>
-                                    <b>HTML</b>: templating languages, style guides, pattern libraries, prototyping
-                                </ListItem>
-                                <ListItem>
-                                    <b>CSS</b>: Sass, Less, PostCSS, BEM & ITCSS
-                                </ListItem>
-                                <ListItem>
-                                    <b>JavaScript</b>: ES6+, React, Redux, NextJS, Gatsby
-                                </ListItem>  
-                                <ListItem>
-                                    <b>Accessibility</b>: testing, audits, education and improvement
-                                </ListItem>
-                                <ListItem>
-                                    <b>Team leadership</b>: code standards and best practices, training, consultation, hiring
-                                </ListItem> 
-                                <ListItem>
-                                    <b>Workflow</b>: Git, automation, testing, continuous integration and delivery, kanban & scrum
-                                </ListItem>                                
+                                {SKILLS.map(Skill => (
+                                    <ListItem key={uuid()}>
+                                        <Skill />
+                                    </ListItem>
+                                ))}
                             </List>
                             <hr className="e-divider" />
                             <Heading
                                 type="h4"
                                 additionalClassNames="c-about-me__main-heading"
                             >
-                                Other Information
+                                {OTHER_TITLE}
                             </Heading>
                             <List additionalClassNames="u-text--larger@md">
-                                <ListItem>
-                                    <b>Speaker</b>: meetups, internal workshops & internal meetings
-                                </ListItem>
-                                <ListItem>
-                                    <b>Hackathons</b>: Google PWA Hackathon (winner), Google AMP Hackathon (2nd) & internal code in the dark (4th)
-                                </ListItem>
-                                <ListItem>
-                                    <b>Design Tools</b>: Abstract, Sketch, Zepline, Invision, Photoshop & Illustrator
-                                </ListItem>  
-                                <ListItem>
-                                    <b>Platforms</b>: AWS, Sitecore, Umbraco, Magento, Contentful & Netlify
-                                </ListItem>
-                                <ListItem>
-                                    <b>CI Tools</b>: TeamCity, Jenkins, AWS Pipeline, Netlify & Travis CI
-                                </ListItem> 
+                                {OTHER.map(OtherInfo => (
+                                    <ListItem key={uuid()}>
+                                        <OtherInfo />
+                                    </ListItem>
+                                ))}
                             </List>
                         </GridItem>
                     </Grid>

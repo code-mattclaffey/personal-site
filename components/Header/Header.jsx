@@ -3,6 +3,16 @@ import Link from 'next/link';
 import { Menu, X } from 'react-feather';
 
 import { RegionInner, List, ListItem } from '@titan-tooling/ui';
+import {
+    DRIBBBLE_NAME,
+    DRIBBBLE_URL,
+    GITHUB_URL,
+    GITHUB_NAME,
+    MEDIUM_URL,
+    MEDIUM_NAME,
+    ABOUT_SECTION_TITlE,
+    LOGO_NAME,
+} from '../../constants';
 
 export const Header = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -16,24 +26,12 @@ export const Header = () => {
             <RegionInner additionalClassNames="c-header__inner">
                 <Link href="/">
                     <a className="e-link--naked u-text--larger u-margin--none u-text--bold">
-                        mattc.
+                        {LOGO_NAME}
                     </a>
                 </Link>
                 <div>
                     <nav className="c-navigation" id="menu">
                         <List additionalClassNames="c-navigation__items">
-                            <ListItem>
-                                <Link href="#">
-                                    <a
-                                        className="c-navigation__link u-text--super u-text--smaller@md"
-                                        onClick={() =>
-                                            setMenuOpen(false)
-                                        }
-                                    >
-                                        Home
-                                    </a>
-                                </Link>
-                            </ListItem>
                             <ListItem>
                                 <Link href="#section--about">
                                     <a
@@ -42,38 +40,38 @@ export const Header = () => {
                                             setMenuOpen(false)
                                         }
                                     >
-                                        About Me
+                                        {ABOUT_SECTION_TITlE}
                                     </a>
                                 </Link>
                             </ListItem>
                             <ListItem>
                                 <a
-                                    href="https://medium.com/@mattclaffey"
+                                    href={MEDIUM_URL}
                                     className="c-navigation__link u-text--super u-text--smaller@md"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Medium
+                                    {MEDIUM_NAME}
                                 </a>
                             </ListItem>
                             <ListItem>
                                 <a
-                                    href="https://github.com/code-mattclaffey"
+                                    href={GITHUB_URL}
                                     className="c-navigation__link u-text--super u-text--smaller@md"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Github
+                                    {GITHUB_NAME}
                                 </a>
                             </ListItem>
                             <ListItem>
                                 <a
-                                    href="http://dribbble.com/mattclaffey/"
+                                    href={DRIBBBLE_URL}
                                     className="c-navigation__link u-text--super u-text--smaller@md"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Dribbble
+                                    {DRIBBBLE_NAME}
                                 </a>
                             </ListItem>
                         </List>

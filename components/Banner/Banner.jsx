@@ -6,6 +6,12 @@ import {
     Text,
     Button,
 } from '@titan-tooling/ui';
+import {
+    BANNER_TITLE,
+    BANNER_TEXT,
+    BANNER_CTA_TEXT,
+    EMAIL_ADDRESS,
+} from '../../constants';
 
 export const Banner = () => (
     <Region
@@ -21,31 +27,19 @@ export const Banner = () => (
                 as="h1"
                 additionalClassNames="c-banner__title"
             >
-                Designer, Frontend Developer & Speaker living in{' '}
-                Manchester.
+                {BANNER_TITLE}
             </Heading>
             <Text additionalClassNames="c-banner__text u-text--larger@md">
-                Hi! I'm Matt, I specialise in in HTML5, CSS3, JavaScript/React and
-                have experience working with .NET & PHP Platforms. I
-                am currently working as a Senior Front-End Web
-                Developer for{' '}
-                <a
-                    href="https://ampersandcommerce.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    Ampersand Commerce
-                </a>
-                , a digital agency based in Manchester.
+                <BANNER_TEXT />
             </Text>
             <Button
                 as="a"
                 size="large"
                 variant="secondary"
-                href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry"
+                href={`mailto:${EMAIL_ADDRESS}?Subject=Website%20Enquiry`}
                 target="_top"
             >
-                Contact Me
+                {BANNER_CTA_TEXT}
             </Button>
         </RegionInner>
     </Region>
