@@ -23,22 +23,20 @@ import { Companies } from '../components/Companies';
 
 const Home = () => (
     <>
-        <Head>
-            <Meta
-                pageTitle={PAGE_TITLE}
-                metaDescription={META_DESCRIPTION}
-                ogTitle={PAGE_TITLE}
-                ogDescription={SOCIAL_CARD_DESC}
-                ogImg={SOCIAL_CARD_IMG}
-                ogUrl={OG_URL}
-                twitterTitle={PAGE_TITLE}
-                twitterDescription={SOCIAL_CARD_DESC}
-                twitterImg={SOCIAL_CARD_IMG}
-                manifestLinks={MANIFEST_LINKS}
-                msTileImg={MS_TILE_IMAGE}
-                themeColor={THEME_COLOR}
-            />
-        </Head>
+        <Meta
+            pageTitle={PAGE_TITLE}
+            metaDescription={META_DESCRIPTION}
+            ogTitle={PAGE_TITLE}
+            ogDescription={SOCIAL_CARD_DESC}
+            ogImg={SOCIAL_CARD_IMG}
+            ogUrl={OG_URL}
+            twitterTitle={PAGE_TITLE}
+            twitterDescription={SOCIAL_CARD_DESC}
+            twitterImg={SOCIAL_CARD_IMG}
+            manifestLinks={MANIFEST_LINKS}
+            msTileImg={MS_TILE_IMAGE}
+            themeColor={THEME_COLOR}
+        />
         <Header />
         <Banner />
         <AboutMe />

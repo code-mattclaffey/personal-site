@@ -1,5 +1,6 @@
 import React from 'react';
 import uuid from 'react-uuid';
+import Head from 'next/head';
 
 export const Meta = ({
     pageTitle,
@@ -15,7 +16,7 @@ export const Meta = ({
     themeColor,
     msTileImg,
 }) => (
-    <>
+    <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={ogTitle} />
@@ -37,5 +38,5 @@ export const Meta = ({
         <meta name="msapplication-TileColor" content={themeColor} />
         <meta name="msapplication-TileImage" content={msTileImg} />
         <meta name="theme-color" content={themeColor} />
-    </>
+    </ Head>
 );
