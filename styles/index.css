@@ -20,6 +20,7 @@
 @import "./_components/_components.footer.css";
 @import "./_components/_components.card.css";
 @import "./_components/_components.navigation.css";
+@import "./_components/_components.a11y-text.css";
 @import "./_elements/_elements.page.extended.css";
 @import "./_elements/_elements.headings.extended.css";
 @import "./_elements/_elements.picture.extended.css";

@@ -58,6 +58,7 @@
     display: block;
     text-decoration: none;
     padding: 12px 20px;
+    line-height: 1;
 }
 
 .c-navigation__link[aria-current="current"],

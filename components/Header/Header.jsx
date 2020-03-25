@@ -13,6 +13,7 @@ import {
     ABOUT_SECTION_TITlE,
     LOGO_NAME,
 } from '../../constants';
+import { A11yText } from '../A11yText';
 
 export const Header = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -73,6 +74,9 @@ export const Header = () => {
                                 >
                                     {DRIBBBLE_NAME}
                                 </a>
+                            </ListItem>
+                            <ListItem>
+                                <A11yText />
                             </ListItem>
                         </List>
                     </nav>
