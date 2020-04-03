@@ -1247,10 +1247,10 @@
     ejs "^2.6.1"
     magic-string "^0.25.0"
 
-"@titan-tooling/ui@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@titan-tooling/ui/-/ui-0.12.0.tgz#a8c97bc5e1616f7199cddb9cbb103bafba258608"
-  integrity sha512-eYuL9zAkENAxVSYEilGcCV/nK1N3ieGtLWwyxssYRmp3h07Wvu1hJxx7hJeeX+UxFV+iFUN2trYJYr7zD7yiFg==
+"@titan-tooling/ui@^0.15.2":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@titan-tooling/ui/-/ui-0.15.2.tgz#c359f2f7e262ec208a799df522711a4b89fbc34b"
+  integrity sha512-E29Uj4r4/bd46gD9s65UO3ZW8fHw4nV50UFTXwPcB1/YEjkcN7EVqx4VOuLMafJ32k5GZFRcXrCl7ZUP/ANu1Q==
   dependencies:
     classnames "^2.2.6"
     normalize.css "^8.0.1"
