@@ -1,35 +1,43 @@
 {
-  "name": "my-site",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev -p 4000",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
-  },
-  "dependencies": {
-    "@next/bundle-analyzer": "^9.3.0",
-    "@titan-tooling/ui": "^0.12.0",
-    "classnames": "^2.2.6",
-    "next": "9.2.0",
-    "next-offline": "^5.0.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-feather": "^2.0.3",
-    "react-uuid": "^1.0.2"
-  },
-  "devDependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
-    "mqpacker": "^7.0.0",
-    "postcss-cli": "^7.1.0",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-custom-properties": "^9.0.2",
-    "postcss-import": "^12.0.1",
-    "postcss-pxtorem": "^4.0.1",
-    "stylelint": "^13.0.0",
-    "stylelint-config-standard": "^19.0.0"
-  }
+    "name": "matt-claffey-personal-site",
+    "private": true,
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "eleventy",
+        "start": "eleventy --serve"
+    },
+    "author": "Matthew Claffey (code-mattclaffey)",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.10.0",
+        "@babel/core": "^7.9.6",
+        "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+        "@babel/plugin-transform-runtime": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "@titan-tooling/ui": "^0.15.2",
+        "autoprefixer": "^9.7.4",
+        "axios": "^0.19.2",
+        "babel-minify": "^0.5.1",
+        "cssnano": "^4.1.10",
+        "html-minifier": "^4.0.0",
+        "imagemin": "^7.0.1",
+        "imagemin-jpegtran": "^6.0.0",
+        "imagemin-pngquant": "^8.0.0",
+        "mqpacker": "^7.0.0",
+        "postcss": "^7.0.27",
+        "postcss-custom-media": "^7.0.8",
+        "postcss-custom-properties": "^9.0.2",
+        "postcss-import": "^12.0.1",
+        "postcss-pxtorem": "^4.0.1",
+        "stylelint": "^13.0.0",
+        "stylelint-config-standard": "^19.0.0",
+        "terser": "^4.6.13"
+    },
+    "dependencies": {
+        "eleventy-plugin-pwa": "^1.0.8"
+    }
 }

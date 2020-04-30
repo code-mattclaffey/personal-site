@@ -1,0 +1,71 @@
+<header class="c-header" data-menu>
+    <div class="o-region__inner c-header__inner">
+        <a class="e-link--naked u-text--larger u-margin--none u-text--bold" href="/">mattc.</a>
+        <div>
+            <nav class="c-navigation" id="menu">
+                <ul class="e-list c-navigation__items">
+                    {% for link in navigation %}
+                        <li class="e-list__item">
+                            <a
+                            class="c-navigation__link u-text--super u-text--smaller@md"
+                            href="{{link.href}}"
+                            {% if link.target === '_blank' %}
+                                target="_blank"
+                                rel="noreferrer"
+                            {% endif %}
+                            >
+                                {{link.text}}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    <li class="e-list__item">
+                        {% include '../a11y-text/a11y-text.njk' %}
+                    </li>
+                </ul>
+            </nav>
+            <a
+                class="c-header__menu-button c-header__menu-button--open"
+                aria-label="Open Main Menu"
+                data-menu-toggle
+                href="#menu"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </a>
+            <a
+                class="c-header__menu-button c-header__menu-button--close"
+                aria-label="Open Main Menu"
+                data-menu-toggle
+                href="#"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>

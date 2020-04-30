@@ -1,0 +1,60 @@
+/* A11y Text Component */
+
+.c-a11y-text {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+@media (--md-viewport) {
+    .c-a11y-text {
+        padding: 0;
+    }
+}
+
+.c-a11y-text__title {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.c-a11y-text__button {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+    height: 2rem;
+    line-height: 1;
+    margin: 0 5px;
+    width: 2rem;
+    padding: 0;
+}
+
+.c-a11y-text__button + .c-a11y-text__button {
+    margin: 0 5px;
+}
+
+@media (--md-viewport) {
+    .c-a11y-text__button {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .c-a11y-text__button + .c-a11y-text__button {
+        margin: 0 5px;
+    }
+}
+
+.c-a11y-text__button:hover,
+.c-a11y-text__button:focus {
+    border-color: var(--secondary);
+}
+
+.c-a11y-text__button--selected {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.c-a11y-text__button--selected:hover,
+.c-a11y-text__button--selected:focus {
+    background-color: var(--secondary-light);
+    border-color: var(--secondary-light);
+}

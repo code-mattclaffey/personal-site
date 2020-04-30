@@ -1,0 +1,26 @@
+<title>{{title}}</title>
+<meta name="description" content="{{description}}" />
+<meta property="og:title" content="{{title}}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:image" content="{{pageImageUrl}}" />
+<meta property="og:url" content="{{page.url}}" />
+<meta name="twitter:title" content="{{title}}" />
+<meta
+    name="twitter:description"
+    content="{{description}}"
+/>
+<meta name="twitter:image" content="{{pageImageUrl}}" />
+<meta name="twitter:card" content="summary_large_image" />
+
+{% for manifestLink in meta.manifestLinks %}
+    <link
+        rel="{{manifestLink.rel}}"
+        href="{{manifestLink.href}}"
+        {% if manifestLink.sizes %} sizes="{{manifestLink.sizes}}" {% endif %}
+        {% if manifestLink.type %} type="{{manifestLink.type}}" {% endif %}
+    />
+{% endfor %}
+
+<meta name="msapplication-TileColor" content="{{meta.themeColor}}" />
+<meta name="msapplication-TileImage" content="{{meta.msTileImg}}" />
+<meta name="theme-color" content="{{meta.themeColor}}" />

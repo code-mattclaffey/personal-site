@@ -1,0 +1,23 @@
+<section class="o-region">
+    <div class="o-region__inner">
+        <div class="o-grid u-flex--align-items u-text--center">
+        <div class="o-grid__item o-grid__item--12/12">
+            <h2 class="e-heading e-heading--h2">
+                {{company.companyTitle}}
+            </h2>
+        </div>
+        {% for comp in company.companies %}
+            <div class="o-grid__item o-grid__item--6/12 o-grid__item--4/12@sm">
+                <img
+                    class="e-img c-about-me__image"
+                    src="{{comp.src}}"
+                    alt="{{comp.alt}}"
+                    {% if comp.style %}
+                        style="width: {{comp.style.width}};"
+                    {% endif %}
+                />
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
