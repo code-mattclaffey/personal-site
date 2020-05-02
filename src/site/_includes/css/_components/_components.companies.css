@@ -1,0 +1,40 @@
+/* Components Companies */
+
+.c-companies {
+    list-style: none;
+}
+
+.c-companies .c-companies__company:first-of-type {
+    border-top: 2px dashed var(--keyline);
+    padding-top: 40px;
+}
+
+.c-companies__company {
+    border-bottom: 2px dashed var(--keyline);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.c-companies__company-image-container {
+    margin-bottom: 20px;
+    margin-right: 40px;
+    width: 100%;
+}
+
+@media (--md-viewport) {
+    .c-companies__company-image-container {
+        flex: none;
+        text-align: center;
+        width: 150px;
+    }
+}
+
+.c-companies__company-image-container .e-img {
+    display: inline-block;
+}
+
+.c-companies__company-content-container {
+    max-width: 90ch;
+}

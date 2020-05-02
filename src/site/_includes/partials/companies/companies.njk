@@ -11,7 +11,8 @@
                 <img
                     class="e-img c-about-me__image"
                     src="{{comp.src}}"
-                    alt="{{comp.alt}}"
+                    alt="{{comp.companyName}}"
+                    loading="lazy"
                     {% if comp.style %}
                         style="width: {{comp.style.width}};"
                     {% endif %}

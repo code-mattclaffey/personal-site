@@ -4,6 +4,10 @@ module.exports = [
         text: "Blog",
     },
     {
+        href: "/portfolio",
+        text: "Portfolio",
+    },
+    {
         href: "https://github.com/code-mattclaffey",
         text: "Github",
         target: "_blank"

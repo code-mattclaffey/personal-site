@@ -22,6 +22,7 @@
 @import "./_components/_components.navigation.css";
 @import "./_components/_components.a11y-text.css";
 @import "./_components/_components.post-list.css";
+@import "./_components/_components.companies.css";
 @import "./_elements/_elements.page.extended.css";
 @import "./_elements/_elements.headings.extended.css";
 @import "./_elements/_elements.picture.extended.css";
