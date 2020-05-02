@@ -53,9 +53,8 @@ module.exports = {
             src: '/images/cinch-logo.svg',
             companyName: 'Cinch',
             startDate: new Date('2019-10-01T14:07:02.000Z'),
-            endDate: new Date('2020-04-28T14:07:02.000Z'),
+            endDate: 'current',
             content: `
-                <p>My role in this company was to lead the frontend team with the latest frontend tech. My focus was to build a design system which would be more reusable, accessible and well written tests. I also setup a lot of Ci integrations such as percy.io (visual regression testing) and unit testing. Other than that I work on BAU work for clients day to day making sure that the code that is written follows the criteria of the ticket assigned to me.</p>
             `,
             roles: [
                 'Software Engineer',

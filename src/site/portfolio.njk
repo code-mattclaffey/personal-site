@@ -47,9 +47,13 @@ desc: I have spent 6 years of working in the digital industry where I have spent
                             {{ comp.startDate | readableDate }}
                         </time>
                         - to
-                        <time datetime="{{ comp.endDate | htmlDateString }}" class="u-text--smaller">
-                            {{ comp.endDate | readableDate }}
-                        </time>
+                        {% if comp.src === '/images/cinch-logo.svg' %}
+                            current
+                        {% else %}
+                            <time datetime="{{ comp.endDate | htmlDateString }}" class="u-text--smaller">
+                                {{ comp.endDate | readableDate }}
+                            </time>
+                        {% endif %}
                     </p>
                     <div class="e-text u-text--larger@md">
                         {{comp.content | safe}}
