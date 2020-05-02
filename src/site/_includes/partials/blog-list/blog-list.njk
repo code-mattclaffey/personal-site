@@ -6,7 +6,7 @@
                     <a href="/blog/{{ post.title | slug }}" class="c-post-list__link"><span class="u-visually-hidden">Read more about {% if post.title %}{{ post.title }}{% else %}<code>{{ post.link }}</code>{% endif %}</span></a>
                     <div class="c-post-list__item-container">
                         <picture class="e-picture u-margin--bottom">
-                            <img src="{{ post.thumbnail }}" loading="lazy" />
+                            <img src="{{ post.thumbnail }}" loading="lazy" alt="Thumbnail image for {{ post-title }} blog post" />
                         </picture>
                         <h3 class="e-heading e-heading--h5">{{ post.title }}</h3>
                         <p class="c-post-list__date"><time datetime="{{ post.pubDate | htmlDateString }}" class="u-text--smaller">{{ post.pubDate | readableDate }}</time></p>
