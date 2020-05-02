@@ -1,0 +1,27 @@
+---
+pagination:
+    data: blog.posts
+    size: 1
+    alias: post
+permalink: "blog/{{ post.title | slug }}/"
+layout: layouts/post.njk
+renderData:
+    title: "{{ post.title }}"
+    desc: "{{ post.shortDescription }}"
+---
+
+<section class="o-region c-banner" style="--region-bg:var(--dark-bg);--region-text-color:var(--white)">
+    <div class="o-region__inner o-region__inner--thin">
+        <h1 class="e-heading e-heading--h1 c-banner__title">{{ post.title }}</h1>
+        <p class="e-text c-banner__text u-text--larger@md">Date Published: <time datetime="{{ post.pubDate | htmlDateString }}">{{ post.pubDate | readableDate }}</time></p>
+        <a class="c-button c-button--outline c-button--large" href="{{ post.link }}" target="_top">View On Medium</a>
+    </div>
+</section>
+
+<article class="o-region">
+    <div class="o-region__inner o-region__inner--thin">
+        {{ post.content | safe }}
+        <p><a class="c-button c-button--primary" href="{{ '/blog' | url }}">Back to blogs</a></p>
+    </div>
+</article>
+

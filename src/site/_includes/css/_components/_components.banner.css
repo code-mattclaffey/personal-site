@@ -42,3 +42,12 @@
 .c-banner__text {
     max-width: 70ch;
 }
+
+.c-banner .c-button--outline {
+    --button-outline-bg: transparent;
+    --button-outline-border: 2px solid var(--white);
+    --button-outline-color: var(--white);
+    --button-outline-hover-bg: var(--white);
+    --button-outline-hover-border: 2px solid var(--white);
+    --button-outline-hover-color: var(--black);
+}

@@ -1,9 +1,10 @@
-const pluginPWA = require("eleventy-plugin-pwa");
+const pluginPWA = require('eleventy-plugin-pwa');
+const { DateTime } = require('luxon');
 
 module.exports = function (config) {
     config.addPlugin(pluginPWA, {
-        swDest: "./dist/service-worker.js",
-        globDirectory: "./dist"
+        swDest: './dist/service-worker.js',
+        globDirectory: './dist',
     });
 
     // Layout aliases can make templates more portable
@@ -12,15 +13,24 @@ module.exports = function (config) {
     // minify the html output
     config.addTransform('htmlmin', require('./src/utils/minify-html.js'));
 
-    config.addFilter("jsmin", function(code) {
-        const Terser = require("terser");
+    config.addFilter('jsmin', function (code) {
+        const Terser = require('terser');
         let minified = Terser.minify(code);
-            if( minified.error ) {
-                console.log("Terser error: ", minified.error);
-                return code;
-            }
+        if (minified.error) {
+            console.log('Terser error: ', minified.error);
+            return code;
+        }
 
-            return minified.code;
+        return minified.code;
+    });
+
+    config.addFilter('readableDate', (dateObj) => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy');
+    });
+
+    // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+    config.addFilter('htmlDateString', (dateObj) => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
     // pass some assets right through

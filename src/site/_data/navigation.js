@@ -1,12 +1,7 @@
 module.exports = [
     {
-        href: "#section--about",
-        text: "About Me",
-    },
-    {
-        href: "https://medium.com/@mattclaffey",
-        text: "Medium",
-        target: "_blank"
+        href: "/blog",
+        text: "Blog",
     },
     {
         href: "https://github.com/code-mattclaffey",

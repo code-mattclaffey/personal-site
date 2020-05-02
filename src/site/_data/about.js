@@ -1,9 +1,9 @@
 module.exports = {
-    title: 'About Me',
+    title: '🙋🏻‍♂️ About Me',
     desc: 'I have 6 years professional experience in front-end development working with multiple agencies & in house companies — helping teams collaborate and work better together, streamline workflow, and deliver quality websites and applications.',
     sections: [
         {
-            title: `What I'm Working On`,
+            title: `👨🏻‍💻 What I'm Working On`,
             desc: `
                 My focus at the moment is building reusable design systems,
                 <abbr title="Continous Integration">CI</abbr>
@@ -11,7 +11,7 @@ module.exports = {
                 <abbr title="Test Driven Development">TDD</abbr>. I also love all
                 things todo with performance &amp; web accessibility.
             `,
-            subTitle: 'Active Projects',
+            subTitle: '📚 Active Projects',
             list: [
                 {
                     title: 'Titan UI',
@@ -48,7 +48,7 @@ module.exports = {
             ]
         },
         {
-            title: `Skills`,
+            title: `🏆 Skills`,
             list: [
                 {
                     title: 'HTML',
@@ -77,7 +77,7 @@ module.exports = {
             ]
         },
         {
-            title: `Other Information`,
+            title: `📝 Other Information`,
             list: [
                 {
                     title: 'Speaker',

@@ -1,0 +1,20 @@
+<section class="o-region">
+    <div class="o-region__inner">
+        <ol reversed class="c-post-list o-grid">
+            {% for post in blog.posts %}
+                <li class="c-post-list__item o-grid__item--12/12 o-grid__item--4/12@md">
+                    <a href="/blog/{{ post.title | slug }}" class="c-post-list__link"><span class="u-visually-hidden">Read more about {% if post.title %}{{ post.title }}{% else %}<code>{{ post.link }}</code>{% endif %}</span></a>
+                    <div class="c-post-list__item-container">
+                        <picture class="e-picture u-margin--bottom">
+                            <img src="{{ post.thumbnail }}" loading="lazy" />
+                        </picture>
+                        <h3 class="e-heading e-heading--h5">{{ post.title }}</h3>
+                        <p class="c-post-list__date"><time datetime="{{ post.pubDate | htmlDateString }}" class="u-text--smaller">{{ post.pubDate | readableDate }}</time></p>
+                        <div class="c-post-list__short-description">{{ post.shortDescription | safe }}</div>
+                        <span class="e-link" aria-hidden="true">Read more</span>
+                    </div>
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>

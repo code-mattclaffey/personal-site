@@ -1,13 +1,13 @@
-<title>{{title}}</title>
-<meta name="description" content="{{description}}" />
-<meta property="og:title" content="{{title}}" />
-<meta property="og:description" content="{{description}}" />
+<title>{{title or (renderData and renderData.title)}}</title>
+<meta name="description" content="{{description or (renderData and renderData.desc)}}" />
+<meta property="og:title" content="{{title or (renderData and renderData.title)}}" />
+<meta property="og:description" content="{{description or (renderData and renderData.desc)}}" />
 <meta property="og:image" content="{{pageImageUrl}}" />
 <meta property="og:url" content="{{page.url}}" />
-<meta name="twitter:title" content="{{title}}" />
+<meta name="twitter:title" content="{{title or (renderData and renderData.title)}}" />
 <meta
     name="twitter:description"
-    content="{{description}}"
+    content="{{description or (renderData and renderData.desc)}}"
 />
 <meta name="twitter:image" content="{{pageImageUrl}}" />
 <meta name="twitter:card" content="summary_large_image" />
