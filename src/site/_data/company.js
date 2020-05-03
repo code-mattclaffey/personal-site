@@ -52,7 +52,7 @@ module.exports = {
         {
             src: '/images/cinch-logo.svg',
             companyName: 'Cinch',
-            startDate: new Date('2019-10-01T14:07:02.000Z'),
+            startDate: new Date('2020-105-04T14:07:02.000Z'),
             endDate: 'current',
             content: `
             `,
