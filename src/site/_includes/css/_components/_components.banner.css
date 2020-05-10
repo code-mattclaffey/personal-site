@@ -11,6 +11,10 @@
     z-index: 0;
 }
 
+.c-banner--tall {
+    min-height: 450px;
+}
+
 @media (--sm-viewport) {
     .c-banner {
         justify-content: center;
