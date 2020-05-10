@@ -16,7 +16,11 @@
 
     const setActive = element => {
         const activeClass = 'c-a11y-text__button--selected';
-        document.querySelector(`.${activeClass}`).classList.remove(activeClass);
+        const activeElements = [...element.parentNode.querySelectorAll(`.${activeClass}`)];
+        activeElements.forEach(el => {
+            el.classList.remove(activeClass);
+        });
+
         element.classList.add(activeClass);
     }
 
