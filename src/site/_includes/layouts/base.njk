@@ -12,6 +12,7 @@
         <main class="container">
             {{ content | safe }}
         </main>
+        {% include "../partials/sticky-footer/sticky-footer.njk" %}
         {% include "../partials/footer/footer.njk" %}
 
         {% set js %}

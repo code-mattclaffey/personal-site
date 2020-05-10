@@ -1,0 +1,25 @@
+/* Sticky footer */
+
+.c-sticky-footer {
+    background-color: var(--dark-bg);
+    border-top: 3px solid var(--a11y-bg);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    will-change: transform;
+    width: 100%;
+    z-index: 9;
+}
+
+.c-sticky-footer__inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+@media (--md-viewport) {
+    .c-sticky-footer {
+        display: none;
+    }
+}

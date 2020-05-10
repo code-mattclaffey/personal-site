@@ -25,6 +25,7 @@
 @import "./_components/_components.companies.css";
 @import "./_components/_components.theme-switcher.css";
 @import "./_components/_components.cinch-logo.css";
+@import "./_components/_components.sticky-footer.css";
 @import "./_elements/_elements.page.extended.css";
 @import "./_elements/_elements.headings.extended.css";
 @import "./_elements/_elements.picture.extended.css";

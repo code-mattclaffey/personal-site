@@ -35,12 +35,15 @@
     }
 
     .c-navigation__link {
-        border-bottom: 3px solid var(--a11y-bg);
         padding: 20px 0 0;
         margin-left: 15px;
     }
-}
 
+    .e-list__item--a11y,
+    .e-list__item--theme {
+        display: none;
+    }
+}
 
 .c-navigation__items {
     align-items: center;
@@ -50,7 +53,6 @@
     margin: 0;
     justify-content: space-between;
 }
-
 
 .c-navigation__link {
     border-bottom: 3px solid transparent;

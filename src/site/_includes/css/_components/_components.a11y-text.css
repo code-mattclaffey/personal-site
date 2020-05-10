@@ -11,6 +11,10 @@
     padding: 20px;
 }
 
+.c-sticky-footer .c-a11y-text {
+    padding: 0;
+}
+
 @media (--md-viewport) {
     .c-a11y-text {
         padding: 0;
