@@ -40,6 +40,7 @@ module.exports = function (config) {
     config.addPassthroughCopy('./src/site/images');
     config.addPassthroughCopy('./src/site/manifest.json');
     config.addPassthroughCopy('./src/site/favicon.ico');
+    config.addPassthroughCopy('./src/site/robots.txt');
 
     // make the seed target act like prod
     return {
