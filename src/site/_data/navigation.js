@@ -16,5 +16,10 @@ module.exports = [
         href: "http://dribbble.com/mattclaffey/",
         text: "Dribbble",
         target: "_blank"
+    },
+    {
+        href: "https://twitter.com/MattClaffey1",
+        text: "Twitter",
+        target: "_blank"
     }
 ];
