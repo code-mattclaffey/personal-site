@@ -1,38 +1,21 @@
 /* Regions */
 
-.o-region {
-    position: relative;
+:root {
+    --region-bg: transparent;
 }
 
-.o-region--has-shape-top {
-    margin-top: calc(440 / 1440 * 100% / 2);
-    padding-top: calc(440 / 1440 * 100% / 2);
+@media (prefers-color-scheme: dark) {
+    :root {
+        --region-text-color: var(--white);
+    }
 }
 
-.o-region--has-shape-bottom {
-    margin-bottom: calc(440 / 1440 * 100% / 2);
-    padding-bottom: calc(440 / 1440 * 100% / 2);
+@media (prefers-color-scheme: light) {
+    :root {
+        --region-text-color: var(--base-font-size);
+    }
 }
-
 
 .o-region__inner--thin {
     max-width: 1024px;
-}
-
-.o-region__shape {
-    left: 0;
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-}
-
-.o-region__shape--bottom {
-    top: 100%;
-    transform: translateY(-50%);
-}
-
-.o-region__shape--top {
-    top: 0;
-    transform: translateY(-50%) scaleY(-1);
 }

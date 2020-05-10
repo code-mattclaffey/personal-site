@@ -1,5 +1,9 @@
 /* Page extension of titan ui */
 
+html {
+    background-color: var(--body-bg);
+}
+
 .e-text {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);

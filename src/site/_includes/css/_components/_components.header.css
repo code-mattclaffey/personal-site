@@ -11,12 +11,6 @@
     z-index: 10;
 }
 
-@media (--md-max-viewport) {
-    .c-header {
-        padding-top: var(--region-gutter-horizontal);
-    }
-}
-
 .c-header__inner {
     align-items: center;
     display: flex;
@@ -26,7 +20,7 @@
 
 @media (--md-max-viewport) {
     .c-header__inner {
-        padding-bottom: var(--region-gutter-horizontal);
+        padding-bottom: 0;
     }
 }
 
