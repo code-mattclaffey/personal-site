@@ -5,14 +5,24 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root,
+    .dark-mode {
         --region-text-color: var(--white);
+    }
+
+    .light-mode {
+        --region-text-color: var(--primary);
     }
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --region-text-color: var(--base-font-size);
+    :root,
+    .light-mode {
+        --region-text-color: var(--primary);
+    }
+
+    .dark-mode {
+        --region-text-color: var(--white);
     }
 }
 

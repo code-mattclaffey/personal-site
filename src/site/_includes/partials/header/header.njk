@@ -13,6 +13,9 @@
                                 target="_blank"
                                 rel="noreferrer"
                             {% endif %}
+                            {% if link.href === page.url %}
+                                aria-current="current"
+                            {% endif %}
                             >
                                 {{link.text}}
                             </a>
@@ -20,6 +23,9 @@
                     {% endfor %}
                     <li class="e-list__item">
                         {% include '../a11y-text/a11y-text.njk' %}
+                    </li>
+                    <li class="e-list__item">
+                        {% include '../theme-switcher/theme-switcher.njk' %}
                     </li>
                 </ul>
             </nav>

@@ -17,6 +17,7 @@
         {% set js %}
             {% include "js/a11y-text.js" %}
             {% include "js/menu.js" %}
+            {% include "js/theme-switcher.js" %}
         {% endset %}
         <script>{{ js | jsmin | safe }}</script>
         <script>

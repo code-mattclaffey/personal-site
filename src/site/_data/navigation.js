@@ -1,10 +1,10 @@
 module.exports = [
     {
-        href: "/blog",
+        href: "/blog/",
         text: "Blog",
     },
     {
-        href: "/portfolio",
+        href: "/portfolio/",
         text: "Portfolio",
     },
     {

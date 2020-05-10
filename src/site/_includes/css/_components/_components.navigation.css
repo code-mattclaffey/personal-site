@@ -35,7 +35,7 @@
     }
 
     .c-navigation__link {
-        border-bottom: 3px solid var(--secondary);
+        border-bottom: 3px solid var(--a11y-bg);
         padding: 20px 0 0;
         margin-left: 15px;
     }
@@ -64,5 +64,5 @@
 .c-navigation__link[aria-current="current"],
 .c-navigation__link:hover,
 .c-navigation__link:focus {
-    border-bottom: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--a11y-bg);
 }

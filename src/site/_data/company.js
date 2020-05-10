@@ -12,23 +12,23 @@ module.exports = {
                 'Software Engineer',
             ],
         },
+        // {
+        //     src: '/images/ampersand-logo.jpg',
+        //     companyName: 'Ampersand',
+        //     startDate: new Date('2019-10-01T14:07:02.000Z'),
+        //     endDate: new Date('2020-04-28T14:07:02.000Z'),
+        //     content: `
+        //         <p>My role in this company was to lead the frontend team with the latest frontend tech. My focus was to build a design system which would be more reusable, accessible and well written tests. I also setup a lot of Ci integrations such as percy.io (visual regression testing) and unit testing. Other than that I work on BAU work for clients day to day making sure that the code that is written follows the criteria of the ticket assigned to me.</p>
+        //     `,
+        //     roles: [
+        //         'Senior Frontend Developer',
+        //     ],
+        //     style: {
+        //         width: '50px'
+        //     }
+        // },
         {
-            src: '/images/ampersand-logo.jpg',
-            companyName: 'Ampersand',
-            startDate: new Date('2019-10-01T14:07:02.000Z'),
-            endDate: new Date('2020-04-28T14:07:02.000Z'),
-            content: `
-                <p>My role in this company was to lead the frontend team with the latest frontend tech. My focus was to build a design system which would be more reusable, accessible and well written tests. I also setup a lot of Ci integrations such as percy.io (visual regression testing) and unit testing. Other than that I work on BAU work for clients day to day making sure that the code that is written follows the criteria of the ticket assigned to me.</p>
-            `,
-            roles: [
-                'Senior Frontend Developer',
-            ],
-            style: {
-                width: '50px'
-            }
-        },
-        {
-            src: '/images/booking-go.jpg',
+            src: '/images/rentalcars-logo.svg',
             companyName: 'BookingGo (Rental Cars)',
             startDate: new Date('2019-06-01T14:07:02.000Z'),
             endDate: new Date('2019-09-30T14:07:02.000Z'),
@@ -40,7 +40,7 @@ module.exports = {
             ],
         },
         {
-            src: '/images/code-logo.jpg',
+            src: '/images/code-logo.svg',
             companyName: 'Code Computerlove',
             startDate: new Date('2014-06-01T14:07:02.000Z'),
             endDate: new Date('2019-06-01T14:07:02.000Z'),
