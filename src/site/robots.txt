@@ -1,0 +1,4 @@
+Sitemap: https://www.mattclaffey.co.uk/sitemap.xml
+
+User-agent: *
+Disallow:
