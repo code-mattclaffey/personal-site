@@ -13,7 +13,7 @@
   "author": "Matthew Claffey (code-mattclaffey)",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
