@@ -31,7 +31,7 @@
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
     "jsdom": "^16.2.2",
-    "luxon": "^1.23.0",
+    "luxon": "^1.24.1",
     "mqpacker": "^7.0.0",
     "postcss": "^7.0.27",
     "postcss-custom-media": "^7.0.8",
