@@ -1,102 +1,102 @@
 /* A11y Text Component */
 
 :root {
-    --icon-color: var(--white);
-    --theme-bg: #2e398f;
+  --icon-color: var(--white);
+  --theme-bg: #2e398f;
 }
 
 .c-theme-switcher {
-    background-color: var(--theme-bg);
-    border-radius: 20px;
-    display: flex;
-    margin-left: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 100px;
+  background-color: var(--theme-bg);
+  border-radius: 20px;
+  display: flex;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 100px;
 }
 
 .c-theme-switcher::after {
-    background-color: var(--white);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: translateX(0);
-    transition: transform .2s cubic-bezier(0.77, 0, 0.175, 1);
-    width: 50%;
-    z-index: 2;
+  background-color: var(--white);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(0);
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+  width: 50%;
+  z-index: 2;
 }
 
 @media (prefers-color-scheme: dark) {
-    .c-theme-switcher::after {
-        transform: translateX(100%);
-    }
+  .c-theme-switcher::after {
+    transform: translateX(100%);
+  }
 
-    .light-mode .c-theme-switcher::after {
-        transform: translateX(0%);
-    }
+  .light-mode .c-theme-switcher::after {
+    transform: translateX(0%);
+  }
 
-    .c-theme-switcher__button--dark-mode {
-        --icon-color: var(--theme-bg);
-    }
+  .c-theme-switcher__button--dark-mode {
+    --icon-color: var(--theme-bg);
+  }
 
-    .light-mode .c-theme-switcher__button--dark-mode {
-        --icon-color: var(--white);
-    }
+  .light-mode .c-theme-switcher__button--dark-mode {
+    --icon-color: var(--white);
+  }
 
-    .light-mode .c-theme-switcher__button--light-mode {
-        --icon-color: var(--theme-bg);
-    }
+  .light-mode .c-theme-switcher__button--light-mode {
+    --icon-color: var(--theme-bg);
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    .c-theme-switcher::after {
-        transform: translateX(0%);
-    }
+  .c-theme-switcher::after {
+    transform: translateX(0%);
+  }
 
-    .dark-mode .c-theme-switcher::after {
-        transform: translateX(100%);
-    }
+  .dark-mode .c-theme-switcher::after {
+    transform: translateX(100%);
+  }
 
-    .c-theme-switcher__button--light-mode {
-        --icon-color: var(--theme-bg);
-    }
+  .c-theme-switcher__button--light-mode {
+    --icon-color: var(--theme-bg);
+  }
 
-    .dark-mode .c-theme-switcher__button--light-mode {
-        --icon-color: var(--white);
-    }
+  .dark-mode .c-theme-switcher__button--light-mode {
+    --icon-color: var(--white);
+  }
 
-    .dark-mode .c-theme-switcher__button--dark-mode {
-        --icon-color: var(--theme-bg);
-    }
+  .dark-mode .c-theme-switcher__button--dark-mode {
+    --icon-color: var(--theme-bg);
+  }
 }
 
 .c-theme-switcher__button {
-    appearance: none;
-    border-radius: 3px;
-    border-color: transparent;
-    height: 2rem;
-    padding: 5px;
-    position: relative;
-    width: 50%;
-    z-index: 3;
+  appearance: none;
+  border-radius: 3px;
+  border-color: transparent;
+  height: 2rem;
+  padding: 5px;
+  position: relative;
+  width: 50%;
+  z-index: 3;
 }
 
 .c-theme-switcher__button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .c-theme-switcher__button--light-mode {
-    background-color: var(--light-mode-bg);
+  background-color: var(--light-mode-bg);
 }
 
 .c-theme-switcher__button--dark-mode {
-    background-color: var(--dark-mode-bg);
+  background-color: var(--dark-mode-bg);
 }
 
 .c-theme-switcher__icon {
-    fill: var(--icon-color);
-    height: 100%;
-    width: 100%;
+  fill: var(--icon-color);
+  height: 100%;
+  width: 100%;
 }

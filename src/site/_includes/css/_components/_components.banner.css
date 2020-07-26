@@ -1,57 +1,56 @@
 /* Banner Component */
 
-
 .c-banner {
-    display: flex;
-    flex-direction: column;
-    text-shadow: 0 2px 20px rgba(0,0,0,.16);
-    overflow: hidden;
-    position: relative;
-    padding-top: 50px;
-    z-index: 0;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  position: relative;
+  padding-top: 50px;
+  z-index: 0;
 }
 
 .c-banner--tall {
-    min-height: 450px;
+  min-height: 450px;
 }
 
 @media (--sm-viewport) {
-    .c-banner {
-        justify-content: center;
-    }
+  .c-banner {
+    justify-content: center;
+  }
 }
 
 .c-banner__title {
-    max-width: 25ch;
-    position: relative;
+  max-width: 25ch;
+  position: relative;
 }
 
 @media (--md-max-viewport) {
-    .c-banner__title {
-        font-size: 1.6em;
-        font-weight: var(--heading-h4-weight);
-    }
+  .c-banner__title {
+    font-size: 1.6em;
+    font-weight: var(--heading-h4-weight);
+  }
 
-    .c-banner .c-button {
-        display: inline-block;
-    }
+  .c-banner .c-button {
+    display: inline-block;
+  }
 }
 
 .c-banner__sub-title {
-    left: 0;
-    position: absolute;
-    top: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 .c-banner__text {
-    max-width: 70ch;
+  max-width: 70ch;
 }
 
 .c-banner .c-button--outline {
-    --button-outline-bg: transparent;
-    --button-outline-border: 2px solid var(--white);
-    --button-outline-color: var(--white);
-    --button-outline-hover-bg: var(--white);
-    --button-outline-hover-border: 2px solid var(--white);
-    --button-outline-hover-color: var(--black);
+  --button-outline-bg: transparent;
+  --button-outline-border: 2px solid var(--white);
+  --button-outline-color: var(--white);
+  --button-outline-hover-bg: var(--white);
+  --button-outline-hover-border: 2px solid var(--white);
+  --button-outline-hover-color: var(--black);
 }

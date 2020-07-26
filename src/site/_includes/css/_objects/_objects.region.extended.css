@@ -1,31 +1,31 @@
 /* Regions */
 
 :root {
-    --region-bg: transparent;
+  --region-bg: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root,
-    .dark-mode {
-        --region-text-color: var(--white);
-    }
+  :root,
+  .dark-mode {
+    --region-text-color: var(--white);
+  }
 
-    .light-mode {
-        --region-text-color: var(--primary);
-    }
+  .light-mode {
+    --region-text-color: var(--primary);
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    :root,
-    .light-mode {
-        --region-text-color: var(--primary);
-    }
+  :root,
+  .light-mode {
+    --region-text-color: var(--primary);
+  }
 
-    .dark-mode {
-        --region-text-color: var(--white);
-    }
+  .dark-mode {
+    --region-text-color: var(--white);
+  }
 }
 
 .o-region__inner--thin {
-    max-width: 1024px;
+  max-width: 1024px;
 }

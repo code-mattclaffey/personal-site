@@ -1,43 +1,42 @@
+(function () {
+  'use strict';
 
-(function() {
-    'use strict';
+  const localStorageName = 'preffered-font-size';
+  const selector = 'data-text-size-toggle';
 
-    const localStorageName = 'preffered-font-size';
-    const selector = 'data-text-size-toggle';
-
-    const updateBaseTextSize = fontSize => {
-        if (fontSize === '--base-font-size') {
-            document.documentElement.removeAttribute('style');
-            return;
-        }
-
-        document.documentElement.style.setProperty('--base-font-size', `var(${fontSize})`);
+  const updateBaseTextSize = (fontSize) => {
+    if (fontSize === '--base-font-size') {
+      document.documentElement.removeAttribute('style');
+      return;
     }
 
-    const setActive = element => {
-        const activeClass = 'c-a11y-text__button--selected';
-        const activeElements = [...element.parentNode.querySelectorAll(`.${activeClass}`)];
-        activeElements.forEach(el => {
-            el.classList.remove(activeClass);
-        });
+    document.documentElement.style.setProperty('--base-font-size', `var(${fontSize})`);
+  };
 
-        element.classList.add(activeClass);
-    }
+  const setActive = (element) => {
+    const activeClass = 'c-a11y-text__button--selected';
+    const activeElements = [...element.parentNode.querySelectorAll(`.${activeClass}`)];
+    activeElements.forEach((el) => {
+      el.classList.remove(activeClass);
+    });
 
-    const handleClick = ({ currentTarget }) => {
-        const fontSize = currentTarget.getAttribute(selector);
-        updateBaseTextSize(fontSize);
-        setActive(currentTarget);
-        localStorage.setItem(localStorageName, fontSize);
-    }
+    element.classList.add(activeClass);
+  };
 
-    const a11yButtons = [...document.querySelectorAll(`[${selector}]`)];
-    const prefferredFontSize = localStorage.getItem(localStorageName);
+  const handleClick = ({ currentTarget }) => {
+    const fontSize = currentTarget.getAttribute(selector);
+    updateBaseTextSize(fontSize);
+    setActive(currentTarget);
+    localStorage.setItem(localStorageName, fontSize);
+  };
 
-    if (prefferredFontSize && prefferredFontSize !== '--base-font-size') {
-        updateBaseTextSize(prefferredFontSize);
-        setActive(document.querySelector(`[${selector}="${prefferredFontSize}"]`));
-    }
+  const a11yButtons = [...document.querySelectorAll(`[${selector}]`)];
+  const prefferredFontSize = localStorage.getItem(localStorageName);
 
-    a11yButtons.forEach(element => element.addEventListener('click', handleClick));
+  if (prefferredFontSize && prefferredFontSize !== '--base-font-size') {
+    updateBaseTextSize(prefferredFontSize);
+    setActive(document.querySelector(`[${selector}="${prefferredFontSize}"]`));
+  }
+
+  a11yButtons.forEach((element) => element.addEventListener('click', handleClick));
 })();

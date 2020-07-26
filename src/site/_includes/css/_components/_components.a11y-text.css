@@ -1,73 +1,73 @@
 /* A11y Text Component */
 
 :root {
-    --a11y-bg: #2e398f;
-    --a11y-bg-light: #3543ad;
+  --a11y-bg: #2e398f;
+  --a11y-bg-light: #3543ad;
 }
 
 .c-a11y-text {
-    align-items: center;
-    display: flex;
-    padding: 20px;
+  align-items: center;
+  display: flex;
+  padding: 20px;
 }
 
 .c-sticky-footer .c-a11y-text {
-    padding: 0;
+  padding: 0;
 }
 
 @media (--md-viewport) {
-    .c-a11y-text {
-        padding: 0;
-    }
+  .c-a11y-text {
+    padding: 0;
+  }
 }
 
 .c-a11y-text__title {
-    margin-bottom: 0;
-    margin-right: 20px;
+  margin-bottom: 0;
+  margin-right: 20px;
 }
 
 .c-a11y-text__button {
-    background-color: transparent;
-    color: var(--white);
-    border-color: var(--white);
-    height: 2rem;
-    line-height: 1;
-    margin: 0 5px;
-    width: 2rem;
-    padding: 0;
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+  height: 2rem;
+  line-height: 1;
+  margin: 0 5px;
+  width: 2rem;
+  padding: 0;
 }
 
 .c-a11y-text__button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .c-a11y-text__button + .c-a11y-text__button {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 @media (--md-viewport) {
-    .c-a11y-text__button {
-        height: 2rem;
-        width: 2rem;
-    }
+  .c-a11y-text__button {
+    height: 2rem;
+    width: 2rem;
+  }
 
-    .c-a11y-text__button + .c-a11y-text__button {
-        margin: 0 5px;
-    }
+  .c-a11y-text__button + .c-a11y-text__button {
+    margin: 0 5px;
+  }
 }
 
 .c-a11y-text__button:hover,
 .c-a11y-text__button:focus {
-    border-color: var(--a11y-bg);
+  border-color: var(--a11y-bg);
 }
 
 .c-a11y-text__button--selected {
-    background-color: var(--a11y-bg);
-    border-color: var(--a11y-bg);
+  background-color: var(--a11y-bg);
+  border-color: var(--a11y-bg);
 }
 
 .c-a11y-text__button--selected:hover,
 .c-a11y-text__button--selected:focus {
-    background-color: var(--a11y-bg-light);
-    border-color: var(--a11y-bg-light);
+  background-color: var(--a11y-bg-light);
+  border-color: var(--a11y-bg-light);
 }

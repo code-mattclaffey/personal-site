@@ -15,33 +15,33 @@ const pxtorem = require('postcss-pxtorem');
 const fileName = 'styles.css';
 
 module.exports = class {
-    async data() {
-        const rawFilepath = path.join(__dirname, `../_includes/css/${fileName}`);
+  async data() {
+    const rawFilepath = path.join(__dirname, `../_includes/css/${fileName}`);
 
-        return {
-            permalink: `css/${fileName}`,
-            rawFilepath,
-            rawCss: await fs.readFileSync(rawFilepath),
-        };
-    }
+    return {
+      permalink: `css/${fileName}`,
+      rawFilepath,
+      rawCss: await fs.readFileSync(rawFilepath),
+    };
+  }
 
-    async render({ rawCss, rawFilepath }) {
-        return await postcss([
-            postcssImport({
-                plugins: [stylelint()],
-            }),
-            postcssCustomProperties(),
-            autoprefixer({
-                flexbox: 'no-2009',
-            }),
-            cssnano(),
-            customMedia(),
-            mqpacker({
-                sort: true,
-            }),
-            pxtorem(),
-        ])
-            .process(rawCss, { from: rawFilepath })
-            .then((result) => result.css);
-    }
+  async render({ rawCss, rawFilepath }) {
+    return await postcss([
+      postcssImport({
+        plugins: [stylelint()],
+      }),
+      postcssCustomProperties(),
+      autoprefixer({
+        flexbox: 'no-2009',
+      }),
+      cssnano(),
+      customMedia(),
+      mqpacker({
+        sort: true,
+      }),
+      pxtorem(),
+    ])
+      .process(rawCss, { from: rawFilepath })
+      .then((result) => result.css);
+  }
 };

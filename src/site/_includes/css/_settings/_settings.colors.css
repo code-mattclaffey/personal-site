@@ -2,101 +2,101 @@
     Colours
 --------------------*/
 * {
-    transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root,
-    .dark-mode {
-        --primary: #151a3c;
-        --primary-light: #1b0758;
-        --secondary: #d01c34;
-        --secondary-light: #e21f39;
-        --white: #ffffff;
-        --black: #000000;
-        --keyline: #dddddd;
-        --dark-keyline: #6d55fb;
-        --dark-bg: #0d1233;
-        --light-bg: #f3f6f9;
-        --earth-green: #038565;
-        --ocean-blue: #3341b2;
-        --banner-bg: var(--dark-bg);
-        --banner-text: var(--white);
-        --body-bg: #151a3c;
-        --base-font-color: var(--white);
-        --region-text-color: var(--white);
-        --link-text-color: var(--white);
-        --link-text-color-hover: var(--white);
-        --cinch-color: var(--white);
-    }
+  :root,
+  .dark-mode {
+    --primary: #151a3c;
+    --primary-light: #1b0758;
+    --secondary: #d01c34;
+    --secondary-light: #e21f39;
+    --white: #ffffff;
+    --black: #000000;
+    --keyline: #dddddd;
+    --dark-keyline: #6d55fb;
+    --dark-bg: #0d1233;
+    --light-bg: #f3f6f9;
+    --earth-green: #038565;
+    --ocean-blue: #3341b2;
+    --banner-bg: var(--dark-bg);
+    --banner-text: var(--white);
+    --body-bg: #151a3c;
+    --base-font-color: var(--white);
+    --region-text-color: var(--white);
+    --link-text-color: var(--white);
+    --link-text-color-hover: var(--white);
+    --cinch-color: var(--white);
+  }
 
-    .light-mode {
-        --primary: #151a3c;
-        --primary-light: #1b0758;
-        --secondary: #d01c34;
-        --secondary-light: #e21f39;
-        --white: #ffffff;
-        --black: #000000;
-        --keyline: #dddddd;
-        --dark-keyline: #6d55fb;
-        --dark-bg: #151a3c;
-        --light-bg: #f3f6f9;
-        --earth-green: #038565;
-        --ocean-blue: #3341b2;
-        --banner-bg: var(--dark-bg);
-        --banner-text: var(--white);
-        --body-bg: var(--white);
-        --region-text-color: var(--base-font-color);
-        --link-text-color: var(--primary);
-        --link-text-color-hover: var(--primary);
-        --cinch-color: var(--black);
-    }
+  .light-mode {
+    --primary: #151a3c;
+    --primary-light: #1b0758;
+    --secondary: #d01c34;
+    --secondary-light: #e21f39;
+    --white: #ffffff;
+    --black: #000000;
+    --keyline: #dddddd;
+    --dark-keyline: #6d55fb;
+    --dark-bg: #151a3c;
+    --light-bg: #f3f6f9;
+    --earth-green: #038565;
+    --ocean-blue: #3341b2;
+    --banner-bg: var(--dark-bg);
+    --banner-text: var(--white);
+    --body-bg: var(--white);
+    --region-text-color: var(--base-font-color);
+    --link-text-color: var(--primary);
+    --link-text-color-hover: var(--primary);
+    --cinch-color: var(--black);
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    :root,
-    .light-mode {
-        --primary: #151a3c;
-        --primary-light: #1b0758;
-        --secondary: #d01c34;
-        --secondary-light: #e21f39;
-        --white: #ffffff;
-        --black: #000000;
-        --keyline: #dddddd;
-        --dark-keyline: #6d55fb;
-        --dark-bg: #151a3c;
-        --light-bg: #f3f6f9;
-        --earth-green: #038565;
-        --ocean-blue: #3341b2;
-        --banner-bg: var(--dark-bg);
-        --banner-text: var(--white);
-        --body-bg: var(--white);
-        --region-text-color: var(--base-font-color);
-        --link-text-color: var(--primary);
-        --link-text-color-hover: var(--primary);
-        --cinch-color: var(--black);
-    }
+  :root,
+  .light-mode {
+    --primary: #151a3c;
+    --primary-light: #1b0758;
+    --secondary: #d01c34;
+    --secondary-light: #e21f39;
+    --white: #ffffff;
+    --black: #000000;
+    --keyline: #dddddd;
+    --dark-keyline: #6d55fb;
+    --dark-bg: #151a3c;
+    --light-bg: #f3f6f9;
+    --earth-green: #038565;
+    --ocean-blue: #3341b2;
+    --banner-bg: var(--dark-bg);
+    --banner-text: var(--white);
+    --body-bg: var(--white);
+    --region-text-color: var(--base-font-color);
+    --link-text-color: var(--primary);
+    --link-text-color-hover: var(--primary);
+    --cinch-color: var(--black);
+  }
 
-    .dark-mode {
-        --primary: #151a3c;
-        --primary-light: #1b0758;
-        --secondary: #d01c34;
-        --secondary-light: #e21f39;
-        --white: #ffffff;
-        --black: #000000;
-        --keyline: #dddddd;
-        --dark-keyline: #6d55fb;
-        --dark-bg: #0d1233;
-        --light-bg: #f3f6f9;
-        --earth-green: #038565;
-        --ocean-blue: #3341b2;
-        --banner-bg: var(--dark-bg);
-        --banner-text: var(--white);
-        --body-bg: #151a3c;
-        --base-font-color: var(--white);
-        --region-text-color: var(--white);
-        --link-text-color: var(--white);
-        --link-text-color-hover: var(--white);
-        --cinch-color: var(--white);
-    }
+  .dark-mode {
+    --primary: #151a3c;
+    --primary-light: #1b0758;
+    --secondary: #d01c34;
+    --secondary-light: #e21f39;
+    --white: #ffffff;
+    --black: #000000;
+    --keyline: #dddddd;
+    --dark-keyline: #6d55fb;
+    --dark-bg: #0d1233;
+    --light-bg: #f3f6f9;
+    --earth-green: #038565;
+    --ocean-blue: #3341b2;
+    --banner-bg: var(--dark-bg);
+    --banner-text: var(--white);
+    --body-bg: #151a3c;
+    --base-font-color: var(--white);
+    --region-text-color: var(--white);
+    --link-text-color: var(--white);
+    --link-text-color-hover: var(--white);
+    --cinch-color: var(--white);
+  }
 }
