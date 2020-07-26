@@ -1,7 +1,7 @@
-name: "Update Website with Medium Blogs"
+name: "Netlify Trigger - Get updates from Medium"
 on:
   schedule:
-    - cron:  '*/1 * * * *'
+    - cron:  '0 0 * * *'
 jobs:
   curl:
     runs-on: ubuntu-latest
