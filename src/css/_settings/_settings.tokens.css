@@ -1,4 +1,22 @@
 :root {
-  --base-font-family: "Avenir Next", "Helvectica Neue", Arial, sans-serif,
-    sans-serif;
+  --color-optimus: #3c46a0;
+  --color-unitron: #cfd3f8;
+  --color-bumblebee: #ffdb43;
+  --color-megatron: #000000;
+  --color-starscream: #ffffff;
+  --color-jetfire: #fcefbb;
+  --color-soundwave: #f0f0f0;
+  --color-ironhide: #262840;
+
+  --spacing-01: 4px;
+  --spacing-02: 8px;
+  --spacing-03: 16px;
+  --spacing-04: 24px;
+  --spacing-05: 32px;
+  --spacing-06: 40px;
+  --spacing-07: 48px;
+  --spacing-08: 56px;
+  --spacing-09: 64px;
+
+  --base-border-radius: 32px;
 }
