@@ -4,32 +4,5 @@
     titan-ui is a cssframework/react library
 */
 
-@import "../../node_modules/@titan-tooling/ui/dist/main.css";
-
 @import "./_settings/_settings.tokens.css";
-@import "./_settings/_settings.colors.css";
-@import "./_settings/_settings.fonts.extended.css";
 @import "./_settings/_settings.breakpoints.css";
-@import "./_scope/_scope.links.css";
-@import "./_objects/_objects.region.extended.css";
-@import "./_components/_components.banner.css";
-@import "./_components/_components.header.css";
-@import "./_components/_components.blog-grid.css";
-@import "./_components/_components.personal-projects.css";
-@import "./_components/_components.about-me.css";
-@import "./_components/_components.footer.css";
-@import "./_components/_components.card.css";
-@import "./_components/_components.navigation.css";
-@import "./_components/_components.a11y-text.css";
-@import "./_components/_components.post-list.css";
-@import "./_components/_components.companies.css";
-@import "./_components/_components.theme-switcher.css";
-@import "./_components/_components.cinch-logo.css";
-@import "./_components/_components.sticky-footer.css";
-@import "./_elements/_elements.page.extended.css";
-@import "./_elements/_elements.headings.extended.css";
-@import "./_elements/_elements.picture.extended.css";
-@import "./_elements/_elements.buttons.extended.css";
-@import "./_elements/_elements.link.extended.css";
-@import "./_elements/_elements.divider.css";
-@import "./_utils/_utils.helpers.css";
