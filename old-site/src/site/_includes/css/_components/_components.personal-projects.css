@@ -1,0 +1,17 @@
+/* Personal Projects */
+
+@media (--md-viewport) {
+  .c-personal-projects {
+    --region-gutter-vertical: 160px;
+  }
+}
+
+@media (--md-max-viewport) {
+  .c-personal-projects .c-personal-projects__main-heading {
+    font-size: 1.4em;
+  }
+}
+
+.c-personal-projects .o-grid__item .c-card {
+  height: 100%;
+}
