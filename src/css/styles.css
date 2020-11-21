@@ -1,3 +1,4 @@
 @import "reset.css";
 @import "./_settings/_settings.tokens.css";
 @import "./_generic/_generic.html.css";
+@import "./_generic/_generic.headings.css";

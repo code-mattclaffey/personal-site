@@ -1,7 +1,9 @@
 :root {
   --color-optimus: #3c46a0;
+  --color-optimus-evil: #2b3377;
   --color-unitron: #cfd3f8;
   --color-bumblebee: #ffdb43;
+  --color-bumblebee-evil: #f8ce20;
   --color-megatron: #000000;
   --color-starscream: #ffffff;
   --color-jetfire: #fcefbb;
@@ -13,10 +15,10 @@
   --spacing-03: 16px;
   --spacing-04: 24px;
   --spacing-05: 32px;
-  --spacing-06: 40px;
-  --spacing-07: 48px;
-  --spacing-08: 56px;
-  --spacing-09: 64px;
+  --spacing-06: 48px;
+  --spacing-07: 64px;
+  --spacing-08: 80px;
+  --spacing-09: 96px;
 
   --base-border-radius: 32px;
 }

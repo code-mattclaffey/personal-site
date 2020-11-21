@@ -6,9 +6,14 @@
   --base-line-height-heading: 1.25;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   color: var(--base-font-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height-body);
   font-family: var(--base-font-family);
+  font-weight: 400;
 }
