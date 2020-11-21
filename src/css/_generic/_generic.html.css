@@ -1,6 +1,6 @@
 :root {
   --base-font-family: "Avenir Next", "Helvectica Neue", Arial, sans-serif;
-  --base-font-size: 20px;
+  --base-font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
   --base-font-color: var(--color-ironhide);
   --base-line-height-body: 1.5;
   --base-line-height-heading: 1.25;

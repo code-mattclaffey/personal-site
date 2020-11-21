@@ -2,10 +2,26 @@
   --region-color: inherit;
   --region-background: var(--color-starscream);
   --region-max-width: 70em;
-  --region-horizontal-spacing: var(--spacing-03);
-  --region-vertical-spacing-01: var(--spacing-04);
-  --region-vertical-spacing-02: var(--spacing-05);
-  --region-vertical-spacing-03: var(--spacing-06);
+  --region-horizontal-spacing: clamp(
+    var(--spacing-03),
+    3 / 70 * 100vw,
+    var(--spacing-06)
+  );
+  --region-vertical-spacing-01: clamp(
+    var(--spacing-04),
+    10 / 70 * 100vw,
+    calc(var(--spacing-07) * 2)
+  );
+  --region-vertical-spacing-02: clamp(
+    var(--spacing-05),
+    10 / 70 * 100vw,
+    calc(var(--spacing-08) * 2)
+  );
+  --region-vertical-spacing-03: clamp(
+    var(--spacing-06),
+    10 / 70 * 100vw,
+    calc(var(--spacing-09) * 2)
+  );
 
   background-color: var(--region-background);
   color: var(--region-color);
@@ -20,33 +36,6 @@
 .regionUnitron {
   --region-color: var(--color-ironhide);
   --region-background: var(--color-unitron);
-}
-
-@media (min-width: 30.0625em) {
-  .region {
-    --region-horizontal-spacing: var(--spacing-04);
-    --region-vertical-spacing-01: var(--spacing-05);
-    --region-vertical-spacing-02: var(--spacing-06);
-    --region-vertical-spacing-03: var(--spacing-07);
-  }
-}
-
-@media (min-width: 48.0625em) {
-  .region {
-    --region-horizontal-spacing: var(--spacing-06);
-    --region-vertical-spacing-01: var(--spacing-06);
-    --region-vertical-spacing-02: var(--spacing-07);
-    --region-vertical-spacing-03: var(--spacing-08);
-  }
-}
-
-@media (min-width: 70em) {
-  .region {
-    --region-horizontal-spacing: var(--spacing-01);
-    --region-vertical-spacing-01: calc(var(--spacing-07) * 2);
-    --region-vertical-spacing-02: calc(var(--spacing-08) * 2);
-    --region-vertical-spacing-03: calc(var(--spacing-09) * 2);
-  }
 }
 
 .region.regionVerticalSpacing01 {

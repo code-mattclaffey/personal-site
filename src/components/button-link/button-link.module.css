@@ -21,7 +21,7 @@
   font-family: inherit;
   font-weight: 700;
   line-height: inherit;
-  padding: var(--spacing-03) var(--spacing-06);
+  padding: 0.75rem 2rem;
   min-height: 48px;
   text-align: center;
   text-decoration: none;
