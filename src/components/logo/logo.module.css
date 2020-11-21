@@ -1,0 +1,11 @@
+.logo {
+  color: inherit;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo:focus,
+.logo:hover {
+  text-decoration: underline;
+}

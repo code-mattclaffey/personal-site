@@ -10,10 +10,12 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   color: var(--base-font-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height-body);
   font-family: var(--base-font-family);
-  font-weight: 400;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }

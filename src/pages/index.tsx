@@ -1,92 +1,41 @@
-import { ButtonLink, ButtonLinkVariants } from "../components/button-link";
+import { Banner } from "../components/banner";
+import { ButtonLinkVariants } from "../components/button-link";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header/header.component";
 import Layout from "../layouts/main/main.layout";
-import { RegionInner } from "../layouts/region/region-inner.component";
-import { Region } from "../layouts/region/region.component";
-import { VSpace } from "../layouts/vspace";
 
 const IndexPage = () => (
   <Layout title="Home">
-    <Region verticalSpacing="01">
-      <RegionInner>
-        <h4>mattc.</h4>
-      </RegionInner>
-    </Region>
-    <Region verticalSpacing="03">
-      <RegionInner>
-        <h1>Frontend Engineer (sometimes UI Designer), based in Manchester.</h1>
-        <VSpace spacing="02" />
-        <p>
-          Hey! I like all things around Designs Systems / Web Performance PWA’s.
-          If thats your thing let’s chat.
-        </p>
-        <VSpace spacing="04" />
-        <ButtonLink url="/">Visit the playground</ButtonLink>
-      </RegionInner>
-    </Region>
-    <Region
-      verticalSpacing="03"
-      style={{
-        "--region-background": "var(--color-ironhide);",
-        "--region-color": "var(--color-starscream);",
-      }}
-    >
-      <RegionInner>
-        <h2>I am always tinkering with tech</h2>
-        <VSpace spacing="02" />
-        <p>
-          Hey! I like all things around Designs Systems / Web Performance PWA’s.
-          If thats your thing let’s chat.
-        </p>
-        <VSpace spacing="04" />
-        <ButtonLink url="/" variant={ButtonLinkVariants.bumblebee}>
-          Visit the playground
-        </ButtonLink>
-      </RegionInner>
-    </Region>
-    <Region verticalSpacing="03">
-      <RegionInner>
-        <h1>Always taking my skills to the next level</h1>
-        <VSpace spacing="04" />
-        <ButtonLink url="/">View resume</ButtonLink>
-      </RegionInner>
-    </Region>
-    <Region
-      verticalSpacing="03"
-      style={{
-        "--region-background": "var(--color-unitron);",
-      }}
-    >
-      <RegionInner>
-        <h2>I like to share what I learn to help others</h2>
-        <VSpace spacing="02" />
-        <p>
-          Hey! I like all things around Designs Systems / Web Performance PWA’s.
-          If thats your thing let’s chat.
-        </p>
-        <VSpace spacing="04" />
-        <ButtonLink url="/">Read blog</ButtonLink>
-      </RegionInner>
-    </Region>
-    <Region
-      verticalSpacing="03"
-      style={{
-        "--region-background": "var(--color-ironhide);",
-        "--region-color": "var(--color-starscream);",
-      }}
-    >
-      <RegionInner>
-        <h2>Want to work with me?</h2>
-        <VSpace spacing="02" />
-        <p>
-          Hey! I like all things around Designs Systems / Web Performance PWA’s.
-          If thats your thing let’s chat.
-        </p>
-        <VSpace spacing="04" />
-        <ButtonLink url="/" variant={ButtonLinkVariants.bumblebee}>
-          Visit the playground
-        </ButtonLink>
-      </RegionInner>
-    </Region>
+    <Header />
+    <Banner
+      titleEl="h1"
+      title="Frontend Engineer (sometimes UI Designer), based in Manchester."
+      copy="Hi! I'm Matt, I specialise in in HTML5, CSS3, JavaScript/React and have experience working with .NET & PHP Platforms. I am currently employed as a Senior Software Engineer for a company called Cinch based in Manchester."
+      ctaCopy="See my work"
+      ctaUrl="/"
+    />
+    <Banner
+      variant="IronHide"
+      title="I am always tinkering with tech"
+      copy="My focus at the moment is building reusable design systems, CI and TDD. I also love all things todo with performance & web accessibility."
+      ctaCopy="Visit the playground"
+      ctaUrl="/"
+      buttonVariant={ButtonLinkVariants.bumblebee}
+    />
+    <Banner
+      title="Always taking my skills to the next level"
+      copy="I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about."
+      ctaCopy="View resume"
+      ctaUrl="/"
+    />
+    <Banner
+      title="I like to share what I learn to help others"
+      copy="I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about."
+      ctaCopy="Read blog"
+      ctaUrl="/"
+      variant="Unitron"
+    />
+    <Footer />
   </Layout>
 );
 

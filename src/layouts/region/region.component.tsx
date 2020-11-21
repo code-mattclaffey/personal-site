@@ -4,13 +4,15 @@ import { ComponentPatternProps } from "../../types";
 import * as styles from "./region.module.css";
 
 interface RegionProps extends ComponentPatternProps {
-  verticalSpacing?: "01" | "02" | "03";
+  verticalSpacing?: "0" | "01" | "02" | "03";
+  variant?: "IronHide" | "Unitron";
 }
 
 export const Region: React.FC<RegionProps> = ({
   element: HtmlEl = "section",
   className,
   verticalSpacing = "02",
+  variant,
   children,
   ...rest
 }) => (
@@ -18,6 +20,7 @@ export const Region: React.FC<RegionProps> = ({
     className={classNames(
       styles.region,
       styles[`regionVerticalSpacing${verticalSpacing}`],
+      variant && styles[`region${variant}`],
       className
     )}
     {...rest}
