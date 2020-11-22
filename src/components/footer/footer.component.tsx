@@ -15,8 +15,8 @@ export const Footer = () => (
       <h2 className="h3">Want to work with me?</h2>
       <VSpace spacing="02" />
       <p>
-        Hey! I like all things around Designs Systems / Web Performance PWA’s.
-        If thats your thing let’s chat.
+        I like working on small projects on the side of my day to day so if you
+        need help building a website then get in touch.
       </p>
       <VSpace spacing="04" />
       <ButtonLink url="/contact" variant={ButtonLinkVariants.bumblebee}>
