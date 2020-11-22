@@ -6,6 +6,16 @@ h5 {
   max-width: 30ch;
 }
 
+@media (min-width: 40em) {
+  h1 {
+    max-width: 20ch;
+  }
+
+  h2 {
+    max-width: 17ch;
+  }
+}
+
 p {
   max-width: 60ch;
 }

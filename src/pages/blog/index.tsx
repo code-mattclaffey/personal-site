@@ -12,6 +12,9 @@ const IndexPage = () => (
       copy="I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about."
       variant="Unitron"
     />
+    <ul>
+      <li>Blog posts from medium/dev.to</li>
+    </ul>
     <Footer />
   </Layout>
 );

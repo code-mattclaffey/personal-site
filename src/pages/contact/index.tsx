@@ -7,8 +7,9 @@ const IndexPage = () => (
   <Layout title="Home">
     <Header />
     <Banner
-      title="Always taking my skills to the next level"
-      copy="I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about."
+      titleEl="h1"
+      title="Let's chat!"
+      copy="I like to look for small projects to work on the side to help my personal development as well as making some extra income. Feel free to send me a message if you need help with a project."
     />
     <Footer />
   </Layout>

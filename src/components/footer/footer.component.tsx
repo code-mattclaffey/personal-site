@@ -19,11 +19,13 @@ export const Footer = () => (
         If thats your thing let’s chat.
       </p>
       <VSpace spacing="04" />
-      <ButtonLink url="/" variant={ButtonLinkVariants.bumblebee}>
+      <ButtonLink url="/contact" variant={ButtonLinkVariants.bumblebee}>
         Get in touch
       </ButtonLink>
       <VSpace spacing="04" />
       <Logo />
+      <VSpace spacing="02" />
+      <p>© 2020 mattc. All rights reserved.</p>
     </RegionInner>
   </Region>
 );

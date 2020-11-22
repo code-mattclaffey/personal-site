@@ -5,13 +5,27 @@ import Layout from "../../layouts/main/main.layout";
 
 const IndexPage = () => (
   <Layout title="Home">
-    <Header variant="Unitron" />
+    <Header />
     <Banner
       titleEl="h1"
-      title="I like to share what I learn to help others"
-      copy="I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about."
-      variant="Unitron"
+      title="Here is some of my work I have done"
+      copy="I have 6 years professional experience in front-end development working with multiple agencies & in house companies — helping teams collaborate and work better together, streamline workflow, and deliver quality websites and applications."
     />
+    <ul>
+      <li>RumRatings - Progressive Web App implementation in Ruby Rails</li>
+      <li>Movement Official - Shopify website</li>
+      <li>Bentley Clothing - Shopify website</li>
+      <li>Cinch Finance Application and Payment Portal / React/Gatsby/AWS</li>
+      <li>Shearings - A/B testing & performance consultation</li>
+      <li>SecretSales - UI / BAU development / Magento 2</li>
+      <li>Poundland - Greenfield UI / BAU development / Magento 2</li>
+      <li>Electrical Safety First / BAU development / .net umbraco</li>
+      <li>
+        Hillarys - Product/BAU development, A/B testing & performance
+        consultation / .net umbraco
+      </li>
+      <li>Bayer Crop Science - Product/ BAU development / .net umbraco</li>
+    </ul>
     <Footer />
   </Layout>
 );
