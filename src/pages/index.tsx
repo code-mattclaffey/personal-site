@@ -24,7 +24,7 @@ const IndexPage = () => (
     />
     <Banner
       title="‍‍🚀️ Always taking my skills to the next level"
-      copy="I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about."
+      copy="I have 6 years professional experience in front-end development working with multiple agencies & in house companies — helping teams collaborate and work better together, streamline workflow, and deliver quality websites and applications."
       ctaCopy="View cv"
       ctaUrl="/cv"
     />
