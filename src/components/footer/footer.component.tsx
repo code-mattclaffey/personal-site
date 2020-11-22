@@ -12,7 +12,7 @@ export const Footer = () => (
     className={styles.footer}
   >
     <RegionInner>
-      <h2>Want to work with me?</h2>
+      <h2 className="h3">Want to work with me?</h2>
       <VSpace spacing="02" />
       <p>
         Hey! I like all things around Designs Systems / Web Performance PWA’s.

@@ -16,7 +16,7 @@ const IndexPage = () => (
     />
     <Banner
       variant="IronHide"
-      title="‍💻 I am always tinkering with tech"
+      title="‍🧪 I am always tinkering with tech"
       copy="My focus at the moment is building reusable design systems, CI and TDD. I also love all things todo with performance & web accessibility."
       ctaCopy="Visit the playground"
       ctaUrl="/ui-playground"
