@@ -7,8 +7,8 @@ export interface BannerProps {
   titleEl?: "h1" | "h2";
   title: string;
   copy: string;
-  ctaCopy: string;
-  ctaUrl: string;
+  ctaCopy?: string;
+  ctaUrl?: string;
   variant?: "IronHide" | "Unitron";
   buttonVariant?: keyof typeof ButtonLinkVariants;
 }
@@ -28,10 +28,15 @@ export const Banner: React.FC<BannerProps> = ({
         <TitleElement>{title}</TitleElement>
         <VSpace spacing="02" />
         <p>{copy}</p>
-        <VSpace spacing="04" />
-        <ButtonLink variant={buttonVariant} url={ctaUrl}>
-          {ctaCopy}
-        </ButtonLink>
+        {ctaCopy && ctaUrl && (
+          <>
+            <VSpace spacing="04" />
+
+            <ButtonLink variant={buttonVariant} url={ctaUrl}>
+              {ctaCopy}
+            </ButtonLink>
+          </>
+        )}
       </RegionInner>
     </Region>
   );
