@@ -17,23 +17,6 @@ const Layout = ({ children, title }: Props) => {
         />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <script
-          src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.filter%2CArray.prototype.forEach%2CArray.prototype.map%2CPromise%2Ces2017"
-          async
-        />
-        <link
-          rel="preload"
-          href="/quiz-bg-mobile.png"
-          media="(max-width: 639px)"
-        />
-        <link rel="preload" href="/quiz-bg.png" media="(min-width: 640px)" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-          rel="stylesheet"
-          media="print"
-          // @ts-ignore
-          onLoad="this.media='all'; this.onload=null;"
-        />
 
         <link rel="manifest" href="/manifest.json" />
         <link
@@ -105,7 +88,6 @@ const Layout = ({ children, title }: Props) => {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#06065b" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#06065b" />
