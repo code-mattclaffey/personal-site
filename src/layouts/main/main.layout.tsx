@@ -109,6 +109,23 @@ const Layout = ({ children, title }: Props) => {
         <meta name="msapplication-TileColor" content="#06065b" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#06065b" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-166061149-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+                  dataLayer.push(arguments);
+              }
+              gtag('js', new Date());
+
+              gtag('config', 'UA-166061149-1');
+          `,
+          }}
+        />
       </Head>
       {children}
     </>
