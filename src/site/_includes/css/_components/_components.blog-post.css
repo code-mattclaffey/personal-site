@@ -1,13 +1,15 @@
-.c-blog-post {
-  display: flex;
-}
+@media (--md-viewport) {
+  .c-blog-post {
+    display: flex;
+  }
 
-.c-blog-post > *:first-child {
-  padding-right: var(--spacing-9-x);
-  margin-bottom: calc(var(--spacing-6-x));
-  width: calc(100% - 400px);
-}
+  .c-blog-post > *:first-child {
+    padding-right: var(--spacing-9-x);
+    margin-bottom: calc(var(--spacing-6-x));
+    width: calc(100% - 400px);
+  }
 
-.c-blog-post > *:last-child {
-  min-width: 400px;
+  .c-blog-post > *:last-child {
+    min-width: 400px;
+  }
 }
