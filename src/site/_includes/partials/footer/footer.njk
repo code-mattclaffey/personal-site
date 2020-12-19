@@ -1,40 +1,33 @@
-<section class="o-region c-footer" style="--region-text-color: var(--white); --region-bg: var(--dark-bg);">
-    <div data-testid="region-inner" class="o-region__inner">
-        <div class="o-grid c-footer__grid">
-            <div class="o-grid__item o-grid__item--12/12 o-grid__item--9/12@md">
-                <h2 class="e-heading e-heading--h3">‍{{footer.title}}</h2>
-                <p class="e-text u-text--short">{{footer.desc}}</p>
-            </div>
-            <div class="o-grid__item u-flex@md u-flex--justify-flex-end@md o-grid__item--12/12 o-grid__item--3/12@md">
-                <a
-                    href="mailto:mattclaffey93@gmail.com?Subject=Website%20Enquiry"
-                    class="e-link c-button c-button--primary"
-                    target="_top"
-                >Contact Me</a>
-            </div>
-            <div class="o-grid__item o-grid__item--12/12 o-grid__item--6/12@md">
-                <p class="e-text u-text--small">
-                    {{footer.copyright}}
-                </p>
-            </div>
-            <div class="o-grid__item o-grid__item--12/12 o-grid__item--6/12@md">
-                <ul class="e-list e-list--stacked c-footer__links u-flex@md u-flex--justify-flex-end@md">
-                    {% for link in navigation %}
-                        <li class="e-list__item">
-                            <a
-                            class="c-footer__link e-link u-text--smaller"
-                            href="{{link.href}}"
-                            {% if link.target === '_blank' %}
-                                target="_blank"
-                                rel="noreferrer"
-                            {% endif %}
-                            >
-                                {{link.text}}
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+<section class="o-region c-footer">
+  <div data-testid="region-inner" class="o-region__inner">
+    <div class="c-footer__grid u-text--center">
+
+      <h2 class="e-heading e-heading--h3">‍Want to work with me?</h2>
+      <p class="e-text u-text--short">I like working on small projects on the side of my day to day so if you need help building a website then get in touch.</p>
+
+      <ul class="e-list e-list--inline c-footer__links">
+        {% for link in navigation %}
+          <li class="e-list__item">
+            <a
+              class="c-footer__link e-link u-text--smaller"
+              href="{{link.href}}"
+              {% if link.target === '_blank' %}
+                  target="_blank"
+                  rel="noreferrer"
+              {% endif %}
+            >
+              {{link.text}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <p><a class="e-link--naked u-text--larger u-text--center u-text--bold" href="/">mattc.</a></p>
+
+      <p class="e-text u-text--small">
+        © 2021 mattc. All rights reserved.
+      </p>
+
     </div>
+  </div>
 </section>

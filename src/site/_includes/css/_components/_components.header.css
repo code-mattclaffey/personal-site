@@ -1,14 +1,8 @@
 /* Header Component */
 
 .c-header {
-  background: var(--dark-bg);
-  color: var(--white);
-  left: 0;
   padding: 10px 0;
-  position: sticky;
-  top: 0;
   width: 100%;
-  z-index: 10;
 }
 
 .c-header__inner {
@@ -19,25 +13,7 @@
 }
 
 @media (--md-max-viewport) {
-  .c-header {
-    border-bottom: 3px solid var(--a11y-bg);
-  }
-
   .c-header__inner {
     padding-bottom: 0;
-  }
-}
-
-.c-header__menu-button {
-  color: var(--white);
-  display: block;
-  height: 44px;
-  padding: 8px;
-  width: 44px;
-}
-
-@media (--md-viewport) {
-  .c-header__menu-button {
-    display: none;
   }
 }

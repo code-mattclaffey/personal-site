@@ -1,0 +1,21 @@
+:root {
+  --base-font-family: 'Avenir Next', 'Helvectica Neue', 'Arial', sans-serif;
+  --base-font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
+  --base-font-color: var(--color-ironhide);
+  --base-line-height-body: 1.5;
+  --base-line-height-heading: 1.25;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--base-font-color);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height-body);
+  font-family: var(--base-font-family);
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}

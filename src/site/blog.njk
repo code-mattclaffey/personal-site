@@ -1,20 +1,41 @@
 ---
 pageImageUrl: "https://mattclaffey.co.uk/thumbnail.jpg"
 layout: layouts/base.njk
-title: ✍🏻 My Blog
-desc: I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about.
+title: ✍🏻 I like to share what I learn to help others
+desc: I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
 ---
 
 <section class="o-region c-banner" style="--region-bg:var(--banner-bg);--region-text-color:var(--banner-text)">
-    <div class="o-region__inner">
-        <h1 class="e-heading e-heading--h1 c-banner__title">✍🏻 My Blog</h1>
-        <p class="e-text c-banner__text u-text--larger@md">
-            I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about.
+  <div class="o-region__inner">
+    <h1 class="e-heading e-heading--h1 c-banner__title">✍🏻 I like to share what I learn to help others</h1>
+    <p class="e-text c-banner__text u-text--larger@md">
+            I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
         </p>
-    </div>
+  </div>
 </section>
-
-{% include "./_includes/partials/blog-list/blog-list.njk" %}
-
-
-
+<section class="o-region">
+  <div class="o-region__inner">
+    <ol class="c-post-list o-grid">
+      {% for post in blog.posts %}
+        <li class="c-post-list__item o-grid__item--12/12 o-grid__item--4/12@md">
+          <a href="/blog/{{ post.title | slug }}" class="c-post-list__link">
+            <span class="u-visually-hidden">Read more about {% if post.title %}{{ post.title }}
+              {% else %}
+                <code>{{ post.link }}</code>
+              {% endif %}</span></a>
+          <div class="c-post-list__item-container">
+            <picture class="e-picture u-margin--bottom">
+              <img src="{{ post.thumbnail }}" loading="lazy" alt="Thumbnail image for {{ post-title }} blog post"/>
+            </picture>
+            <h3 class="e-heading e-heading--h5">{{ post.title }}</h3>
+            <p class="c-post-list__date">
+              <time datetime="{{ post.pubDate | htmlDateString }}" class="u-text--smaller">{{ post.pubDate | readableDate }}</time>
+            </p>
+            <div class="c-post-list__short-description">{{ post.shortDescription | safe }}</div>
+            <span class="e-link" aria-hidden="true">Read more</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

@@ -13,7 +13,7 @@
 }
 
 .u-text--bold {
-  font-weight: var(--heading-h1-weight);
+  font-weight: 700;
 }
 
 .u-text--larger {

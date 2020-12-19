@@ -1,10 +1,7 @@
 /* footer */
 
-.c-footer .c-button {
-  display: inline-block;
-}
-
 .c-footer .e-text {
+  display: inline-block;
   margin-bottom: 0;
 }
 
@@ -13,16 +10,7 @@
 }
 
 .c-footer__links {
+  justify-content: center;
   list-style: none;
   margin-left: 0;
-}
-
-.c-footer__link,
-.c-footer__link:focus,
-.c-footer__link:active,
-.c-footer__link:visited,
-.c-footer__link:hover {
-  color: var(--white);
-  border-color: var(--white);
-  margin: 0 5px;
 }
