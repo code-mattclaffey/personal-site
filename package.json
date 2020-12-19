@@ -21,6 +21,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-feather": "^2.0.9",
     "react-final-form": "^6.5.2",
     "react-html-parser": "^2.0.2",
     "reset.css": "^2.0.2",

@@ -1,0 +1,62 @@
+.menuButton {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--base-border-radius);
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+  position: relative;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menuButton + .menuButton {
+  margin-left: var(--spacing-02);
+}
+
+.menuButton:focus,
+.menuButton:hover {
+  background-color: var(--color-ironhide);
+  color: var(--color-starscream);
+}
+
+.menuButtonOpen,
+.menuButtonOpen:focus,
+.menuButtonOpen:hover {
+  background-color: var(--color-optimus);
+  color: var(--color-starscream);
+}
+
+.menuButtonWhenNavIsOpen {
+  color: var(--color-starscream);
+}
+
+.menuButtonWhenNavIsOpen:hover,
+.menuButtonWhenNavIsOpen:focus {
+  background-color: var(--color-bumblebee);
+  color: var(--color-megatron);
+}
+
+.menuButtonOpen.menuButtonWhenNavIsOpen,
+.menuButtonOpen.menuButtonWhenNavIsOpen:focus,
+.menuButtonOpen.menuButtonWhenNavIsOpen:hover {
+  background-color: var(--color-bumblebee);
+  color: var(--color-megatron);
+}
+
+.menuButtonIcon {
+  height: 44px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  z-index: 1;
+  width: 44px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.menuButtonIconHidden {
+  opacity: 0;
+  z-index: 0;
+}

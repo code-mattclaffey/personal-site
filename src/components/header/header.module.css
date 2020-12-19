@@ -1,3 +1,19 @@
 .header {
   padding-top: var(--spacing-03);
+  transition: color 0.2s 0.4s ease-in-out,
+    background-color 0.2s 0.25s ease-in-out;
+  position: relative;
+  z-index: 3;
+}
+
+.headerNavOpen {
+  background-color: var(--color-optimus);
+  color: var(--color-starscream);
+  transition: color 0.2s ease-in-out;
+}
+
+.headerInner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
