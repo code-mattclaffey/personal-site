@@ -1,0 +1,10 @@
+.c-banner__title {
+  margin-bottom: var(--spacing-2-x);
+  max-width: 20ch;
+}
+
+.c-banner__text {
+  font-size: var(--base-font-size-large);
+  margin-top: 0;
+  max-width: 40ch;
+}

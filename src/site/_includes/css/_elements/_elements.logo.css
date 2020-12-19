@@ -1,0 +1,11 @@
+.e-logo,
+.e-logo:focus {
+  color: var(--color-body-copy);
+  font-size: 1.4em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.e-logo:focus {
+  text-decoration: underline;
+}

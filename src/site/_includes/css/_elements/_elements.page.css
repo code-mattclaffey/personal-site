@@ -1,9 +1,10 @@
 :root {
   --base-font-family: 'Avenir Next', 'Helvectica Neue', 'Arial', sans-serif;
   --base-font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
-  --base-font-color: var(--color-ironhide);
+  --base-font-size-large: clamp(22px, 1.25 / 70 * 100vw, 26px);
+  --base-font-color: var(--color-body-copy);
   --base-line-height-body: 1.5;
-  --base-line-height-heading: 1.25;
+  --base-font-weight: 300;
 }
 
 * {
@@ -16,6 +17,10 @@ body {
   font-size: var(--base-font-size);
   line-height: var(--base-line-height-body);
   font-family: var(--base-font-family);
-  font-weight: 500;
+  font-weight: var(--base-font-weight);
   -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
 }
