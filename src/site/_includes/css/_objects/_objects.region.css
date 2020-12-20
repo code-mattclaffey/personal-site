@@ -1,0 +1,22 @@
+.o-region {
+  --region-color: inherit;
+  --region-background: var(--color-body-bg);
+  --region-horizontal-spacing: clamp(var(--spacing-3-x), 3 / 70 * 100vw, var(--spacing-6-x));
+
+  background-color: var(--region-background);
+  color: var(--region-color);
+  padding: clamp(var(--spacing-4-x), 4 / 70 * 100vw, calc(var(--spacing-5-x))) 0;
+  width: 100%;
+}
+
+.o-region__inner {
+  --region-max-width: 70em;
+
+  margin: 0 auto;
+  max-width: var(--region-max-width);
+  padding: 0 var(--region-horizontal-spacing);
+}
+
+.o-region__inner--thin {
+  --region-max-width: 60em;
+}

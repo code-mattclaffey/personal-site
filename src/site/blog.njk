@@ -1,20 +1,42 @@
 ---
 pageImageUrl: "https://mattclaffey.co.uk/thumbnail.jpg"
 layout: layouts/base.njk
-title: ✍🏻 My Blog
-desc: I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about.
+title: ✍🏻 I like to share what I learn to help others
+desc: I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
 ---
 
 <section class="o-region c-banner" style="--region-bg:var(--banner-bg);--region-text-color:var(--banner-text)">
-    <div class="o-region__inner">
-        <h1 class="e-heading e-heading--h1 c-banner__title">✍🏻 My Blog</h1>
-        <p class="e-text c-banner__text u-text--larger@md">
-            I blog on Medium about all the things I learn and I feel that it is so important to share the knowlegde with the world about the things I am passionate about.
-        </p>
-    </div>
+  <div class="o-region__inner">
+    <h1 class="e-heading e-heading--h1 c-banner__title c-banner__title--long">✍🏻 I like to share what I learn to help others</h1>
+    <p class="e-text c-banner__text c-banner__text--long">
+      I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
+    </p>
+  </div>
 </section>
-
-{% include "./_includes/partials/blog-list/blog-list.njk" %}
-
-
-
+<section class="o-region">
+  <div class="o-region__inner">
+  <div class="c-blog-list">
+      {% for post in blog.posts %}
+        <article>
+          <div class="e-box">
+            <h3 class="e-heading e-heading--h4">{{ post.title }}</h3>
+            <p>
+              <time datetime="{{ post.pubDate | htmlDateString }}">{{ post.pubDate | readableDate }}</time>
+            </p>
+            {{ post.shortDescription | safe }}
+            <a href="/blog/{{ post.title | slug }}" class="c-blog-list__link">
+              Read more
+              <span class="c-blog-list__link-text">
+                about
+                {% if post.title %}{{ post.title }}
+                {% else %}
+                  <code>{{ post.link }}</code>
+                {% endif %}
+              </span>
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

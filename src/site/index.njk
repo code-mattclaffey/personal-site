@@ -5,8 +5,68 @@ pageImageUrl: "https://mattclaffey.co.uk/thumbnail.jpg"
 layout: layouts/base.njk
 ---
 
-{% include "./_includes/partials/banner/banner.njk" %}
-{% include "./_includes/partials/about-me/about-me.njk" %}
-{% include "./_includes/partials/post-list/post-list.njk" %}
-{% include "./_includes/partials/companies/companies.njk" %}
+<section class="o-region">
+  <div class="o-region__inner">
+    <h1 class="e-heading e-heading--h1 c-banner__title">Matthew Claffey</h1>
+    <p class="c-banner__text">
+      👨🏻‍💻 Frontend Engineer (sometimes UI Designer), based in Manchester.
+    </p>
+  </div>
+</section>
 
+<section class="o-region">
+  <div class="o-region__inner">
+    <div class="e-box e-box--pastal-blue e-box--vertical-xl c-about-me">
+      <div>
+        {% include './_includes/partials/svg/web-dev.njk' %}
+      </div>
+      <div>
+        <h2 class="e-heading e-heading--h3">
+        About Me
+      </h2>
+        <p>
+        Hi! I'm Matt, I specialise in in HTML5, CSS3, JavaScript/React and have experience working with .NET & PHP Platforms. I am currently working as a Software Engineer at Cinch, who are based in Manchester.
+      </p>
+
+        <p>
+        I have over 6 years professional experience in front-end development working with multiple agencies & in house companies — helping teams collaborate, work better together, streamline workflow, and deliver quality websites and applications.
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="o-region">
+  <div class="o-region__inner o-region__inner--thin">
+    <div class="c-blog-list__header">
+      <h2 class="e-heading e-heading--h3">✍🏻 I like to share what I learn to help others</h2>
+      <p>
+        I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
+      </p>
+      <a href="/blog">Browse posts</a>
+    </div>
+    <div class="c-blog-list ">
+      {% for post in blog.latestPosts %}
+        <article>
+          <div class="e-box">
+            <h3 class="e-heading e-heading--h4">{{ post.title }}</h3>
+            <p>
+              <time datetime="{{ post.pubDate | htmlDateString }}">{{ post.pubDate | readableDate }}</time>
+            </p>
+            {{ post.shortDescription | safe }}
+            <a href="/blog/{{ post.title | slug }}" class="c-blog-list__link">
+              Read more
+              <span class="c-blog-list__link-text">
+                about
+                {% if post.title %}{{ post.title }}
+                {% else %}
+                  <code>{{ post.link }}</code>
+                {% endif %}
+              </span>
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

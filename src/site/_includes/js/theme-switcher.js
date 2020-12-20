@@ -1,36 +1,27 @@
-(function () {
-  'use strict';
+const setTheme = (theme) => {
+  document.querySelector('html').classList.add(theme);
+  document.querySelector('html').classList.remove(theme === 'dark-mode' ? 'light-mode' : 'dark-mode');
+  localStorage.setItem('mattc-site-theme', JSON.stringify(theme));
+};
 
-  const localStorageName = 'preffered-theme';
-  const selector = 'data-theme-switcher';
+const toggleTheme = ({ currentTarget }) => {
+  const mode = currentTarget.getAttribute('data-toggle-theme');
 
-  const updateThemeMode = (theme) => {
-    if (theme === 'light-mode') {
-      document.documentElement.classList.add(theme);
-      document.documentElement.classList.remove('dark-mode');
-      return;
-    }
+  console.log(mode);
 
-    document.documentElement.classList.add(theme);
-    document.documentElement.classList.remove('light-mode');
-  };
+  setTheme(mode);
+};
 
-  const handleClick = ({ currentTarget }) => {
-    const theme = currentTarget.getAttribute(selector);
-    updateThemeMode(theme);
-    localStorage.setItem(localStorageName, theme);
+const chosenTheme = localStorage.getItem('mattc-site-theme');
 
-    document.querySelector(`[${selector}][aria-selected="true"]`).setAttribute('aria-selected', false);
-    currentTarget.setAttribute('aria-selected', true);
-  };
+if (chosenTheme) {
+  setTheme(JSON.parse(chosenTheme));
+}
 
-  const a11yButtons = [...document.querySelectorAll(`[${selector}]`)];
-  const prefferredThemeMode = localStorage.getItem(localStorageName);
+window.addEventListener('load', () => {
+  const themeButtons = [...document.querySelectorAll('[data-toggle-theme]')];
 
-  if (prefferredThemeMode) {
-    updateThemeMode(prefferredThemeMode);
-    document.querySelector(`[${selector}="${prefferredThemeMode}"]`).setAttribute('aria-selected', true);
-  }
-
-  a11yButtons.forEach((element) => element.addEventListener('click', handleClick));
-})();
+  themeButtons.forEach((element) => {
+    element.addEventListener('click', toggleTheme);
+  });
+});

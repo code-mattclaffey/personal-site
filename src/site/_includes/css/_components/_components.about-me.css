@@ -1,15 +1,27 @@
-/* About Me */
-
 .c-about-me {
-  --region-gutter-vertical: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (--md-max-viewport) {
-  .c-about-me .c-about-me__main-heading {
-    font-size: 1.4em;
+.c-about-me > * {
+  flex-grow: 1;
+  flex-basis: calc((30em - (100% - var(--spacing-6-x))) * 999);
+}
+
+.c-about-me > *:first-child {
+  margin-bottom: calc(var(--spacing-6-x) / 2);
+}
+
+@media (--md-viewport) {
+  .c-about-me > * {
+    margin: calc(var(--spacing-6-x) / 2);
   }
 }
 
-.c-about-me__image {
-  filter: grayscale(100%);
+.c-about-me > *:nth-child(1) {
+  align-self: center;
+}
+
+.c-about-me > *:nth-child(2) {
+  flex-grow: 1.5;
 }

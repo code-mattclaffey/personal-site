@@ -4,12 +4,22 @@ module.exports = [
     text: 'Blog',
   },
   {
-    href: '/portfolio/',
-    text: 'Portfolio',
+    href: 'mailto:mattclaffey93@gmail.com',
+    text: 'Email',
   },
   {
     href: 'https://github.com/code-mattclaffey',
     text: 'Github',
+    target: '_blank',
+  },
+  {
+    href: 'https://medium.com/@mattclaffey',
+    text: 'Medium',
+    target: '_blank',
+  },
+  {
+    href: 'https://dev.to/mattc',
+    text: 'Dev.to',
     target: '_blank',
   },
   {
