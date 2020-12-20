@@ -3,8 +3,16 @@
   max-width: 20ch;
 }
 
+.c-banner__title--long {
+  max-width: 25ch;
+}
+
 .c-banner__text {
   font-size: var(--base-font-size-large);
   margin-top: 0;
   max-width: 40ch;
+}
+
+.c-banner__text--long {
+  max-width: 60ch;
 }
