@@ -13,17 +13,6 @@ module.exports = function (config) {
   // minify the html output
   config.addTransform('htmlmin', require('./src/utils/minify-html.js'));
 
-  config.addFilter('jsmin', function (code) {
-    const Terser = require('terser');
-    let minified = Terser.minify(code);
-    if (minified.error) {
-      console.log('Terser error: ', minified.error);
-      return code;
-    }
-
-    return minified.code;
-  });
-
   config.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy');
   });
@@ -35,6 +24,7 @@ module.exports = function (config) {
 
   // pass some assets right through
   config.addPassthroughCopy('./src/site/images');
+  config.addPassthroughCopy('./src/site/js');
   config.addPassthroughCopy('./src/site/manifest.json');
   config.addPassthroughCopy('./src/site/favicon.ico');
   config.addPassthroughCopy('./src/site/robots.txt');
