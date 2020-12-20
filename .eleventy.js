@@ -1,5 +1,4 @@
 const pluginPWA = require('eleventy-plugin-pwa');
-const svgContents = require('eleventy-plugin-svg-contents');
 const { DateTime } = require('luxon');
 
 module.exports = function (config) {
@@ -7,8 +6,6 @@ module.exports = function (config) {
     swDest: './dist/service-worker.js',
     globDirectory: './dist',
   });
-
-  config.addPlugin(svgContents);
 
   // Layout aliases can make templates more portable
   config.addLayoutAlias('default', 'layouts/base.njk');
