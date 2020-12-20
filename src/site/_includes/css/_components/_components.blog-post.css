@@ -11,6 +11,10 @@
   font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
 }
 
+.c-blog-post a {
+  word-wrap: break-word;
+}
+
 @media (--md-viewport) {
   .c-blog-post {
     display: flex;
@@ -23,6 +27,7 @@
   }
 
   .c-blog-post > *:last-child {
-    min-width: 400px;
+    max-width: 400px;
+    width: 100%;
   }
 }

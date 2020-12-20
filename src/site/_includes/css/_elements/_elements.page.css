@@ -30,3 +30,11 @@ abbr[title] {
   font-weight: 600;
   text-decoration: underline;
 }
+
+figure {
+  margin: 0;
+}
+
+strong {
+  font-weight: 700;
+}
