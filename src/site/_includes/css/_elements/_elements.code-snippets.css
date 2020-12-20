@@ -1,0 +1,13 @@
+pre {
+  background-color: var(--color-code-snippets);
+  color: var(--color-code-snippets-text);
+  font-size: clamp(14px, 1.25 / 70 * 100vw, 16px);
+  margin-bottom: 0;
+  overflow: auto;
+  padding: var(--spacing-4-x) var(--spacing-4-x);
+}
+
+pre + pre {
+  margin: 0;
+  padding-top: 0;
+}

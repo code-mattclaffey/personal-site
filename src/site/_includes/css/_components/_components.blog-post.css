@@ -1,3 +1,16 @@
+.c-blog-post h2,
+.c-blog-post .e-heading--h2,
+.c-blog-post h3,
+.c-blog-post .e-heading--h3,
+.c-blog-post h4,
+.c-blog-post .e-heading--h4 {
+  margin: var(--spacing-4-x) 0;
+}
+
+.c-blog-post__main {
+  font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
+}
+
 @media (--md-viewport) {
   .c-blog-post {
     display: flex;

@@ -14,7 +14,7 @@ renderData:
   <div class="o-region__inner">
 
     <div class="c-blog-post">
-      <article>
+      <article class="c-blog-post__main">
         <header>
           <h1 class="e-heading e-heading--h1 c-banner__title">{{ post.title }}</h1>
           <p class="e-text c-banner__text u-text--larger@md">
@@ -27,9 +27,13 @@ renderData:
         </p>
       </article>
       <aside>
+        {% include '../_includes/partials/svg/web-dev.njk' %}
+        <br />
+        <br />
+
         <div class="e-box">
           <h2 class="e-heading e-heading--h4">Written By</h2>
-          <p>Matthew Claffey <abbr title="Matt Claffey 1 is his twitter handle">@mattclaffey1</abbr></p>
+          <p>Matthew Claffey <a href="https://twitter.com/MattClaffey1" target="_blank" rel="nofollow norefferer"><abbr title="Matt Claffey 1 is his twitter handle">@mattclaffey1</abbr></a></p>
           <p>
             Hi! I'm Matt, I specialise in in HTML5, CSS3, JavaScript/React and have experience working with .NET & PHP Platforms. I am currently working as a Software Engineer at Cinch, who are based in Manchester.
           </p>

@@ -1,6 +1,6 @@
 .o-region {
   --region-color: inherit;
-  --region-background: white;
+  --region-background: var(--color-body-bg);
   --region-horizontal-spacing: clamp(var(--spacing-3-x), 3 / 70 * 100vw, var(--spacing-6-x));
 
   background-color: var(--region-background);

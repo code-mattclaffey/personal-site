@@ -1,6 +1,6 @@
 :root {
   --base-font-family: 'Avenir Next', 'Helvectica Neue', 'Arial', sans-serif;
-  --base-font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
+  --base-font-size: clamp(16px, 1.25 / 70 * 100vw, 18px);
   --base-font-size-large: clamp(22px, 1.25 / 70 * 100vw, 26px);
   --base-font-color: var(--color-body-copy);
   --base-line-height-body: 1.5;
@@ -13,6 +13,7 @@
 
 html,
 body {
+  background: var(--color-body-bg);
   color: var(--base-font-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height-body);
@@ -23,4 +24,9 @@ body {
 
 img {
   max-width: 100%;
+}
+
+abbr[title] {
+  font-weight: 600;
+  text-decoration: underline;
 }
