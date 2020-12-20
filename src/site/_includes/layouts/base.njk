@@ -16,11 +16,10 @@
 
         {% include "../partials/footer/footer.njk" %}
 
-        {# {% set js %}
-            {% include "js/a11y-text.js" %}
-            {% include "js/theme-switcher.js" %}
+        {% set js %}
+          {% include "js/theme-switcher.js" %}
         {% endset %}
-        <script>{{ js | jsmin | safe }}</script> #}
+        <script>{{ js | jsmin | safe }}</script>
         {# <script>
             window.addEventListener('load', function() {
               if ("serviceWorker" in navigator) {
