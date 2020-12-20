@@ -1,41 +1,43 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/styles.css">
-        {% include "../partials/meta/meta.njk" %}
-    </head>
-    <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-        {% include "../partials/header/header.njk" %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    {% include "../partials/meta/meta.njk" %}
+  </head>
+  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
+    {% include "../partials/header/header.njk" %}
 
-        <main class="container">
-            {{ content | safe }}
-        </main>
+    <main class="container">
+      {{ content | safe }}
+    </main>
 
-        {% include "../partials/footer/footer.njk" %}
+    {% include "../partials/footer/footer.njk" %}
 
-        {% set js %}
-          {% include "js/theme-switcher.js" %}
-        {% endset %}
-        <script>{{ js | jsmin | safe }}</script>
-        {# <script>
+    {% set js %}
+    {% include "js/theme-switcher.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    {# <script>
             window.addEventListener('load', function() {
               if ("serviceWorker" in navigator) {
                 navigator.serviceWorker.register("/service-worker.js");
               }
             });
         </script> #}
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166061149-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166061149-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-            gtag('config', 'UA-166061149-1');
-        </script>
-    </body>
+      gtag('config', 'UA-166061149-1');
+    </script>
+  </body>
 </html>

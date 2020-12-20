@@ -73,5 +73,5 @@ module.exports = {
     },
   ],
   msTileImage: '/images/ms-icon-144x144.png',
-  themeColor: '#151a3c',
+  themeColor: '#ffffff',
 };
