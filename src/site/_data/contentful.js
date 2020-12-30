@@ -41,7 +41,9 @@ module.exports = async () => {
       page.fields.date = new Date(page.sys.updatedAt);
       page.fields.blogContent = documentToHtmlString(page.fields.blogContent, options);
 
-      return page.fields;
+      return {
+        blog: page.fields
+      };
     })
 
     return pages

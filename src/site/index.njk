@@ -46,27 +46,23 @@ layout: layouts/base.njk
       <a href="/blog">Browse posts</a>
     </div>
     <div class="c-blog-list ">
-      {% for post in blog.latestPosts %}
-        <article>
-          <div class="e-box">
-            <h3 class="e-heading e-heading--h4">{{ post.title }}</h3>
-            <p>
-              <time datetime="{{ post.pubDate | htmlDateString }}">{{ post.pubDate | readableDate }}</time>
-            </p>
-            {{ post.shortDescription | safe }}
-            <a href="/blog/{{ post.title | slug }}" class="c-blog-list__link">
-              Read more
-              <span class="c-blog-list__link-text">
-                about
-                {% if post.title %}{{ post.title }}
-                {% else %}
-                  <code>{{ post.link }}</code>
-                {% endif %}
-              </span>
-            </a>
-          </div>
-        </article>
-      {% endfor %}
+    {% for allPosts in contentful.blog %}
+      <article>
+        <div class="e-box">
+          <h3 class="e-heading e-heading--h4">{{ post.blogTitle }}</h3>
+          <p>
+            <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          </p>
+          {{ post.shortDescription | safe }}
+          <a href="/blog/{{ post.blogSlug }}" class="c-blog-list__link">
+            Read more
+            <span class="c-blog-list__link-text">
+              about {{ post.blogTitle }}
+            </span>
+          </a>
+        </div>
+      </article>
+    {% endfor %}
     </div>
   </div>
 </section>
