@@ -17,13 +17,13 @@ metadata:
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ contentful.blog | rssLastUpdatedDate }}</updated>
+  <updated>{{ contentful | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for page in contentful.blog %}
+  {%- for page in contentful %}
     <entry>
       <title>{{ page.blogTitle }}</title>
       <link href="/blog/{{ page.blogSlug }}"/>

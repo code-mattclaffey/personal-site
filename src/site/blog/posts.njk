@@ -1,15 +1,16 @@
 ---
 pagination:
-    data: contentful.blog
+    data: contentful
     size: 1
     alias: post
 permalink: "blog/{{ post.blogSlug }}/"
 layout: layouts/base.njk
 renderData:
     title: "{{ post.blogTitle }}"
-    {# desc: "{{ post.shortDescription }}" #}
-    {# pageImageUrl: "https://mattclaffey.co.uk/{{ post.thumbnail }}" #}
+    desc: "{{ post.shortDescription }}"
+    pageImageUrl: "https://mattclaffey.co.uk/{{ post.thumbnail }}"
 ---
+
 <div class="o-region">
   <div class="o-region__inner">
     <div class="c-blog-post">
@@ -40,7 +41,7 @@ renderData:
         <br />
         <h2 class="e-heading e-heading--h3">Other Posts</h2>
         <div class="c-blog-list c-blog-list--stacked">
-          {% for allPosts in contentful.blog %}
+          {% for allPosts in contentful %}
             {% if allPosts.blogTitle !== post.blogTitle %}
               <article>
                 <div class="e-box">
