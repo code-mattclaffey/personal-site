@@ -53,7 +53,7 @@ layout: layouts/base.njk
           <p>
             <time datetime="{{ allPosts.date | htmlDateString }}">{{ allPosts.date | readableDate }}</time>
           </p>
-          {{ post.shortDescription | safe }}
+          <p>{{ allPosts.blogShortDescription }}</p>
           <a href="/blog/{{ allPosts.blogSlug }}" class="c-blog-list__link">
             Read more
             <span class="c-blog-list__link-text">

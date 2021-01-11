@@ -7,7 +7,7 @@ permalink: "blog/{{ post.blogSlug }}/"
 layout: layouts/base.njk
 renderData:
     title: "{{ post.blogTitle }}"
-    desc: "{{ post.shortDescription }}"
+    desc: "{{ post.blogShortDescription }}"
     pageImageUrl: "https://mattclaffey.co.uk/{{ post.thumbnail }}"
 ---
 
@@ -49,7 +49,7 @@ renderData:
                   <p>
                     <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
                   </p>
-                  {{ post.shortDescription | safe }}
+                  <p>{{ allPosts.blogShortDescription }}</p>
                   <a href="/blog/{{ post.blogSlug }}" class="c-blog-list__link">
                     Read more
                     <span class="c-blog-list__link-text">

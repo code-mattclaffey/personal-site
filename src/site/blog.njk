@@ -19,15 +19,15 @@ desc: I blog on Medium about all the things I learn and I feel that it is so imp
     {% for allPosts in contentful %}
       <article>
         <div class="e-box">
-          <h3 class="e-heading e-heading--h4">{{ post.blogTitle }}</h3>
+          <h3 class="e-heading e-heading--h4">{{ allPosts.blogTitle }}</h3>
           <p>
-            <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+            <time datetime="{{ allPosts.date | htmlDateString }}">{{ allPosts.date | readableDate }}</time>
           </p>
-          {{ post.shortDescription | safe }}
-          <a href="/blog/{{ post.blogSlug }}" class="c-blog-list__link">
+          <p>{{ allPosts.blogShortDescription }}</p>
+          <a href="/blog/{{ allPosts.blogSlug }}" class="c-blog-list__link">
             Read more
             <span class="c-blog-list__link-text">
-              about {{ post.blogTitle }}
+              about {{ allPosts.blogTitle }}
             </span>
           </a>
         </div>
