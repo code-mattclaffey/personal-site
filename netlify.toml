@@ -8,3 +8,13 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "no-referrer"
     X-Content-Type-Options = "nosniff"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs.thresholds]
+    performance = 0.95
+    accessibility = 0.95
+    best-practices = 1
+    seo = 1
+    pwa = 1
