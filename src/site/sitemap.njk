@@ -12,10 +12,10 @@ eleventyExcludeFromCollections: true
         </url>
     {% endfor %}
 
-    {% for post in blog.posts %}
+    {% for page in contentful %}
         <url>
-            <loc>https://www.mattclaffey.co.uk/blog/{{ post.title | slug }}</loc>
-            <lastmod>{{ post.pubDate | htmlDateString }}</lastmod>
+            <loc>https://www.mattclaffey.co.uk/blog/{{ post.blogSlug }}</loc>
+            <lastmod>{{ post.publishDate | htmlDateString }}</lastmod>
             <changefreq>weekly</changefreq>
         </url>
     {% endfor %}
