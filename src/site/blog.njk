@@ -15,28 +15,24 @@ desc: I blog on Medium about all the things I learn and I feel that it is so imp
 </section>
 <section class="o-region">
   <div class="o-region__inner">
-  <div class="c-blog-list">
-      {% for post in blog.posts %}
-        <article>
-          <div class="e-box">
-            <h3 class="e-heading e-heading--h4">{{ post.title }}</h3>
-            <p>
-              <time datetime="{{ post.pubDate | htmlDateString }}">{{ post.pubDate | readableDate }}</time>
-            </p>
-            {{ post.shortDescription | safe }}
-            <a href="/blog/{{ post.title | slug }}" class="c-blog-list__link">
-              Read more
-              <span class="c-blog-list__link-text">
-                about
-                {% if post.title %}{{ post.title }}
-                {% else %}
-                  <code>{{ post.link }}</code>
-                {% endif %}
-              </span>
-            </a>
-          </div>
-        </article>
-      {% endfor %}
+    <div class="c-blog-list">
+    {% for allPosts in contentful %}
+      <article>
+        <div class="e-box">
+          <h3 class="e-heading e-heading--h4">{{ allPosts.blogTitle }}</h3>
+          <p>
+            <time datetime="{{ allPosts.publishDate | htmlDateString }}">{{ allPosts.publishDate | readableDate }}</time>
+          </p>
+          <p>{{ allPosts.blogShortDescription }}</p>
+          <a href="/blog/{{ allPosts.blogSlug }}" class="c-blog-list__link">
+            Read more
+            <span class="c-blog-list__link-text">
+              about {{ allPosts.blogTitle }}
+            </span>
+          </a>
+        </div>
+      </article>
+    {% endfor %}
     </div>
   </div>
 </section>

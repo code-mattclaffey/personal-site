@@ -1,7 +1,10 @@
 const pluginPWA = require('eleventy-plugin-pwa');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 const { DateTime } = require('luxon');
 
 module.exports = function (config) {
+  config.addPlugin(pluginRss);
   config.addPlugin(pluginPWA, {
     swDest: './dist/service-worker.js',
     globDirectory: './dist',
