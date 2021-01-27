@@ -5,6 +5,7 @@ pagination:
     alias: post
 permalink: "blog/{{ post.blogSlug }}/"
 layout: layouts/base.njk
+eleventyExcludeFromCollections: true
 renderData:
     title: "{{ post.blogTitle }}"
     desc: "{{ post.blogShortDescription }}"

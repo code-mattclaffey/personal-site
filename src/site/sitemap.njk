@@ -6,17 +6,15 @@ eleventyExcludeFromCollections: true
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for page in collections.all %}
         <url>
-            <loc>https://www.mattclaffey.co.uk{{ page.url | url }}</loc>
+            <loc>https://www.mattclaffey.co.uk{{ page.url | url }}/</loc>
             <lastmod>{{ page.date.toISOString() }}</lastmod>
-            <changefreq>weekly</changefreq>
         </url>
     {% endfor %}
 
     {% for page in contentful %}
         <url>
-            <loc>https://www.mattclaffey.co.uk/blog/{{ post.blogSlug }}</loc>
-            <lastmod>{{ post.publishDate | htmlDateString }}</lastmod>
-            <changefreq>weekly</changefreq>
+            <loc>https://www.mattclaffey.co.uk/blog/{{ page.blogSlug }}/</loc>
+            <lastmod>{{ page.publishDate.toISOString() }}</lastmod>
         </url>
     {% endfor %}
 </urlset>
