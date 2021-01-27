@@ -16,7 +16,7 @@ const options = {
       const hasCodeSnippet = field.content[0].marks.find(mark => mark.type === 'code')
 
       if (field.content.length === 1 && hasCodeSnippet) {
-        return `<pre><code>${field.content[0].value}</code></pre>`;
+        return `<pre>${next(field.content)}</pre>`;
       }
 
       return `<p>${next(field.content)}</p>`;
@@ -38,13 +38,15 @@ module.exports = async () => {
     const entries = await client.getEntries({ content_type: 'blogPost', order: 'sys.createdAt' })
 
     const pages = entries.items.map(page => {
-      page.fields.date = new Date(page.sys.updatedAt);
+      page.fields.publishDate = new Date(page.fields.publishDate);
+      page.fields.updatedDate = new Date(page.sys.updatedAt);
+      page.fields.updatedAtUTC = page.fields.updatedDate.toUTCString();
       page.fields.blogContent = documentToHtmlString(page.fields.blogContent, options);
 
       return page.fields
     })
 
-    return pages
+    return pages.sort((a, b) =>  b.publishDate - a.publishDate)
   }
   catch(error) {
     console.error(error);

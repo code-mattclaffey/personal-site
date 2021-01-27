@@ -11,25 +11,21 @@ metadata:
     email: "mattclaffey93@gmail.com"
 ---
 
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ contentful | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
-  <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-  </author>
-  {%- for page in contentful %}
-    <entry>
-      <title>{{ page.blogTitle }}</title>
-      <link href="/blog/{{ page.blogSlug }}"/>
-      <updated>{{ page.date | rssDate }}</updated>
-      <id>/blog/{{ page.blogSlug }}</id>
-      <content type="html">{{ post.blogContent }}</content>
-    </entry>
-  {%- endfor %}
-</feed>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>{{ metadata.title }}</title>
+    <description>{{ metadata.subtitle }}</description>
+    <link>{{ metadata.url }}</link>
+    <language>en-us</language>
+    <atom:link href="{{ metadata.feedUrl }}" rel="self" type="application/rss+xml"/>
+    {%- for page in contentful %}
+      <item>
+        <title>{{ page.blogTitle }}</title>
+        <link>{{ metadata.url }}blog/{{ page.blogSlug }}</link>
+        <pubDate>{{ page.updatedAtUTC }}</pubDate>
+        <guid>{{ metadata.feedUrl }}blog/{{ page.blogSlug }}</guid>
+        <description>{{ page.blogContent }}</description>
+      </item>
+    {%- endfor %}
+  </channel>
+</rss>

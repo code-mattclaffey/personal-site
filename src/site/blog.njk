@@ -21,7 +21,7 @@ desc: I blog on Medium about all the things I learn and I feel that it is so imp
         <div class="e-box">
           <h3 class="e-heading e-heading--h4">{{ allPosts.blogTitle }}</h3>
           <p>
-            <time datetime="{{ allPosts.date | htmlDateString }}">{{ allPosts.date | readableDate }}</time>
+            <time datetime="{{ allPosts.publishDate | htmlDateString }}">{{ allPosts.publishDate | readableDate }}</time>
           </p>
           <p>{{ allPosts.blogShortDescription }}</p>
           <a href="/blog/{{ allPosts.blogSlug }}" class="c-blog-list__link">

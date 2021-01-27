@@ -18,7 +18,7 @@ renderData:
         <header>
           <h1 class="e-heading e-heading--h1 c-banner__title">{{ post.blogTitle }}</h1>
           <p class="e-text c-banner__text u-text--larger@md">
-          Date Published: <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          Date Published: <time datetime="{{ post.publishDate | htmlDateString }}">{{ post.publishDate | readableDate }}</time>
           </p>
         </header>
         {{ post.blogContent | safe }}
@@ -43,21 +43,23 @@ renderData:
         <div class="c-blog-list c-blog-list--stacked">
           {% for allPosts in contentful %}
             {% if allPosts.blogTitle !== post.blogTitle %}
-              <article>
-                <div class="e-box">
-                  <h3 class="e-heading e-heading--h4">{{ post.blogTitle }}</h3>
-                  <p>
-                    <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-                  </p>
-                  <p>{{ allPosts.blogShortDescription }}</p>
-                  <a href="/blog/{{ post.blogSlug }}" class="c-blog-list__link">
-                    Read more
-                    <span class="c-blog-list__link-text">
-                      about {{ post.blogTitle }}
-                    </span>
-                  </a>
-                </div>
-              </article>
+              {% if loop.index0 < 4 %}
+                <article>
+                  <div class="e-box">
+                    <h3 class="e-heading e-heading--h4">{{ allPosts.blogTitle }}</h3>
+                    <p>
+                      <time datetime="{{ allPosts.publishDate | htmlDateString }}">{{ allPosts.publishDate | readableDate }}</time>
+                    </p>
+                    <p>{{ allPosts.blogShortDescription }}</p>
+                    <a href="/blog/{{ allPosts.blogSlug }}" class="c-blog-list__link">
+                      Read more
+                      <span class="c-blog-list__link-text">
+                        about {{ allPosts.blogTitle }}
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              {% endif %}
             {% endif %}
           {% endfor %}
         </div>
