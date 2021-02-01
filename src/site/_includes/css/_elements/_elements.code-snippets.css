@@ -9,5 +9,6 @@ pre {
 
 pre + pre {
   margin: 0;
+  padding-bottom: var(--spacing-2-x);
   padding-top: 0;
 }
