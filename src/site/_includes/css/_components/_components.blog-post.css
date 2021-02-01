@@ -8,7 +8,8 @@
 }
 
 .c-blog-post__main {
-  font-size: clamp(16px, 1.25 / 70 * 100vw, 20px);
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .c-blog-post a {
