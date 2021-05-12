@@ -30,7 +30,7 @@
     "imagemin-pngquant": "^9.0.1",
     "luxon": "^1.25.0",
     "mqpacker": "^7.0.0",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.10",
     "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^10.0.0",
     "postcss-import": "^14.0.0",
