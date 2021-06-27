@@ -10,6 +10,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^15.0.0",
+    "@contentful/rich-text-types": "^15.0.0",
+    "contentful": "^8.4.2",
     "next": "^10.0.0",
     "next-images": "^1.8.1",
     "normalize.css": "^8.0.1",
