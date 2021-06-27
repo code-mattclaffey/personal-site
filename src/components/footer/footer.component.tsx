@@ -53,7 +53,7 @@ export const Footer = () => {
 
             <ul className="c-footer__socials">
               {navigation.map(link => (
-                <li>
+                <li key={link.href}>
                   <a href={link.href} target={link.target} rel={link.target !== undefined ? "noreferrer" : undefined}>
                     {link.text}
                   </a>
