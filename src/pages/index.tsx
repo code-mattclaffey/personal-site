@@ -1,12 +1,14 @@
 import React from 'react'
-import Head from 'next/head'
+import { Seo } from '../components/seo/seo.component'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Title</title>
-      </Head>
+      <Seo
+        title="Matt Claffey - Manchester Based - Frontend Developer"
+        description="Hi I'm Matt, I have been a frontend developer for around 6 years, I've done work for multiple agencies, consulted for clients, and collaborated with talented people to create digital products."
+        pageImageUrl="images/thumbnail.jpg"
+      />
       <section>
         <p>[Your Self Introduction]</p>
         <p>
