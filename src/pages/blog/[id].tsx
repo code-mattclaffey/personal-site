@@ -87,10 +87,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   const data: BlogPosts = await getContentfulBlogPosts()
 
+  const post = data.filter((post) => params?.id === post.blogSlug)[0]
+
   return {
     props: {
       blogPost: data.filter((post) => params?.id === post.blogSlug)[0],
-      allPosts: data.filter((post) => params?.id !== post.blogSlug).slice(0, 4)
+      allPosts: data.filter((post) => params?.id !== post.blogSlug).slice(0, 4),
+      postData: {
+        title: post.blogTitle,
+        id: post.blogSlug,
+        link: post.blogSlug,
+        date: post.publishDate
+      }
     }
   }
 }

@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "prebuild": "next-sitemap",
+    "prebuild": "yarn next-sitemap",
+    "postbuld": "yarn next-rss",
     "start": "next start"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "contentful": "^8.4.2",
     "next": "^10.0.0",
     "next-images": "^1.8.1",
+    "next-rss": "^1.0.1",
     "next-sitemap": "^1.6.124",
     "normalize.css": "^8.0.1",
     "react": "17.0.1",

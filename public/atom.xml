@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mattclaffey.co.uk</id>
+    <title>Matthew Claffey - Frontend Developer</title>
+    <updated>2021-06-27T20:25:23.433Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mattclaffey.co.uk"/>
+    <subtitle>👨🏻‍💻 Frontend Engineer (sometimes UI Designer), based in Manchester.</subtitle>
+    <rights>© Matthew Claffey</rights>
+    <entry>
+        <title type="html"><![CDATA[Integrating Sentry.io with GatbsyJS]]></title>
+        <id>https://mattclaffey.co.uk/blog/integrating-sentryio-with-gatbsyjs</id>
+        <link href="https://mattclaffey.co.uk/blog/integrating-sentryio-with-gatbsyjs"/>
+        <updated>2021-01-31T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Responsive fonts using css clamp()]]></title>
+        <id>https://mattclaffey.co.uk/blog/responsive-fonts-using-css-clamp()</id>
+        <link href="https://mattclaffey.co.uk/blog/responsive-fonts-using-css-clamp()"/>
+        <updated>2020-11-30T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to mock api calls in Storybook]]></title>
+        <id>https://mattclaffey.co.uk/blog/how-to-mock-api-calls-in-storybook</id>
+        <link href="https://mattclaffey.co.uk/blog/how-to-mock-api-calls-in-storybook"/>
+        <updated>2020-09-21T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to reduce you html output in 11ty]]></title>
+        <id>https://mattclaffey.co.uk/blog/how-to-reduce-you-html-output-in-11ty</id>
+        <link href="https://mattclaffey.co.uk/blog/how-to-reduce-you-html-output-in-11ty"/>
+        <updated>2020-08-25T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lazy Loading Images 2020]]></title>
+        <id>https://mattclaffey.co.uk/blog/lazy-loading-images-2020</id>
+        <link href="https://mattclaffey.co.uk/blog/lazy-loading-images-2020"/>
+        <updated>2020-08-25T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Loading Fonts The FOUT Way]]></title>
+        <id>https://mattclaffey.co.uk/blog/loading-fonts-the-fout-way</id>
+        <link href="https://mattclaffey.co.uk/blog/loading-fonts-the-fout-way"/>
+        <updated>2020-08-21T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My favourite talks at DotCSS Paris]]></title>
+        <id>https://mattclaffey.co.uk/blog/my-favourite-talks-at-dotcss-paris</id>
+        <link href="https://mattclaffey.co.uk/blog/my-favourite-talks-at-dotcss-paris"/>
+        <updated>2019-12-23T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Storing an array of elements using the useRef hook]]></title>
+        <id>https://mattclaffey.co.uk/blog/adding-react-refs-to-an-array-of-items</id>
+        <link href="https://mattclaffey.co.uk/blog/adding-react-refs-to-an-array-of-items"/>
+        <updated>2019-08-10T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Demystifying React Context]]></title>
+        <id>https://mattclaffey.co.uk/blog/demystifying-react-context</id>
+        <link href="https://mattclaffey.co.uk/blog/demystifying-react-context"/>
+        <updated>2019-08-01T00:00:00.000Z</updated>
+    </entry>
+</feed>
