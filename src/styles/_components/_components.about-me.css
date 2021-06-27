@@ -12,7 +12,7 @@
   margin-bottom: calc(var(--spacing-6-x) / 2);
 }
 
-@media (--md-viewport) {
+@media (min-width: 48.0625em) {
   .c-about-me > * {
     margin: calc(var(--spacing-6-x) / 2);
   }

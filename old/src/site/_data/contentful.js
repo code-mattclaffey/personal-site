@@ -38,12 +38,16 @@ module.exports = async () => {
     const entries = await client.getEntries({ content_type: 'blogPost', order: 'sys.createdAt' })
 
     const pages = entries.items.map(page => {
-      page.fields.publishDate = new Date(page.fields.publishDate);
-      page.fields.updatedDate = new Date(page.sys.updatedAt);
-      page.fields.updatedAtUTC = page.fields.updatedDate.toUTCString();
-      page.fields.blogContent = documentToHtmlString(page.fields.blogContent, options);
+      // page.fields.publishDate = page.fields.publishDate;
+      // page.fields.updatedDate = page.sys.updatedAt;
+      // page.fields.updatedAtUTC = page.fields.updatedDate.toUTCString();
+      // page.fields.blogContent = documentToHtmlString(page.fields.blogContent, options);
 
-      return page.fields
+      return {
+        title: page.blogTitle,
+        blogShortDescription: page.blogShortDescription,
+        blogSlug: page.blogSlug,
+      }
     })
 
     return pages.sort((a, b) =>  b.publishDate - a.publishDate)

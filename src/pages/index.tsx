@@ -3,8 +3,14 @@ import { Seo } from '../components/seo/seo.component'
 import Link from 'next/link'
 import { Footer } from '../components/footer/footer.component'
 import { Header } from '../components/header/header.component'
+import { getContentfulBlogPosts, BlogPosts } from '../utils/contentful/contentful'
 
-export default function Home() {
+export interface HomeProps {
+  blogPosts: BlogPosts
+}
+
+const Home: React.FC<HomeProps> = ({ blogPosts }) => {
+  const latestPosts = blogPosts.slice(0, 4)
   return (
     <>
       <Seo
@@ -52,25 +58,25 @@ export default function Home() {
               <Link href="/blog">Browse posts</Link>
             </div>
             <div className="c-blog-list">
-              {/* {% for allPosts in contentful %}
-              {% if loop.index0 < 4 %}
-                <article>
+              {latestPosts.map(post => (
+                <article key={post.blogSlug}>
                   <div className="e-box">
-                    <h3 className="e-heading e-heading--h4">{{ allPosts.blogTitle }}</h3>
-                    <p>
-                      <time datetime="{{ allPosts.publishDate | htmlDateString }}">{{ allPosts.publishDate | readableDate }}</time>
-                    </p>
-                    <p>{{ allPosts.blogShortDescription }}</p>
-                    <a href="/blog/{{ allPosts.blogSlug }}" className="c-blog-list__link">
-                      Read more
-                      <span className="c-blog-list__link-text">
-                        about {{ allPosts.blogTitle }}
-                      </span>
-                    </a>
+                    <h3 className="e-heading e-heading--h4">{post.title}</h3>
+                    {/* <p>
+                      <time datetime="{{ post.publishDate | htmlDateString }}">{{ post.publishDate | readableDate }}</time>
+                    </p> */}
+                    <p>{post.blogShortDescription}</p>
+                    <Link href={`/blog/${post.blogSlug}`}>
+                      <a className="c-blog-list__link">
+                        Read more
+                        <span className="c-blog-list__link-text">
+                          about {post.title}
+                        </span>
+                      </a>
+                    </Link>
                   </div>
                 </article>
-              {% endif %}
-            {% endfor %} */}
+              ))}
             </div>
           </div>
         </section>
@@ -81,3 +87,15 @@ export default function Home() {
   )
 }
 
+export default Home
+
+
+export async function getStaticProps() {
+  const data = await getContentfulBlogPosts()
+
+  return {
+    props: {
+      blogPosts: data
+    }
+  }
+}

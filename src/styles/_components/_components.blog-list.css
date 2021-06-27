@@ -26,7 +26,7 @@
   margin-bottom: var(--spacing-6-x);
 }
 
-@media (--md-max-viewport) {
+@media (max-width: 48em) {
   .c-blog-list > * {
     margin-bottom: var(--spacing-6-x);
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media (--md-viewport) {
+@media (min-width: 48.0625em) {
   .c-blog-list:not(.c-blog-list--stacked) > * {
     width: calc(50% - var(--spacing-6-x));
     display: inline-block;

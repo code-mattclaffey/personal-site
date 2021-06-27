@@ -6,7 +6,6 @@
 @import 'normalize.css';
 @import './_settings/_settings.global.css';
 @import './_settings/_settings.colors.css';
-@import './_settings/_settings.breakpoints.css';
 @import './_objects/_objects.region.css';
 @import './_elements/_elements.page.css';
 @import './_elements/_elements.headings.css';

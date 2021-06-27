@@ -16,7 +16,7 @@
   word-wrap: break-word;
 }
 
-@media (--md-viewport) {
+@media (min-width: 48.0625em) {
   .c-blog-post {
     display: flex;
   }

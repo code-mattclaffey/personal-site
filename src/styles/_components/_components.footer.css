@@ -17,7 +17,7 @@
   margin: var(--spacing-1-x) var(--spacing-3-x);
 }
 
-@media (--md-viewport) {
+@media (min-width: 48.0625em) {
   .c-footer__socials {
     display: flex;
     justify-content: center;
