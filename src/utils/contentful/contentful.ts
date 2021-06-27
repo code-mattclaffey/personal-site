@@ -30,27 +30,27 @@ const options = {
   },
 };
 
-export type BlogPosts = Array<{
-  title: string
+export type BlogPost = {
+  blogTitle: string
   blogShortDescription: string
+  blogContent: string
+  publishDate: string
+  updatedDate: string
   blogSlug: string
-}>
+}
+
+export type BlogPosts = Array<BlogPost>
 
 export const getContentfulBlogPosts = async () => {
   try {
     const entries = await client.getEntries({ content_type: 'blogPost', order: 'sys.createdAt' })
 
     const pages = entries.items.map((page: any) => {
-      page.fields.publishDate = new Date(page.fields.publishDate);
-      page.fields.updatedDate = new Date(page.sys.updatedAt);
-      page.fields.updatedAtUTC = page.fields.updatedDate.toUTCString();
+      page.fields.publishDate = page.fields.publishDate;
+      page.fields.updatedDate = page.sys.updatedAt;
       page.fields.blogContent = documentToHtmlString(page.fields.blogContent, options);
 
-      return {
-        title: page.fields.blogTitle,
-        blogShortDescription: page.fields.blogShortDescription,
-        blogSlug: page.fields.blogSlug,
-      }
+      return page.fields
     })
 
     return pages.sort((a: any, b: any) => b.publishDate - a.publishDate)
