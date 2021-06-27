@@ -5,6 +5,7 @@ import { Footer } from '../components/footer/footer.component'
 import { Header } from '../components/header/header.component'
 import { BlogPost } from '../components/blog-post/blog-post.component'
 import { getContentfulBlogPosts, BlogPosts } from '../utils/contentful/contentful'
+import WebDevSvg from '../../public/web-dev.svg'
 
 export interface HomeProps {
   blogPosts: BlogPosts
@@ -33,6 +34,7 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
         <section className="o-region">
           <div className="o-region__inner">
             <div className="e-box e-box--pastal-blue e-box--vertical-xl c-about-me">
+              <WebDevSvg />
               <div>
                 <h2 className="e-heading e-heading--h3">
                   About Me

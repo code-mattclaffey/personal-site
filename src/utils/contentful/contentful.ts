@@ -37,6 +37,7 @@ export type BlogPost = {
   publishDate: string
   updatedDate: string
   blogSlug: string
+  thumbnail: string
 }
 
 export type BlogPosts = Array<BlogPost>
