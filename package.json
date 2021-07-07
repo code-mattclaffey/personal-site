@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "prebuild": "yarn next-sitemap",
+    "prebuild": "yarn next build && yarn next-sitemap",
     "postbuld": "yarn next-rss",
     "start": "next start"
   },
