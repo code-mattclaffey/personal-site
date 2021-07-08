@@ -6,7 +6,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "NODE_ENV=production next build && next export",
     "prebuild": "yarn next build && yarn next-sitemap",
     "postbuld": "yarn next-rss",
     "start": "next start"
