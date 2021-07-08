@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mattclaffey.co.uk
+
+# Sitemaps
+Sitemap: https://mattclaffey.co.uk/sitemap.xml

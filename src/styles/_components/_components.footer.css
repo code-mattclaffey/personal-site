@@ -1,0 +1,26 @@
+.c-footer {
+  margin: 0 auto;
+  max-width: 60ch;
+  text-align: center;
+}
+
+.c-footer__socials {
+  list-style: none;
+  padding-left: 0;
+}
+
+.c-footer__socials > * {
+  display: inline-block;
+}
+
+.c-footer__socials > li {
+  margin: var(--spacing-1-x) var(--spacing-3-x);
+}
+
+@media (min-width: 48.0625em) {
+  .c-footer__socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

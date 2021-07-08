@@ -1,46 +1,32 @@
 {
   "name": "matt-claffey-personal-site",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve",
-    "prettier:fix": "prettier \"./**/*\" --check --write",
-    "prettier:check": "prettier \"./**/*\" --check"
-  },
   "author": "Matthew Claffey (code-mattclaffey)",
   "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "@contentful/rich-text-html-renderer": "^14.1.2",
-    "@contentful/rich-text-types": "^14.1.2",
-    "autoprefixer": "^10.2.5",
-    "babel-minify": "^0.5.1",
-    "contentful": "^8.3.5",
-    "cssnano": "^4.1.11",
-    "dotenv": "^8.6.0",
-    "eleventy": "^1.0.6",
-    "eleventy-plugin-pwa": "^1.0.8",
-    "html-minifier": "^4.0.0",
-    "imagemin": "^7.0.1",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-pngquant": "^9.0.2",
-    "luxon": "^1.26.0",
-    "mqpacker": "^7.0.0",
-    "postcss": "^8.2.14",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-custom-properties": "^10.0.0",
-    "postcss-import": "^14.0.1",
-    "postcss-pxtorem": "^5.1.1",
-    "prettier": "^2.2.1",
-    "prettier-cli": "^0.1.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^20.0.0"
+  "scripts": {
+    "dev": "next dev",
+    "build": "NODE_ENV=production next build && next export",
+    "prebuild": "yarn next build && yarn next-sitemap",
+    "postbuld": "yarn next-rss",
+    "start": "next start"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "@contentful/rich-text-html-renderer": "^15.0.0",
+    "@contentful/rich-text-types": "^15.0.0",
+    "contentful": "^8.4.2",
+    "next": "^10.0.0",
+    "next-images": "^1.8.1",
+    "next-rss": "^1.0.1",
+    "next-sitemap": "^1.6.124",
+    "normalize.css": "^8.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.13",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "typescript": "^4.3.5"
   }
 }
