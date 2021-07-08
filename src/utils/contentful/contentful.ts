@@ -54,7 +54,8 @@ export const getContentfulBlogPosts = async () => {
       return page.fields
     })
 
-    return pages.sort((a: any, b: any) => b.publishDate - a.publishDate)
+    // @ts-ignore
+    return pages.sort((a: any, b: any) => new Date(b.publishDate) - new Date(a.publishDate))
   } catch (error) {
     console.error(error);
   }
