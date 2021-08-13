@@ -15,7 +15,7 @@
     "@contentful/rich-text-html-renderer": "^15.0.0",
     "@contentful/rich-text-types": "^15.0.0",
     "contentful": "^8.4.2",
-    "next": "^10.0.0",
+    "next": "^11.1.0",
     "next-images": "^1.8.1",
     "next-rss": "^1.0.1",
     "next-sitemap": "^1.6.124",
