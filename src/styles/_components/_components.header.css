@@ -4,6 +4,7 @@
   justify-content: space-between;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .c-header__toggle-container {
@@ -16,7 +17,7 @@
   appearance: none;
   border: 0;
   background-color: transparent;
-  color: var(--color-body-copy);
+  color: var(--color-white);
   cursor: pointer;
   height: 100%;
   left: 0;

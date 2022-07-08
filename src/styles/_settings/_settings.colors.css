@@ -11,8 +11,7 @@
   }
 }
 
-:root,
-.light-mode {
+:root {
   --color-white: #ffffff;
   --color-black: #000000;
   --color-pastal-pink: #fee8f5;
@@ -24,49 +23,6 @@
   --color-code-snippets: #24335a;
   --color-code-snippets-text: #ffffff;
   --color-body-bg: #ffffff;
-}
 
-.dark-mode {
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-pastal-pink: #885f98;
-  --color-pastal-green: #696bc5;
-  --color-pastal-blue: #505f8c;
-  --color-pastal-purple: #6d5e98;
-  --color-pastal-grey: #5a6b98;
-  --color-body-copy: #ffffff;
-  --color-code-snippets: #111729;
-  --color-code-snippets-text: #ffffff;
-  --color-body-bg: #24335a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root,
-  .dark-mode {
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --color-pastal-pink: #885f98;
-    --color-pastal-green: #696bc5;
-    --color-pastal-blue: #505f8c;
-    --color-pastal-purple: #6d5e98;
-    --color-pastal-grey: #5a6b98;
-    --color-body-copy: #ffffff;
-    --color-code-snippets: #111729;
-    --color-code-snippets-text: #ffffff;
-    --color-body-bg: #24335a;
-  }
-
-  .light-mode {
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --color-pastal-pink: #fee8f5;
-    --color-pastal-green: #eaf5fb;
-    --color-pastal-blue: #e8eefe;
-    --color-pastal-purple: #f4e8fe;
-    --color-pastal-grey: #f6f0fc;
-    --color-body-copy: #242a3a;
-    --color-code-snippets: #24335a;
-    --color-code-snippets-text: #ffffff;
-    --color-body-bg: #ffffff;
-  }
+  --base-region-bg: #1e1a69;
 }

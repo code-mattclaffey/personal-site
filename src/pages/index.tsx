@@ -1,14 +1,13 @@
 import React from 'react'
 import { Seo } from '../components/seo/seo.component'
 import Link from 'next/link'
-import { Footer } from '../components/footer/footer.component'
-import { Header } from '../components/header/header.component'
 import { BlogPost } from '../components/blog-post/blog-post.component'
-import { getContentfulBlogPosts, BlogPosts } from '../utils/contentful/contentful'
+import { getContentfulBlogPosts, BlogPost as BlogPostProps } from '../utils/contentful/contentful'
 import WebDevSvg from '../../public/web-dev.svg'
+import { Banner } from '../components/banner/banner.component'
 
 export interface HomeProps {
-  blogPosts: BlogPosts
+  blogPosts: BlogPostProps[]
 }
 
 const Home: React.FC<HomeProps> = ({ blogPosts }) => {
@@ -20,17 +19,12 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
         description="Hi I'm Matt, I have been a frontend developer for around 6 years, I've done work for multiple agencies, consulted for clients, and collaborated with talented people to create digital products."
         pageImageUrl="images/thumbnail.jpg"
       />
-      <Header />
       <main className="container">
-        <section className="o-region">
-          <div className="o-region__inner">
-            <h1 className="e-heading e-heading--h1 c-banner__title">Matthew Claffey</h1>
-            <p className="c-banner__text">
-              👨🏻‍💻 Frontend Engineer (sometimes UI Designer), based in Manchester.
-            </p>
-          </div>
-        </section>
-
+        <Banner title="Matthew Claffey">
+          <p className="e-text c-banner__text c-banner__text--long">
+            I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
+          </p>
+        </Banner>
         <section className="o-region">
           <div className="o-region__inner">
             <div className="e-box e-box--pastal-blue e-box--vertical-xl c-about-me">
@@ -70,8 +64,6 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
           </div>
         </section>
       </main>
-      <Footer />
-
     </>
   )
 }

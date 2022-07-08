@@ -7,8 +7,8 @@
   margin: var(--spacing-4-x) 0;
 }
 
-.c-blog-post__main {
-  font-size: 20px;
+.c-blog-post {
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 
@@ -17,18 +17,8 @@
 }
 
 @media (min-width: 48.0625em) {
-  .c-blog-post {
-    display: flex;
-  }
-
   .c-blog-post > *:first-child {
     padding-right: var(--spacing-9-x);
     margin-bottom: calc(var(--spacing-6-x));
-    width: calc(100% - 400px);
-  }
-
-  .c-blog-post > *:last-child {
-    max-width: 400px;
-    width: 100%;
   }
 }

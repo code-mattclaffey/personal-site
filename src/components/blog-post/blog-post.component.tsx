@@ -1,12 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { BlogPost as BlogPostProps } from '../../utils/contentful/contentful'
-
-export const getFormattedDate = (d: string) => {
-  const date = new Date(d)
-
-  return new Intl.DateTimeFormat('en-gb', { month: 'long', day: '2-digit', year: 'numeric' }).format(date)
-}
+import { getFormattedDate } from '../../utils/dates/dates'
 
 
 export const BlogPost: React.FC<BlogPostProps> = ({ blogSlug, blogTitle, publishDate, blogShortDescription }) => (
