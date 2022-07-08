@@ -7,14 +7,15 @@ export interface BlogListProps {
 }
 
 export const BlogList: React.FC<BlogListProps> = ({ posts }) => (
-  <div>
-    <h2 className="e-heading e-heading--h3">Other Posts</h2>
-    <div className="c-blog-list">
-      {posts.map(post => (
-        <React.Fragment key={post.blogSlug}>
-          <BlogPost {...post} />
-        </React.Fragment>
-      ))}
+  <section className="o-region">
+    <div className="o-region__inner o-region__inner--thin">
+      <div className="c-blog-list">
+        {posts.map(post => (
+          <React.Fragment key={post.blogSlug}>
+            <BlogPost {...post} />
+          </React.Fragment>
+        ))}
+      </div>
     </div>
-  </div>
+  </section>
 )

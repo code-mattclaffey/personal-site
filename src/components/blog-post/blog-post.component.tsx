@@ -7,7 +7,7 @@ import { getFormattedDate } from '../../utils/dates/dates'
 export const BlogPost: React.FC<BlogPostProps> = ({ blogSlug, blogTitle, publishDate, blogShortDescription }) => (
   <article>
     <div className="e-box">
-      <h3 className="e-heading e-heading--h4">{blogTitle}</h3>
+      <h2 className="e-heading e-heading--h3">{blogTitle}</h2>
       <p>
         <time dateTime={publishDate}>
           {getFormattedDate(publishDate)}

@@ -22,11 +22,7 @@ const Blog: React.FC<BlogProps> = ({ blogPosts }) => {
             I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
           </p>
         </Banner>
-        <section className="o-region">
-          <div className="o-region__inner">
-            <BlogList posts={blogPosts} />
-          </div>
-        </section>
+        <BlogList posts={blogPosts} />
       </main>
     </>
   )

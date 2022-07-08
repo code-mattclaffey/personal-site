@@ -4,13 +4,14 @@ import { getContentfulBlogPosts, BlogPost } from '../../utils/contentful/content
 import { GetStaticPropsContext } from 'next'
 import { getFormattedDate } from '../../utils/dates/dates'
 import { Banner } from '../../components/banner/banner.component'
+import { BlogList } from '../../components/blog-list/blog-list.component'
 
 export interface BlogPageProps {
   blogPost: BlogPost
-  allPosts: BlogPost[]
+  otherPosts: BlogPost[]
 }
 
-const Post: React.FC<BlogPageProps> = ({ blogPost }) => (
+const Post: React.FC<BlogPageProps> = ({ blogPost, otherPosts }) => (
   <>
     <Seo
       title={blogPost.blogTitle}
@@ -33,6 +34,7 @@ const Post: React.FC<BlogPageProps> = ({ blogPost }) => (
         <div className="o-region">
           <div className="o-region__inner o-region__inner--thin c-blog-post" dangerouslySetInnerHTML={{ __html: blogPost.blogContent }} />
         </div>
+        <BlogList posts={otherPosts} />
       </article>
     </main>
   </>
@@ -59,7 +61,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
   return {
     props: {
       blogPost: data.filter((post) => params?.id === post.blogSlug)[0],
-      allPosts: data.filter((post) => params?.id !== post.blogSlug).slice(0, 4),
+      otherPosts: data.filter((post) => params?.id !== post.blogSlug).slice(0, 3),
       postData: {
         title: post.blogTitle,
         id: post.blogSlug,

@@ -7,11 +7,6 @@
   margin: var(--spacing-4-x) 0;
 }
 
-.c-blog-post {
-  font-size: 1.4rem;
-  line-height: 1.6;
-}
-
 .c-blog-post a {
   word-wrap: break-word;
 }

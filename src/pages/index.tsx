@@ -1,17 +1,14 @@
 import React from 'react'
 import { Seo } from '../components/seo/seo.component'
-import Link from 'next/link'
-import { BlogPost } from '../components/blog-post/blog-post.component'
 import { getContentfulBlogPosts, BlogPost as BlogPostProps } from '../utils/contentful/contentful'
-import WebDevSvg from '../../public/web-dev.svg'
 import { Banner } from '../components/banner/banner.component'
+import { BlogList } from '../components/blog-list/blog-list.component'
 
 export interface HomeProps {
   blogPosts: BlogPostProps[]
 }
 
 const Home: React.FC<HomeProps> = ({ blogPosts }) => {
-  const latestPosts = blogPosts.slice(0, 4)
   return (
     <>
       <Seo
@@ -25,7 +22,7 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
             I blog on Medium about all the things I learn and I feel that it is so important to share the knowledge with the world about the things I am passionate about.
           </p>
         </Banner>
-        <section className="o-region">
+        {/* <section className="o-region">
           <div className="o-region__inner">
             <div className="e-box e-box--pastal-blue e-box--vertical-xl c-about-me">
               <WebDevSvg />
@@ -43,9 +40,9 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="o-region">
+        {/* <section className="o-region">
           <div className="o-region__inner o-region__inner--thin">
             <div className="c-blog-list__header">
               <h2 className="e-heading e-heading--h3">✍🏻 I like to share what I learn to help others</h2>
@@ -54,15 +51,9 @@ const Home: React.FC<HomeProps> = ({ blogPosts }) => {
               </p>
               <Link href="/blog">Browse posts</Link>
             </div>
-            <div className="c-blog-list">
-              {latestPosts.map(post => (
-                <React.Fragment key={post.blogSlug}>
-                  <BlogPost {...post} />
-                </React.Fragment>
-              ))}
-            </div>
           </div>
-        </section>
+        </section> */}
+        <BlogList posts={blogPosts} />
       </main>
     </>
   )
@@ -76,7 +67,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      blogPosts: data
+      blogPosts: data.slice(0, 4)
     }
   }
 }
