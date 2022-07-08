@@ -1,8 +1,8 @@
 import React from 'react'
 import { Seo } from '../../components/seo/seo.component'
-import { BlogPost } from '../../components/blog-post/blog-post.component'
 import { getContentfulBlogPosts, BlogPost as BlogPostProps } from '../../utils/contentful/contentful'
 import { Banner } from '../../components/banner/banner.component'
+import { BlogList } from '../../components/blog-list/blog-list.component'
 
 export interface BlogProps {
   blogPosts: BlogPostProps[]
@@ -24,13 +24,7 @@ const Blog: React.FC<BlogProps> = ({ blogPosts }) => {
         </Banner>
         <section className="o-region">
           <div className="o-region__inner">
-            <div className="c-blog-list">
-              {blogPosts.map(post => (
-                <React.Fragment key={post.blogSlug}>
-                  <BlogPost {...post} />
-                </React.Fragment>
-              ))}
-            </div>
+            <BlogList posts={blogPosts} />
           </div>
         </section>
       </main>
