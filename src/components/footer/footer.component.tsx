@@ -61,9 +61,6 @@ export const Footer = () => {
               ))}
             </ul>
             <p>
-              <a href="/" className="e-logo">mattc.</a>
-            </p>
-            <p>
               © 2021 mattc. All rights reserved.
             </p>
           </div>

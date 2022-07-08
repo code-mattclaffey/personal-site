@@ -40,8 +40,6 @@ export type BlogPost = {
   thumbnail: string
 }
 
-export type BlogPosts = Array<BlogPost>
-
 export const getContentfulBlogPosts = async () => {
   try {
     const entries = await client.getEntries({ content_type: 'blogPost', order: 'sys.createdAt' })

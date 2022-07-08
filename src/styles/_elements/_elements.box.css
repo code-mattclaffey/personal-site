@@ -1,25 +1,8 @@
 .e-box {
-  background-color: var(--color-pastal-grey);
   border-radius: var(--base-border-radius);
-  padding: clamp(2em, 4 / 70 * 100vw, 3em);
+  padding: clamp(1rem, 4 / 70 * 100vw, 2rem);
 }
 
 .e-box--vertical-xl {
   padding: clamp(2em, 4 / 70 * 100vw, 3.5em) clamp(1.5em, 4 / 70 * 100vw, 3em);
-}
-
-.e-box--pastal-green {
-  background-color: var(--color-pastal-green);
-}
-
-.e-box--pastal-pink {
-  background-color: var(--color-pastal-green);
-}
-
-.e-box--pastal-blue {
-  background-color: var(--color-pastal-green);
-}
-
-.e-box--pastal-purple {
-  background-color: var(--color-pastal-purple);
 }

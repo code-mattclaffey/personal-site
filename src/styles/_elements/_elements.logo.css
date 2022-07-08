@@ -1,7 +1,7 @@
 .e-logo,
 .e-logo:focus,
 .e-logo:hover {
-  color: var(--color-body-copy);
+  color: var(--color-white);
   font-size: 1.4em;
   font-weight: 700;
   text-decoration: none;

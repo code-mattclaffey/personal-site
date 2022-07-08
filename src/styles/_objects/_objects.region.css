@@ -9,8 +9,16 @@
   width: 100%;
 }
 
+.o-region--py-large {
+  padding: clamp(var(--spacing-6-x), 4 / 70 * 100vw, calc(var(--spacing-9-x))) 0;
+}
+
+.o-region--header {
+  padding: clamp(var(--spacing-4-x), 4 / 70 * 100vw, calc(var(--spacing-5-x))) 0 0;
+}
+
 .o-region__inner {
-  --region-max-width: 70em;
+  --region-max-width: 1480px;
 
   margin: 0 auto;
   max-width: var(--region-max-width);
@@ -18,5 +26,5 @@
 }
 
 .o-region__inner--thin {
-  --region-max-width: 60em;
+  --region-max-width: 1200px;
 }

@@ -4,3 +4,13 @@ a:focus {
   color: var(--color-body-copy);
   font-weight: 600;
 }
+
+.c-link--alt {
+  color: var(--color-white);
+}
+
+.c-link--alt:hover,
+.c-link--alt:focus {
+  color: var(--color-white);
+  text-decoration: underline;
+}

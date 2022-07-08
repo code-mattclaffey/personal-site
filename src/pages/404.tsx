@@ -1,7 +1,5 @@
 import React from 'react'
 import { Seo } from '../components/seo/seo.component'
-import { Footer } from '../components/footer/footer.component'
-import { Header } from '../components/header/header.component'
 import Link from 'next/link'
 
 const Custom404Page = () => (
@@ -11,7 +9,6 @@ const Custom404Page = () => (
       description="Don't worry about it! Happens to the best of us, let's get you back on track."
       pageImageUrl="images/thumbnail.jpg"
     />
-    <Header />
     <main className="o-region c-banner c-banner--tall">
       <div className="o-region__inner">
         <h1 className="e-heading e-heading--h1 c-banner__title">😕 Opps, looks like you got lost</h1>
@@ -19,11 +16,10 @@ const Custom404Page = () => (
           Don't worry about it! Happens to the best of us, let's get you back on track.
         </p>
         <Link href="/">
-          <a className="c-button c-button--primary c-button--large">Return home</a>
+          <a>Return home</a>
         </Link>
       </div>
     </main>
-    <Footer />
   </>
 )
 

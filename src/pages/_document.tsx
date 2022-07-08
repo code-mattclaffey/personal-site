@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import { Footer } from '../components/footer/footer.component'
+import { Header } from '../components/header/header.component'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -11,7 +13,9 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
+          <Header />
           <Main />
+          <Footer />
           <NextScript />
         </body>
       </Html>
