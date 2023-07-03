@@ -20,13 +20,15 @@
     "next-rss": "^1.0.1",
     "next-sitemap": "^1.6.124",
     "normalize.css": "^8.0.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^15.12.4",
     "@types/react": "^17.0.13",
+    "@types/rss": "^0.0.30",
     "babel-plugin-inline-react-svg": "^0.5.4",
-    "typescript": "^4.3.5"
+    "typescript": "^5.1.6"
   }
 }

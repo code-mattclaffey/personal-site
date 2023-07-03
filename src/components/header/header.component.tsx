@@ -1,8 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 export const Header = () => {
-
   const styles = {
     '--region-background': 'var(--base-region-bg);',
     '--region-color': 'var(--color-white);',
@@ -14,15 +13,13 @@ export const Header = () => {
         <nav className="o-region__inner">
           <ul className="c-header__navigation">
             <li>
-              <Link href="/">
-                <a className="e-logo">
-                  mattc.
-                </a>
+              <Link href="/" className="e-logo">
+                mattc.
               </Link>
             </li>
           </ul>
         </nav>
       </header>
     </>
-  )
-}
+  );
+};
