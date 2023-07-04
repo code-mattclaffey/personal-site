@@ -17,7 +17,6 @@ export default async function generateRssFeed(contentfulPosts: any) {
  const feed = new RSS(feedOptions);
 
  contentfulPosts.forEach((post: any) => {
-  console.log(post)
   feed.item({
       title: post.blogTitle,
       guid: `${site_url}/blog/${post.blogSlug}`,

@@ -1,21 +1,21 @@
-import React from 'react'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
+import React from 'react';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 type ManifestLinks = Array<{
-  rel: string
-  sizes?: string
-  type?: string
-  href: string
-}>
+  rel: string;
+  sizes?: string;
+  type?: string;
+  href: string;
+}>;
 
 export interface SeoProps {
-  title: string
-  description: string
-  pageImageUrl: string
-  themeColor?: string
-  msTileImg?: string
-  manifestLinks?: ManifestLinks
+  title: string;
+  description: string;
+  pageImageUrl: string;
+  themeColor?: string;
+  msTileImg?: string;
+  manifestLinks?: ManifestLinks;
 }
 
 const metaLinks: ManifestLinks = [
@@ -90,7 +90,7 @@ const metaLinks: ManifestLinks = [
     rel: 'manifest',
     href: '/manifest.json',
   },
-]
+];
 
 export const Seo: React.FC<SeoProps> = ({
   title,
@@ -100,7 +100,7 @@ export const Seo: React.FC<SeoProps> = ({
   themeColor = '#ffffff',
   manifestLinks = metaLinks,
 }) => {
-  const { pathname } = useRouter()
+  const { pathname } = useRouter();
 
   return (
     <Head>
@@ -114,25 +114,16 @@ export const Seo: React.FC<SeoProps> = ({
       <meta property="og:url" content={`https://mattclaffey.co.uk/${pathname}`} />
       <meta property="og:type" content="website" />
       <meta name="twitter:title" content={title} />
-      <meta
-        name="twitter:description"
-        content={description}
-      />
+      <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={pageImageUrl} />
       <meta name="twitter:card" content="summary_large_image" />
 
-      {manifestLinks.map(link => (
-        <link
-          key={link.href}
-          rel={link.rel}
-          href={link.href}
-          sizes={link.sizes}
-          type={link.type}
-        />
+      {manifestLinks.map((link) => (
+        <link key={link.href} rel={link.rel} href={link.href} sizes={link.sizes} type={link.type} />
       ))}
       <meta name="msapplication-TileColor" content={themeColor} />
       <meta name="msapplication-TileImage" content={msTileImg} />
       <meta name="theme-color" content={themeColor} />
     </Head>
-  )
-}
+  );
+};

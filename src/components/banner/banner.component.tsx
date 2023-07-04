@@ -10,13 +10,8 @@ export interface BannerProps {
 }
 
 export const Banner: React.FC<BannerProps> = ({ title, children, link }) => {
-  const styles = {
-    '--region-background': 'var(--base-region-bg);',
-    '--region-color': 'var(--color-white);',
-  };
-
   return (
-    <section className="o-region o-region--py-large" style={styles as any}>
+    <section className="c-banner o-region o-region--py-large">
       <div className="o-region__inner">
         {link && (
           <Link href={link.to} className="c-link c-link--alt">

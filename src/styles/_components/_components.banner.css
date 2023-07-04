@@ -1,3 +1,8 @@
+.c-banner {
+  --region-background: var(--base-region-bg);
+  --region-color: var(--color-white);
+}
+
 .c-banner__title {
   margin-bottom: var(--spacing-2-x);
   max-width: 20ch;
