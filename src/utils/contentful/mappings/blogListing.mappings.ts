@@ -1,4 +1,4 @@
-import { client, getBlogEntry } from "../contentful";
+import { getBlogEntry } from "../contentful";
 
 export const blogListing = async (props: any) => {
   let posts: any = [];
