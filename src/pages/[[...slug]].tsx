@@ -83,8 +83,6 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
     return (componentMappings as any)[component.sys.contentType.sys.id] !== undefined;
   });
 
-  console.log(availableComponents);
-
   await Promise.all(
     availableComponents.map((component: any) => {
       return (componentMappings as any)[component.sys.contentType.sys.id](component);

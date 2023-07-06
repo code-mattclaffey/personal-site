@@ -1,0 +1,29 @@
+.blogPost h2,
+.blogPost .e-heading--h2,
+.blogPost h3,
+.blogPost .e-heading--h3,
+.blogPost h4,
+.blogPost .e-heading--h4 {
+  margin: var(--spacing-4-x) 0;
+}
+
+.blogPost a {
+  word-wrap: break-word;
+}
+
+@media (min-width: 48.0625em) {
+  .blogPost > *:first-child {
+    padding-right: var(--spacing-9-x);
+    margin-bottom: calc(var(--spacing-6-x));
+  }
+}
+
+.blogPostLinkText {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

@@ -1,24 +1,24 @@
-.c-footer {
+.footer {
   margin: 0 auto;
   max-width: 60ch;
   text-align: center;
 }
 
-.c-footer__socials {
+.footerSocials {
   list-style: none;
   padding-left: 0;
 }
 
-.c-footer__socials > * {
+.footerSocials > * {
   display: inline-block;
 }
 
-.c-footer__socials > li {
+.footerSocials > li {
   margin: var(--spacing-1-x) var(--spacing-3-x);
 }
 
 @media (min-width: 48.0625em) {
-  .c-footer__socials {
+  .footerSocials {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
